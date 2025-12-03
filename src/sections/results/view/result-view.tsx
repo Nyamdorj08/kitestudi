@@ -1,0 +1,124 @@
+'use client';
+
+import { Box, Container, Paper, useMediaQuery, useTheme } from '@mui/material';
+import { useParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { toast } from 'sonner';
+import { CircularLoadingBlur } from 'src/components/circular-loading-blur';
+import { StudyyService } from 'src/services';
+import { StudyyAnswerResponse } from 'src/services/types/Studyy.type';
+import { getErrorMessage } from 'src/utils/error-message';
+import { eventview } from 'src/utils/fpixel';
+import { Visual } from '../Visual';
+import { SOLO_VISUAL } from '../datas/SoloVisual';
+
+export const ResultView = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+  const params = useParams();
+  const [result, setResult] = useState<StudyyAnswerResponse | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  const [hasFiredCheckout, setHasFiredCheckout] = useState(false);
+  const [hasFiredPurchase, setHasFiredPurchase] = useState(false);
+  const [hasFiredResultViewed, setHasFiredResultViewed] = useState(false);
+
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      const response = await StudyyService().paymentCheck(params._id.toString());
+      setResult(response.data);
+      setLoading(false);
+    } catch (error) {
+      toast.error(getErrorMessage(error));
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    if (!params._id) return;
+    fetchData();
+  }, [params._id]);
+
+  useEffect(() => {
+    if (!result) return;
+
+    if (result.status === 'pending' && !hasFiredCheckout) {
+      eventview(
+        'InitiateCheckout',
+        {
+          value: 4900.0,
+          currency: 'MNT',
+          num_items: 1,
+          contents: [{ id: 'studyy-basic', quantity: 1, item_price: 4800.0 }],
+          content_type: 'product',
+        },
+        { eventID: `checkout-${result._id}` }
+      );
+      setHasFiredCheckout(true);
+    }
+
+    if (result.status === 'paid' && !hasFiredPurchase) {
+      eventview(
+        'Purchase',
+        {
+          value: 4900.0,
+          currency: 'MNT',
+          num_items: 1,
+          contents: [{ id: 'studyy-basic', quantity: 1, item_price: 4800.0 }],
+          content_type: 'product',
+        },
+        { eventID: `purchase-${result._id}` }
+      );
+      setHasFiredPurchase(true);
+    }
+
+    if (result.status === 'completed' && !hasFiredResultViewed) {
+      eventview('ResultViewed', {}, { eventID: `result-${result._id}` });
+      setHasFiredResultViewed(true);
+    }
+  }, [result, hasFiredCheckout, hasFiredPurchase, hasFiredResultViewed]);
+
+  const showSoloVisual = result?.styles?.includes('solo visual');
+
+  return (
+    <Box
+      sx={{
+        minHeight: '100vh',
+        background: 'radial-gradient(circle at top, #1e293b 0, #020617 45%, #020617 100%)',
+        display: 'flex',
+        alignItems: 'center',
+        py: isMobile ? 4 : 8,
+      }}
+    >
+      <Container maxWidth="md">
+        <Paper
+          sx={{
+            position: 'relative',
+            overflow: 'hidden',
+            borderRadius: 5,
+            p: isMobile ? 3 : 4,
+            background: 'linear-gradient(135deg, rgba(15,23,42,0.96), rgba(15,23,42,0.98))',
+            border: '1px solid rgba(148,163,184,0.4)',
+            boxShadow: '0 25px 80px rgba(15,23,42,0.9)',
+          }}
+        >
+          <Box
+            sx={{
+              position: 'absolute',
+              inset: 0,
+              background:
+                'radial-gradient(circle at top center, rgba(56,189,248,0.2), transparent 55%)',
+              pointerEvents: 'none',
+            }}
+          />
+
+          {loading && <CircularLoadingBlur loading={loading} />}
+
+          <Box sx={{ position: 'relative' }}>{showSoloVisual && <Visual data={SOLO_VISUAL} />}</Box>
+        </Paper>
+      </Container>
+    </Box>
+  );
+};

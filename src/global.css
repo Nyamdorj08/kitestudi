@@ -1,0 +1,220 @@
+/** **************************************
+* Fonts: app
+*************************************** */
+/* @import '@fontsource-variable/public-sans';
+
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/500.css';
+@import '@fontsource/barlow/600.css';
+@import '@fontsource/barlow/700.css';
+@import '@fontsource/barlow/800.css'; */
+
+/** **************************************
+* Fonts: options
+*************************************** */
+@import '@fontsource-variable/dm-sans';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/nunito-sans';
+
+/** **************************************
+* Plugins
+*************************************** */
+/* scrollbar */
+@import './components/scrollbar/styles.css';
+@import './components/chart/styles.css';
+
+/** **************************************
+* Baseline
+*************************************** */
+html {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+body,
+#root,
+#root__layout {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 100%;
+  flex-direction: column;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+input[type='number']::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+input[type='number']::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Black.ttf);
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Black_Italic.ttf);
+  font-weight: 1000;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_ExtraBold.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_ExtraBold_Italic.ttf);
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Bold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Bold_Italic.ttf);
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_DemiBold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_DemiBold_Italic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Bold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Bold_Italic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Medium_Italic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Normal.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Normal_Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Regular.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Regular_Italic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Thin.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Thin_Italic.ttf);
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Light.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url(/fonts/TT_Commons_Pro_Light_Italic.ttf);
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Dota Font';
+  src: url(/fonts/DotaFont.ttf);
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Webkit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width */
+}
+
+::-webkit-scrollbar-track {
+  background: #333; /* Darker track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Darker scrollbar thumb */
+  border-radius: 3px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Slightly lighter on hover */
+}
+
+.uploadThumbnail div:first-child {
+  height: 500px;
+}
