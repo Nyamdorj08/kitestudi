@@ -5,7 +5,7 @@ export const SOCIAL_AUDITORY: VisualData = {
   mainType: 'Авиа зүйн / сонсголоор',
   chips: [
     {
-      label: 'Авиа зүйн буюу сонсголоор',
+      label: 'Үндсэн хэв маяг: Авиа зүйн буюу сонсголоор',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
@@ -27,7 +27,7 @@ export const SOCIAL_AUDITORY: VisualData = {
     p1: 'Та чимээгүй сонсогч байхаасаа илүү асууж, хариулж, тайлбарлаж байхдаа тархий хамгийн сайн ажиллуулдаг. Гэхдээ “дэмий чалчаа” биш – фокус яриа хэрэгтэй.',
     p2: 'Ийм төрлийн хүн ярианаас энерги авдаг. Чимээгүй, ганцаараа олон цаг суух нь шууд нойрыг нь хүргэнэ. Асуулт асууж, хариулж, хүнтэй маргаж, ойлголтоо “дуу чимээтэй илэрхийлэх” явцдаа аливаа 80%-ийг сурч авдаг.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/description.png',
       alt: 'SOCIAL-AUDITORY',
     },
   },
@@ -44,7 +44,7 @@ export const SOCIAL_AUDITORY: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/proscons.png',
       alt: 'SOCIAL-AUDITORY',
     },
   },
@@ -55,7 +55,7 @@ export const SOCIAL_AUDITORY: VisualData = {
       'Бусдад заах боломж бүрийг хичээл давталт гэж хар.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/generaladvices.png',
       alt: 'SOCIAL-AUDITORY',
     },
   },
@@ -71,7 +71,7 @@ export const SOCIAL_AUDITORY: VisualData = {
       'Шалгалтын өмнө асуулт–хариултын хэлбэрээр хоорондоо дасгал хий.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/situations.png',
       alt: 'SOCIAL-AUDITORY',
     },
   },
@@ -100,7 +100,7 @@ export const SOCIAL_AUDITORY: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/generalExamples.png',
       alt: 'SOCIAL-AUDITORY',
     },
   },
@@ -113,7 +113,7 @@ export const SOCIAL_AUDITORY: VisualData = {
       'Зүгээр чимээгүй сонсогч” байхаас зайлсхийж, ярианд идэвхтэй оролцсон.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialauditory/dailyChecklist.png',
       alt: 'SOCIAL-AUDITORY',
     },
   },

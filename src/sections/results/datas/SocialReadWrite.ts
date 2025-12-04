@@ -4,12 +4,12 @@ export const SOCIAL_READWRITE: VisualData = {
   mainType: 'Бичиг / уншлагаар',
   chips: [
     {
-      label: 'Бичгэн буюу уншиж бичих аргаар',
+      label: 'Үндсэн хэв маяг: Бичгэн буюу уншиж бичих аргаар',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
     {
-      label: 'Нийгмийн',
+      label: 'Харилцах хэв маяг: Нийгмийн',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },
@@ -26,7 +26,7 @@ export const SOCIAL_READWRITE: VisualData = {
     p1: 'Та текст дээр сайн, хүмүүстэй хамт бичих, унших, shared document дээр ажиллах үедээ илүү сайн сурдаг.',
     p2: 'Ийм төрлийн хүн текстээрээ хамт сурах дуртай: shared doc, чат, асуулт хариулт (Q&A), comment, хамтарсан тэмдэглэл зэрэг бол түүний талбар. “Ярьж байхаар биччих, тэгвэл бүтэн үлдэнэ” гэж боддог.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/description.png',
       alt: 'SOCIAL-READWRITE',
     },
   },
@@ -43,7 +43,7 @@ export const SOCIAL_READWRITE: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/proscons.png',
       alt: 'SOCIAL-READWRITE',
     },
   },
@@ -54,7 +54,7 @@ export const SOCIAL_READWRITE: VisualData = {
       'Чатад зөвхөн мийм биш, жинхэнэ тайлбар, хураангуй хий.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/generaladvices.png',
       alt: 'SOCIAL-READWRITE',
     },
   },
@@ -70,7 +70,7 @@ export const SOCIAL_READWRITE: VisualData = {
       'Шалгалтын өмнө хамтдаа асуулт, хариулт (Q&A) документ гаргаж, бүгдээрээ засвар хий.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/situations.png',
       alt: 'SOCIAL-READWRITE',
     },
   },
@@ -99,7 +99,7 @@ export const SOCIAL_READWRITE: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/generalExamples.png',
       alt: 'SOCIAL-READWRITE',
     },
   },
@@ -112,7 +112,7 @@ export const SOCIAL_READWRITE: VisualData = {
       'Өнөөдрийн гол сэдвээс 3–5 асуулт, хариулттай асуулт, хариулт (Q&A) жагсаалт бичиж үлдээсэн.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/dailyChecklist.png',
       alt: 'SOCIAL-READWRITE',
     },
   },

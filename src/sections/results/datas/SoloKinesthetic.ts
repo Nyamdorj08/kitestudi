@@ -4,12 +4,12 @@ export const SOLO_KINESTHETIC: VisualData = {
   mainType: 'Бие махбодын / хөдөлгөөнөөр',
   chips: [
     {
-      label: ' Бие махбодын буюу хөдөлгөөнөөр',
+      label: 'Үндсэн хэв маяг: Бие махбодын буюу хөдөлгөөнөөр',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
     {
-      label: 'Ганцаараа',
+      label: 'Харилцах хэв маяг: Ганцаараа',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },
@@ -26,7 +26,7 @@ export const SOLO_KINESTHETIC: VisualData = {
     p1: 'Та бодлого бодож, бичиж, туршиж, төсөл хийж байж сурдаг. Бусдын хийж байгааг харахаас илүү гартаа барьж үзэх нь өөрт нь хамгийн их хэрэгтэй.',
     p2: 'Ийм төрлийн хүн өөрөө хийж байж сурдаг. Хүн зааж өгөхийг хүлээх биш, өөрөө оролдож үзэх дуртай. “Надад pdf тайлбар битгий өг, жишээ бодлого, даалгавар өгчих” гэдэг сэтгэлгээтэй.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/description.png',
       alt: 'SOLO-KINESTHETIC',
     },
   },
@@ -43,7 +43,7 @@ export const SOLO_KINESTHETIC: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/proscons.png',
       alt: 'SOLO-KINESTHETIC',
     },
   },
@@ -54,7 +54,7 @@ export const SOLO_KINESTHETIC: VisualData = {
       '“Өнөөдөр хэдэн бодлого/дасгал хийв?” гэдгээ гол үзүүлэлт болго.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/generaladvices.png',
       alt: 'SOLO-KINESTHETIC',
     },
   },
@@ -70,7 +70,7 @@ export const SOLO_KINESTHETIC: VisualData = {
       'Өөртөө жижиг төсөл зохиож, сурсан зүйлээ түүн дээр ашиглах.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/situations.png',
       alt: 'SOLO-KINESTHETIC',
     },
   },
@@ -99,7 +99,7 @@ export const SOLO_KINESTHETIC: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/generalExamples.png',
       alt: 'SOLO-KINESTHETIC',
     },
   },
@@ -112,7 +112,7 @@ export const SOLO_KINESTHETIC: VisualData = {
       '“Дараа бодъё” гэж хойш тавьсан сэдвээс бодлого бодох буюу практик дээр ажилласан.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/dailyChecklist.png',
       alt: 'SOLO-KINESTHETIC',
     },
   },

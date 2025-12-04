@@ -10,7 +10,7 @@ export const MIXED_VISUAL: VisualData = {
       textColor: 'grey.100',
     },
     {
-      label: 'Холимог (ганцаараа + хүнтэй ярилцах хосолсон)',
+      label: 'Харилцах хэв маяг: Холимог (ганцаараа + хүнтэй ярилцах хосолсон)',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },
@@ -27,7 +27,7 @@ export const MIXED_VISUAL: VisualData = {
     p1: 'Та эхлээд сэдвийг нүдэнд харагдах бүтэц, зураг болгоод, дараа нь хүнтэй ярьж байж түүнийгээ баталгаажуулахдаа сайн. Ганцаарчилсан зураглал + богино ярилцлага = танд хамгийн оновчтой сонголт.',
     p2: 'Энэ хүн эхлээд өөрийн толгойд зураг гаргаад, дараа нь хүнтэй ярьж байж баталгаажуулах дуртай. Дотроо “би ингэж харж байгаа, зөв үү?” гэдэг маягийн сэтгэлгээтэй. Ганцаараа сууж чадна, гэхдээ дан ганцаараа удаан явахад эргэлзээд эхэлдэг.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/description.png',
       alt: 'MIXED-VISUAL',
     },
   },
@@ -44,7 +44,7 @@ export const MIXED_VISUAL: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/proscons.png',
       alt: 'MIXED-VISUAL',
     },
   },
@@ -55,7 +55,7 @@ export const MIXED_VISUAL: VisualData = {
       'Бусдын тайлбарыг сонсоод өөрийн схем дээрээ засвар хийж хэвш.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/generaladvices.png',
       alt: 'MIXED-VISUAL',
     },
   },
@@ -71,7 +71,7 @@ export const MIXED_VISUAL: VisualData = {
       'Шалгалтын өмнө найзтайгаа “схемээ эргэж ярьдаг уулзалт” хий.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/situations.png',
       alt: 'MIXED-VISUAL',
     },
   },
@@ -100,7 +100,7 @@ export const MIXED_VISUAL: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/generalExamples.png',
       alt: 'MIXED-VISUAL',
     },
   },
@@ -113,7 +113,7 @@ export const MIXED_VISUAL: VisualData = {
       'Шалгалтад орох гол 1–2 сэдвийн “мастер” схемээ шинэчилсэн.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/dailyChecklist.png',
       alt: 'MIXED-VISUAL',
     },
   },

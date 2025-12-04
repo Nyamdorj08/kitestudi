@@ -4,19 +4,19 @@ export const MIXED_KINESTHETIC: VisualData = {
   mainType: 'Бие махбодын / хөдөлгөөнөөр',
   chips: [
     {
-      label: ' Бие махбодын буюу хөдөлгөөнөөр',
+      label: 'Үндсэн хэв маяг: Бие махбодын буюу хөдөлгөөнөөр',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
     {
-      label: 'Холимог (ганцаараа + хүнтэй ярилцах хосолсон)',
+      label: 'Харилцах хэв маяг:Холимог (ганцаараа + хүнтэй ярилцах хосолсон)',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },
   ],
   coreIdea: {
     title: 'Товчоор',
-    text: ' “Өөрөө оролдож үзээд, гацвал хүнээс асууж, засах аргаар дахин оролдох.',
+    text: '“Өөрөө оролдож үзээд, гацвал хүнээс асууж, засах аргаар дахин оролдох.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/coreidea.png',
       alt: 'MIXED-KINESTHETIC',
@@ -26,7 +26,7 @@ export const MIXED_KINESTHETIC: VisualData = {
     p1: 'Та хийж байж сурдаг, гэхдээ дан ганцаараа гацах хэрэггүй – богино тайлбар, зөв чиглэл хэн нэгнээс авах үед маш хурдан урагшилдаг.',
     p2: 'Ийм төрлийн хүн “би эхлээд өөрөө оролдоно, болохгүй бол хүнээс зөв замыг нь асууна, дараа нь дахиад өөрөө хийнэ” гэсэн дараалалтай байдаг. Хийж үз → хариу үнэлгээ → дахин хийж үз.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/description.png',
       alt: 'MIXED-KINESTHETIC',
     },
   },
@@ -42,7 +42,7 @@ export const MIXED_KINESTHETIC: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/proscons.png',
       alt: 'MIXED-KINESTHETIC',
     },
   },
@@ -53,7 +53,7 @@ export const MIXED_KINESTHETIC: VisualData = {
       '“Өнөөдөр хэдэн бодлого/дасгал хийв?” гэдгээ гол үзүүлэлт болго.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/generaladvices.png',
       alt: 'MIXED-KINESTHETIC',
     },
   },
@@ -68,7 +68,7 @@ export const MIXED_KINESTHETIC: VisualData = {
       'Цаг харж, тодорхой тооны бодлого, дасгал ажиллах.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/situations.png',
       alt: 'MIXED-KINESTHETIC',
     },
   },
@@ -101,7 +101,7 @@ export const MIXED_KINESTHETIC: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/generalExamples.png',
       alt: 'MIXED-KINESTHETIC',
     },
   },
@@ -114,7 +114,7 @@ export const MIXED_KINESTHETIC: VisualData = {
       'Бодсон бодлогоосоо нэгийг нь тайлбартайгаар тэмдэглэлдээ бичиж авсан.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/dailyChecklist.png',
       alt: 'MIXED-KINESTHETIC',
     },
   },
