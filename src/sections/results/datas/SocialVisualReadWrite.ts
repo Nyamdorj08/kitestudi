@@ -126,7 +126,7 @@ export const SOCIAL_VISUALREADWRITE: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/7IDKQX5glJM4EPvD0B30HZ?si=76de1fb715154d9d',
     },
   ],
 };

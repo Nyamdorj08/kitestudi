@@ -119,7 +119,7 @@ export const MIXED_READWRITE: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/69bNyLkTdlOe6lYi0vzwzG?si=71517a7101ae40e7',
     },
   ],
 };

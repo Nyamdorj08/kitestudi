@@ -118,7 +118,7 @@ export const MIXED_VISUALKINESTHETIC: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/187NTbbzEl8jgYIHBVo3Tb?si=f59af1a1b5cf4fb1',
     },
   ],
 };

@@ -124,7 +124,7 @@ export const SOLO_READWRITEKINESTHETIC: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/79J17b2w4PgLR2WL45wjQU?si=386841d4e3944465',
     },
   ],
 };

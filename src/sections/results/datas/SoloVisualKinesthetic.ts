@@ -116,7 +116,7 @@ export const SOLO_VISUALKINESTHETIC: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/4kNw7kNMnPanF7xag5LysA?si=eac4a0b687be4577',
     },
   ],
 };

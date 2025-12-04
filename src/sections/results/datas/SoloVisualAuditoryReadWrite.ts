@@ -123,7 +123,7 @@ export const SOLO_VISUALAUDITORYREADWRITE: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/0xNZ3z0qpOmbRNN1ZVb1UU?si=9bfb819cbf064386',
     },
   ],
 };

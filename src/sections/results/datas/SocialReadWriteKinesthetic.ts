@@ -119,7 +119,7 @@ export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/4L1AN7KVzL3ZKiAQcaQMYN?si=f4dc5dd381d9454b',
     },
   ],
 };

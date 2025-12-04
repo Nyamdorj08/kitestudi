@@ -124,7 +124,7 @@ export const SOCIAL_AUDITORYKINESTHETIC: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/2bV0UT9J5QZ3te7PkhEdQw?si=9848cdbbb31b4417',
     },
   ],
 };
