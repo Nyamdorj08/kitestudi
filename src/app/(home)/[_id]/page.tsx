@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { ResultView } from 'src/sections/results/view/result-view';
 
 export const metadata: Metadata = {
-  title: 'S.E.L.F.E.C.T — 2 минутын өөрийгөө хорлох зуршлын тест',
-  description: 'Өдөр тутмын зуршил, шийдвэр, айдас чамайг хэрхэн хорлож байгааг мэдэж ав.',
+  title: 'Studii.mn - суралцах хэв маягийн тест',
+  description: 'Муу сурдаггүй, буруу л сурдаг. Суралцах хамгийн зөв аргаа мэдэж аваарай.',
 };
 
 export default function Page() {

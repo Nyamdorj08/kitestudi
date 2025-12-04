@@ -187,22 +187,21 @@ export const HomeView = () => {
 
                   <Box>
                     <Typography
-                      variant="h5"
-                      fontWeight={800}
-                      sx={{
-                        mb: 1.5,
-                        color: 'text.primary',
-                      }}
+                      maxWidth={500}
+                      variant="body1"
+                      fontSize="0.97rem"
+                      sx={{ color: 'text.secondary' }}
                     >
-                      Чиний суралцах системийг задлан шинжилнэ
-                    </Typography>
-                    <Typography variant="body1" fontSize="0.97rem" sx={{ color: 'text.secondary' }}>
-                      Чи ямар үед хамгийн хурдан, гүн, удаан мартахгүйгээр сурдаг вэ?
+                      “Хичээлийг жинхнээсээ уйлуулна” гэж боддог ч өөрөө уйлчихсан сууж байсан
+                      тохиолдол байдаг л биз дээ?
+                      <br />
                       <br />
                       <strong>
-                        Бодол, зуршил, цагийн менежмент чинь суралцах чадварыг хаана нь гацааж
-                        байгааг ил гаргаж өгнө.
+                        Өөрийнхөө суралцах хэв маягийг мэдээд авчихвал зөвхөн хичээл гэлтгүй ямар ч
+                        шинэ зүйлийг “гартаа оруулах” үнэхээр амархан болно.
                       </strong>
+                      <br />
+                      <br />
                     </Typography>
                   </Box>
 
@@ -342,14 +341,14 @@ export const HomeView = () => {
                         fontWeight={600}
                         sx={{
                           color: 'text.primary',
-                          mb: 1,
+                          mb: 5,
                           fontSize: { xs: '1.05rem', md: '1.15rem' },
                         }}
                       >
                         {currentQuestion.question}
                       </Typography>
 
-                      <Typography
+                      {/* <Typography
                         variant="body2"
                         sx={{
                           color: 'text.secondary',
@@ -359,7 +358,7 @@ export const HomeView = () => {
                         }}
                       >
                         ☑️ Таны бодит байдалд хамгийн ойр тохирох хувилбарыг сонгоорой.
-                      </Typography>
+                      </Typography> */}
 
                       <RadioGroup
                         value={isCustomSelected ? 'custom' : selectedValue || ''}
@@ -501,24 +500,40 @@ export const HomeView = () => {
           {stage === 'email' && (
             <Fade in>
               <Box>
-                <Typography
-                  variant="h5"
-                  fontWeight={700}
-                  gutterBottom
-                  sx={{ color: 'text.primary', mb: 1.5 }}
+                <Box
+                  sx={{
+                    width: { xs: 140, md: 160 },
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    mx: 'auto',
+                    mb: 3,
+                  }}
                 >
-                  🎉 Үр дүн бэлэн боллоо!
-                </Typography>
-                <Typography variant="body1" sx={{ color: 'text.secondary', mb: 2 }}>
-                  Таны <strong>суралцах хэв маяг, анхаарал, цагийн менежмент, төвлөрөл</strong> ямар
-                  алдаанаас болж алдагддаг, юуг өөрчлөхөд хамгийн их нөлөө үзүүлэхийг нарийвчлан
-                  дүгнээд и-мэйлээр илгээнэ.
+                  <Box
+                    component="img"
+                    src="/full_white_logo.png"
+                    alt="STUDII-MAIN"
+                    sx={{
+                      width: '100%',
+                      display: 'block',
+                    }}
+                  />
+                </Box>
+                <Typography
+                  textAlign={'center'}
+                  fontWeight={700}
+                  variant="body1"
+                  sx={{ color: 'text.primary', mb: 2 }}
+                >
+                  Ганцхан удаа бөглөх тест бөгөөд үр дүн нь таны амьдралд насан туршид нөлөөлөх
+                  өөрчлөлт авчрах болно.
                   <br />
-                  Дүгнэлт нь хувийн бөгөөд зөвхөн та харах боломжтой.
                 </Typography>
+
                 <TextField
                   fullWidth
-                  placeholder="Таны и-мэйл"
+                  placeholder="Таны и-мэйл хаяг"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -551,11 +566,13 @@ export const HomeView = () => {
                 >
                   Дүгнэлтээ и-мэйлээр авах
                 </Button>
+
                 <Typography
                   variant="caption"
                   sx={{ mt: 1, display: 'block', color: 'text.secondary' }}
+                  textAlign={'center'}
                 >
-                  🛡️ Таны и-мэйл зөвхөн дүгнэлт илгээхэд ашиглагдана. Бусад зорилгоор хадгалах,
+                  Таны и-мэйлыг зөвхөн дүгнэлт илгээхэд ашиглана. Бусад зорилгоор хадгалахгүй,
                   сурталчилгаа илгээхгүй.
                 </Typography>
               </Box>
@@ -612,25 +629,91 @@ export const HomeView = () => {
 
         {/* Why dialog */}
         <Dialog open={showWhy} onClose={() => setShowWhy(false)} maxWidth="sm" fullWidth>
-          <DialogTitle>Яагаад энэ тест хэрэгтэй вэ?</DialogTitle>
-          <DialogContent>
-            <Typography variant="body1" gutterBottom>
-              Ихэнх хүмүүс “хичээлээ сайн давтах ёстой” гэж боддог ч{' '}
-              <strong>юу нь яг алдаатай</strong> байгаагаа мэддэггүй. Таны сурдаггүй шалтгаан
-              ихэнхдээ тархи, анхаарал, зуршлын системтэй холбоотой байдаг.
+          <DialogTitle
+            sx={{
+              fontWeight: 700,
+              pb: 1,
+              color: 'text.primary',
+            }}
+          >
+            Яагаад энэ тест хэрэгтэй вэ?
+          </DialogTitle>
+
+          <DialogContent sx={{ pt: 0.5 }}>
+            <Typography
+              variant="body1"
+              gutterBottom
+              sx={{
+                lineHeight: 1.6,
+                fontSize: '0.95rem',
+                color: 'text.primary',
+                mb: 2,
+              }}
+            >
+              Шинэ зүйлийг өөрийн болгон эзэмших буюу амжилттай суралцах нууц нь танд өөрт байгаа.
+              Өөрийн онцлог хэв маягийг мэдэж авснаар доорх ашиг тустай:
             </Typography>
-            <ul>
-              <li>📌 Аль үед, ямар орчинд та хамгийн сайн сурдгаа тодорхой харна</li>
-              <li>
-                ⏰ Хойш тавьдаг зуршил, төвлөрөл сарнидаг мөчүүдийн үндсэн шалтгааныг олж харна
+
+            <ul
+              style={{
+                paddingLeft: '1.2rem',
+                margin: 0,
+                marginBottom: '1.2rem',
+              }}
+            >
+              <li
+                style={{
+                  marginBottom: '0.7rem',
+                  lineHeight: 1.55,
+                  fontSize: '0.93rem',
+                  color: 'var(--mui-palette-text-primary)',
+                }}
+              >
+                Цаг хэмнэнэ. Өөрийгөө хүчлээд сурсан ч биш, сураагүй ч биш суухын оронд хэв маягтаа
+                таарсан арга ашиглавал богино хугацаанд илүү ихийг үр дүнтэйгээр сурна.
               </li>
-              <li>🧠 “Илүү их биш, илүү ухаалгаар сурах” хувийн стратеги гаргах суурь болно</li>
+
+              <li
+                style={{
+                  marginBottom: '0.7rem',
+                  lineHeight: 1.55,
+                  fontSize: '0.93rem',
+                  color: 'var(--mui-palette-text-primary)',
+                }}
+              >
+                Ойлголт, тогтоц сайжирна. Зөв аргаар сурвал нэг уншаад өнгөрсөн ч тархиндаа авч
+                үлддэг. Ингэснээр шалгалт, ажил, амьдрал дээр санаанд “өөрөө гарч ирдэг” мэдлэгтэй
+                болно.
+              </li>
+
+              <li
+                style={{
+                  marginBottom: '0.7rem',
+                  lineHeight: 1.55,
+                  fontSize: '0.93rem',
+                  color: 'var(--mui-palette-text-primary)',
+                }}
+              >
+                Өөрийгөө буруутгах нь багасна. Хойш тавьдаг зуршил, төвлөрөл сарниад байдгынхаа
+                шалтгааныг олж мэдэхээс гадна “Би л тэнэг юм байна, би л залхуу” гэж өөрийгөө зэмлэх
+                нь багасна. Учир нь эдгээр нь буруу аргаар сурч байгаагийн шинж юм.
+              </li>
+
+              <li
+                style={{
+                  marginBottom: '0.7rem',
+                  lineHeight: 1.55,
+                  fontSize: '0.93rem',
+                  color: 'var(--mui-palette-text-primary)',
+                }}
+              >
+                Зөв сонголт хийнэ. Өөртөө үнэхээр үр дүн өгөх хэлбэрийг сонгож чадна (сонсох, харах,
+                бичих, хийх, ганцаараа, хамтдаа гэх мэт). Үр дүнд нь нэг сургалтаас авах өгөөж тань
+                хэд дахин өснө.
+              </li>
             </ul>
-            <Typography variant="body2" color="text.secondary">
-              Энэ бол ганц удаа бөглөх тест. Гэхдээ үр дүн нь таны дараагийн олон жилийн суралцах
-              систем, ажлын хэв маягт нөлөөлөх боломжтой.
-            </Typography>
           </DialogContent>
+
           <DialogActions>
             <Button onClick={() => setShowWhy(false)}>Хаах</Button>
           </DialogActions>
@@ -649,7 +732,23 @@ export const HomeView = () => {
           </DialogContent>
           <DialogActions>
             <Button onClick={() => setConfirmEmailDialog(false)}>Буцах</Button>
-            <Button variant="contained" onClick={handleFinalSubmit}>
+            <Button
+              variant="contained"
+              onClick={handleFinalSubmit}
+              sx={{
+                borderRadius: 999,
+                fontSize: '1.02rem',
+                background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
+                fontWeight: 700,
+                boxShadow: '0 0 22px rgba(34,197,94,0.45)',
+                '&:hover': {
+                  background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
+                  transform: 'translateY(-1px)',
+                  boxShadow: '0 0 30px rgba(52,211,153,0.7)',
+                },
+                transition: 'all 0.16s ease-in-out',
+              }}
+            >
               Зөв, илгээх
             </Button>
           </DialogActions>

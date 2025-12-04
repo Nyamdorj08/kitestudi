@@ -4,19 +4,19 @@ import { HomeView } from 'src/sections/home/view';
 // ----------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: 'S.E.L.F.E.C.T — 2 минутын өөрийгөө хорлох зуршлын тест',
-  description: 'Өдөр тутмын зуршил, шийдвэр, айдас чамайг хэрхэн хорлож байгааг мэдэж ав.',
+  title: 'Studii.mn - суралцах хэв маягийн тест',
+  description: 'Муу сурдаггүй, буруу л сурдаг. Суралцах хамгийн зөв аргаа мэдэж аваарай.',
   openGraph: {
-    title: 'S.E.L.F.E.C.T — 2 минутын өөрийгөө хорлох зуршлын тест',
-    description: 'Өдөр тутмын зуршил, шийдвэр, айдас чамайг хэрхэн хорлож байгааг мэдэж ав.',
-    url: 'https://selfect.eetneb.dev',
+    title: 'Studii.mn - суралцах хэв маягийн тест',
+    description: 'Муу сурдаггүй, буруу л сурдаг. Суралцах хамгийн зөв аргаа мэдэж аваарай.',
+    url: 'https://studii.mn',
     type: 'website',
     images: [
       {
-        url: 'https://selfect.eetneb.dev/og-image.png',
+        url: 'https://studii.mn/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'SELFECT өөрийгөө хорлох зуршлын тест',
+        alt: 'Муу сурдаггүй, буруу л сурдаг. Суралцах хамгийн зөв аргаа мэдэж аваарай.',
       },
     ],
   },

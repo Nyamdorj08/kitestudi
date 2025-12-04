@@ -23,8 +23,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'S.E.L.F.E.C.T — 2 минутын өөрийгөө хорлох зуршлын тест',
-  description: 'Өдөр тутмын зуршил, шийдвэр, айдас чамайг хэрхэн хорлож байгааг мэдэж ав.',
+  title: 'Studii.mn - суралцах хэв маягийн тест',
+  description: 'Муу сурдаггүй, буруу л сурдаг. Суралцах хамгийн зөв аргаа мэдэж аваарай.',
   icons: [
     {
       rel: 'icon',
@@ -32,24 +32,24 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: 'S.E.L.F.E.C.T — 2 минутын өөрийгөө хорлох зуршлын тест',
-    description: 'Өдөр тутмын зуршил, шийдвэр, айдас чамайг хэрхэн хорлож байгааг мэдэж ав.',
-    url: 'https://selfect.eetneb.dev',
+    title: 'Studii.mn - суралцах хэв маягийн тест',
+    description: 'Муу сурдаггүй, буруу л сурдаг. Суралцах хамгийн зөв аргаа мэдэж аваарай.',
+    url: 'https://studii.mn',
     type: 'website',
     images: [
       {
-        url: 'https://selfect.eetneb.dev',
+        url: 'https://studii.mn/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'SELFECT өөрийгөө хорлох зуршлын тест',
+        alt: 'Муу сурдаггүй, буруу л сурдаг. Суралцах хамгийн зөв аргаа мэдэж аваарай.',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'S.E.L.F.E.C.T — 2 минутын өөрийгөө хорлох зуршлын тест',
-    description: 'Өдөр тутмын зуршил, шийдвэр, айдас чамайг хэрхэн хорлож байгааг мэдэж ав.',
-    images: ['https://selfect.eetneb.dev/og-image.png'],
+    title: 'Studii.mn - суралцах хэв маягийн тест',
+    description: 'Муу сурдаггүй, буруу л сурдаг. Суралцах хамгийн зөв аргаа мэдэж аваарай.',
+    images: ['https://studii.mn/og-image.png'],
   },
   other: {
     'fb:app_id': '747060114451984',

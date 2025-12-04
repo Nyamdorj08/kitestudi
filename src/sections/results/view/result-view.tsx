@@ -14,6 +14,7 @@ import { PaymentSection } from '../PaymentSection';
 import { VisualDataFinder } from '../VisualData';
 import { Visual, VisualData } from '../Visual';
 import { FooterView } from 'src/sections/Footer';
+import { ResultChecker } from 'src/sections/home/view/result-checker';
 
 export const ResultView = () => {
   const theme = useTheme();
@@ -46,7 +47,11 @@ export const ResultView = () => {
 
   useEffect(() => {
     if (!params._id) return;
-    fetchData();
+    if (params._id !== 'helper') {
+      fetchData();
+    } else {
+      setLoading(false);
+    }
   }, [params._id]);
 
   useEffect(() => {
@@ -100,6 +105,12 @@ export const ResultView = () => {
           py: isMobile ? 4 : 8,
         }}
       >
+        {params._id && params._id === 'helper' && (
+          <Container maxWidth="sm">
+            <ResultChecker />
+          </Container>
+        )}
+
         {!loading && result && result.status === 'pending' && (
           <Container>
             <PaymentSection result={result} onCheckPayment={fetchData} />

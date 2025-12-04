@@ -66,33 +66,34 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
       </Box>
 
       <Typography
-        variant="h6"
-        fontWeight={800}
-        textAlign="center"
+        variant="body1"
+        fontWeight={700}
         sx={{
-          mb: 1,
+          mt: 2,
+          textAlign: 'center',
           color: 'text.primary',
-          textShadow: '0 1px 2px rgba(15,23,42,0.9)',
-          textTransform: 'uppercase',
         }}
       >
-        дүгнэлтийг нээхэд ердөө <strong>4900₮</strong>
+        Ганцхан удаа бөглөх тест бөгөөд үр дүн нь таны амьдралд насан туршид нөлөөлөх өөрчлөлт
+        авчрах болно.
       </Typography>
 
       <Typography
         variant="body2"
+        fontWeight={500}
+        textAlign="center"
         sx={{
-          mt: 1,
-          textAlign: 'center',
+          mt: 2,
           color: 'text.secondary',
+          textShadow: '0 1px 2px rgba(15,23,42,0.9)',
+          textTransform: 'uppercase',
         }}
       >
-        Таны суралцах хэв маяг, анхаарал, цагийн менежмент, хойш тавих зуршлын{' '}
-        <strong>AI анализ</strong> бэлэн болсон.
+        Дүгнэлтээ харахад ердөө <strong>4900</strong> төгрөг
       </Typography>
 
       {/* Info pill */}
-      <Stack alignItems="center" spacing={2.5} mt={3}>
+      <Stack alignItems="center" spacing={2.5} mt={1}>
         {/* <Box
           p={2}
           sx={{
@@ -111,63 +112,19 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
           Харин чамд бол дараагийн <strong>олон жилийн суралцах roadmap</strong> болно.
         </Box> */}
 
-        <Typography
-          variant="body1"
-          fontWeight={700}
-          sx={{ color: 'text.primary', textAlign: 'center', mt: 1 }}
-        >
-          QR кодыг уншуулж төлбөр хийгээд,
-          <br /> <u>“Төлбөр шалгах”</u> товчийг дарна уу.
-        </Typography>
-
         {/* QR card */}
-        <Paper
-          variant="outlined"
-          sx={{
-            mt: 2,
-            p: 2,
-            borderRadius: 3,
-            borderColor: 'rgba(129,230,217,0.5)',
-            backgroundColor: 'rgba(15,23,42,0.95)',
-          }}
-        >
-          <img
-            src={`data:image/png;base64,${result.qr_image}`}
-            alt="QR төлбөр"
-            style={{ width: 220, height: 220, objectFit: 'contain' }}
-          />
-        </Paper>
 
         {/* Mobile bank app shortcuts */}
         {isMobile && result.urls?.length ? (
           <Box mt={2} width="100%">
-            <Stack alignItems="center">
-              <Button
-                variant="contained"
-                size="large"
-                onClick={onCheckPayment}
-                sx={{
-                  borderRadius: 999,
-                  px: 4,
-                  background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
-                  fontWeight: 600,
-                  '&:hover': {
-                    background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
-                  },
-                }}
-              >
-                Төлбөр шалгах
-              </Button>
-            </Stack>
-
-            <Box mt={1.5}>
+            <Box>
               <Typography
                 sx={{ textAlign: 'center', color: 'text.secondary' }}
-                variant="body1"
+                variant="body2"
                 fontWeight={800}
                 gutterBottom
               >
-                Эсвэл банкны аппаар төлөх
+                Банкны аппаар төлөх
               </Typography>
             </Box>
 
@@ -197,28 +154,71 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
                 </Grid>
               ))}
             </Grid>
+
+            <Stack alignItems="center" mt={3}>
+              <Button
+                variant="contained"
+                size="large"
+                onClick={onCheckPayment}
+                sx={{
+                  borderRadius: 999,
+                  px: 4,
+                  background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
+                  fontWeight: 600,
+                  '&:hover': {
+                    background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
+                  },
+                }}
+              >
+                Төлбөр шалгах
+              </Button>
+            </Stack>
           </Box>
         ) : null}
+
+        <Typography
+          variant="body2"
+          fontWeight={700}
+          sx={{ color: 'text.secondary', textAlign: 'center', mt: 1 }}
+        >
+          <Box sx={{ xs: 'display', md: 'none' }} component={'span'}>
+            Эсвэл
+          </Box>{' '}
+          QR кодыг уншуулан төлбөр хийгээд
+          <br /> <u>“Төлбөр шалгах”</u> товчийг дарна уу.
+        </Typography>
+
+        <Paper
+          variant="outlined"
+          sx={{
+            mt: 2,
+            p: 2,
+            borderRadius: 3,
+            borderColor: 'rgba(129,230,217,0.5)',
+            backgroundColor: 'rgba(15,23,42,0.95)',
+          }}
+        >
+          <img
+            src={`data:image/png;base64,${result.qr_image}`}
+            alt="QR төлбөр"
+            style={{ width: 220, height: 220, objectFit: 'contain' }}
+          />
+        </Paper>
       </Stack>
 
       {/* Desktop main button */}
-      <Stack alignItems="center" mt={3}>
+      <Stack alignItems="center" mt={2}>
         <Button
           variant="contained"
           size="large"
           onClick={onCheckPayment}
           sx={{
-            width: isMobile ? '100%' : 'auto',
-            px: isMobile ? 3 : 6,
-            py: 1.4,
             borderRadius: 999,
+            px: 4,
             background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
-            fontWeight: 700,
-            fontSize: '1rem',
-            boxShadow: '0 0 20px rgba(52,211,153,0.6)',
+            fontWeight: 600,
             '&:hover': {
               background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
-              boxShadow: '0 0 26px rgba(52,211,153,0.8)',
             },
           }}
         >

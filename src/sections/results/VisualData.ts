@@ -3,40 +3,44 @@ import { MIXED_AUDITORYKINESTHETIC } from './datas/MixedAuditoryKinesthetic';
 import { MIXED_AUDITORYREADWRITE } from './datas/MixedAuditoryReadWrite';
 import { MIXED_AUDITORYREADWRITEKINESTHETIC } from './datas/MixedAuditoryReadWriteKinesthetic';
 import { MIXED_KINESTHETIC } from './datas/MixedKinesthetic';
+import { MIXED_READWRITE } from './datas/MixedReadWrite';
 import { MIXED_READWRITEKINESTHETIC } from './datas/MixedReadWriteKinesthetic';
-import { MIXED_VISUALREADWRITEKINESTHETIC } from './datas/MixedReadWriteKinesthetics';
 
 import { MIXED_VISUAL } from './datas/MixedVisual';
-import { MIXED_VISUAL_AUDITORY } from './datas/MixedVisualAuditory';
-import { MIXED_VISUALAUDITORYKINESTHETIC } from './datas/MixedVisualAuditoryKinesthetics';
+import { MIXED_VISUALAUDITORY } from './datas/MixedVisualAuditory';
+import { MIXED_VISUALAUDITORYKINESTHETIC } from './datas/MixedVisualAuditoryKinesthetic';
 import { MIXED_VISUALAUDITORYREADWRITE } from './datas/MixedVisualAuditoryReadWrite';
+import { MIXED_VISUALAUDITORYREADWRITEKINESTHETIC } from './datas/MixedVisualAuditoryReadWriteKinesthetic';
 import { MIXED_VISUALKINESTHETIC } from './datas/MixedVisualKinesthetic';
 import { MIXED_VISUALREADWRITE } from './datas/MixedVisualReadWrite';
+import { MIXED_VISUALREADWRITEKINESTHETIC } from './datas/MixedVisualReadWriteKinesthetic';
 import { SOCIAL_AUDITORY } from './datas/SocialAuditory';
 import { SOCIAL_AUDITORYKINESTHETIC } from './datas/SocialAuditoryKinesthetic';
 import { SOCIAL_AUDITORYREADWRITE } from './datas/SocialAuditoryReadWrite';
 import { SOCIAL_AUDITORYREADWRITEKINESTHETIC } from './datas/SocialAuditoryReadWriteKinesthetic';
 import { SOCIAL_KINESTHETIC } from './datas/SocialKinesthetic';
 import { SOCIAL_READWRITE } from './datas/SocialReadWrite';
-import { SOCIAL_VISUALREADWRITEKINESTHETIC } from './datas/SocialReadWriteKinesthetic';
+import { SOCIAL_READWRITEKINESTHETIC } from './datas/SocialReadWriteKinesthetic';
 import { SOCIAL_VISUAL } from './datas/SocialVisual';
 import { SOLO_VISUALAUDITORY } from './datas/SocialVisualAuditory';
 import { SOCIAL_VISUALAUDITORYKINESTHETIC } from './datas/SocialVisualAuditoryKinesthetic';
 import { SOCIAL_VISUALAUDITORYREADWRITE } from './datas/SocialVisualAuditoryReadWrite';
+import { SOCIAL_VISUALAUDITORYREADWRITEKINESTHETIC } from './datas/SocialVisualAuditoryReadWriteKinesthetic';
 import { SOCIAL_VISUALKINESTHETIC } from './datas/SocialVisualKinesthetic';
+import { SOCIAL_VISUALAUDITORY } from './datas/SocialVisualReadWrite';
+import { SOCIAL_VISUALREADWRITEKINESTHETIC } from './datas/SocialVisualReadWriteKinesthetic';
 import { SOLO_AUDITORY } from './datas/SoloAuditory';
 import { SOLO_AUDITORYKINESTHETIC } from './datas/SoloAuditoryKinesthetic';
 import { SOLO_AUDITORYREADWRITE } from './datas/SoloAuditoryReadWrite';
 import { SOLO_AUDITORYREADWRITEKINESTHETIC } from './datas/SoloAuditoryReadWriteKinesthetic';
 import { SOLO_KINESTHETIC } from './datas/SoloKinesthetic';
 import { SOLO_READWRITE } from './datas/SoloReadWrite';
-import { SOCIAL_READWRITEKINESTHETIC } from './datas/SoloReadWriteKinesthetic';
-import { SOLO_VISUALREADWRITEKINESTHETIC } from './datas/SoloReadWriteKinesthetics';
 import { SOLO_VISUAL } from './datas/SoloVisual';
 import { SOLO_VISUALAUDITORYKINESTHETIC } from './datas/SoloVisualAuditoryKinesthetic';
 import { SOLO_VISUALAUDITORYREADWRITE } from './datas/SoloVisualAuditoryReadWrite';
 import { SOLO_VISUALAUDITORYREADWRITEKINESTHETIC } from './datas/SoloVisualAuditoryReadWriteKinesthetic';
 import { SOLO_VISUALKINESTHETIC } from './datas/SoloVisualKinesthetic';
+import { SOLO_VISUALREADWRITEKINESTHETIC } from './datas/SoloVisualReadWriteKinesthetic';
 
 export const DATA_MAP: Record<string, any> = {
   // ---- SOLO ----
@@ -63,10 +67,10 @@ export const DATA_MAP: Record<string, any> = {
   // ---- MIXED ----
   'mixed visual': MIXED_VISUAL,
   'mixed auditory': MIXED_AUDITORY,
-  // 'mixed readwrite': MIXED_READWRITE,
+  'mixed readwrite': MIXED_READWRITE,
   'mixed kinesthetic': MIXED_KINESTHETIC,
 
-  'mixed visual - mixed auditory': MIXED_VISUAL_AUDITORY,
+  'mixed visual - mixed auditory': MIXED_VISUALAUDITORY,
   'mixed visual - mixed readwrite': MIXED_VISUALREADWRITE,
   'mixed visual - mixed kinesthetic': MIXED_VISUALKINESTHETIC,
   'mixed auditory - mixed readwrite': MIXED_AUDITORYREADWRITE,
@@ -78,8 +82,8 @@ export const DATA_MAP: Record<string, any> = {
   'mixed visual - mixed readwrite - mixed kinesthetic': MIXED_VISUALREADWRITEKINESTHETIC,
   'mixed auditory - mixed readwrite - mixed kinesthetic': MIXED_AUDITORYREADWRITEKINESTHETIC,
 
-  // 'mixed visual - mixed auditory - mixed readwrite - mixed kinesthetic':
-  //   MIXED_VISUALAUDITORYREADWRITEKINESTHETIC,
+  'mixed visual - mixed auditory - mixed readwrite - mixed kinesthetic':
+    MIXED_VISUALAUDITORYREADWRITEKINESTHETIC,
 
   // ---- SOCIAL ----
   'social visual': SOCIAL_VISUAL,
@@ -87,8 +91,8 @@ export const DATA_MAP: Record<string, any> = {
   'social readwrite': SOCIAL_READWRITE,
   'social kinesthetic': SOCIAL_KINESTHETIC,
 
-  // 'social visual - social auditory': SOCIAL_VISUAL_AUDITORY,
-  // 'social visual - social readwrite': SOCIAL_VISUAL_READWRITE,
+  'social visual - social auditory': SOCIAL_VISUALAUDITORY,
+  // 'social visual - social readwrite': SOCIAL_VISUALREADWRITE,
   'social visual - social kinesthetic': SOCIAL_VISUALKINESTHETIC,
   'social auditory - social readwrite': SOCIAL_AUDITORYREADWRITE,
   'social auditory - social kinesthetic': SOCIAL_AUDITORYKINESTHETIC,
@@ -99,8 +103,8 @@ export const DATA_MAP: Record<string, any> = {
   'social visual - social readwrite - social kinesthetic': SOCIAL_VISUALREADWRITEKINESTHETIC,
   'social auditory - social readwrite - social kinesthetic': SOCIAL_AUDITORYREADWRITEKINESTHETIC,
 
-  // 'social visual - social auditory - social readwrite - social kinesthetic':
-  //   SOCIAL_VISUALAUDITORYREADWRITEKINESTHETIC,
+  'social visual - social auditory - social readwrite - social kinesthetic':
+    SOCIAL_VISUALAUDITORYREADWRITEKINESTHETIC,
 };
 
 export const VisualDataFinder = (styles: string[]) => {
