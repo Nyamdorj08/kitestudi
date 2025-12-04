@@ -29,7 +29,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
     p1: 'Та сэдвийг эхлээд дүрслэх маягаар структурчилж, дараа нь хүнтэй ярьж байж ойлголтоо баталгаажуулахад хамгийн сайн тохирдог. Нүдэнд харагдах зураглал + богино ярилцлага энэ хэв маягийн түлхүүр.',
     p2: 'Ганцаараа байж чадна, гэхдээ дан ганцаараа удаан сурах үед эргэлзэж магадгүй. Иймээс эхний алхам – зураг; дараагийн алхам – ярилцлага байх нь танд хамгийн оновчтой.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/description.png',
       alt: 'MIXED-VISUALAUDITORY',
     },
   },
@@ -49,7 +49,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/proscons.png',
       alt: 'MIXED-VISUALAUDITORY',
     },
   },
@@ -62,7 +62,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
       'Аудио материал дээр зогсоох → давтаж хэлэх → үргэлжлүүлэх аргыг хэрэглэ.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/generaladvices.png',
       alt: 'MIXED-VISUALAUDITORY',
     },
   },
@@ -81,7 +81,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
       'Шалгалтын өмнө найзтайгаа 2 минутын тайлбар солилц.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/situations.png',
       alt: 'MIXED-VISUALAUDITORY',
     },
   },
@@ -110,7 +110,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/generalExamples.png',
       alt: 'MIXED-VISUALAUDITORY',
     },
   },
@@ -124,7 +124,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
       'Шалгалтын гол схемүүдээ шинэчилсэн.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/dailyChecklist.png',
       alt: 'MIXED-VISUALAUDITORY',
     },
   },

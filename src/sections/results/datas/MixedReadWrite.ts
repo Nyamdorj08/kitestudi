@@ -26,7 +26,7 @@ export const SOLO_READWRITE: VisualData = {
     p1: 'Та уншиж/бичиж сурахдаа сайн, дээрээс нь ойлгохгүй хэсгээ хүнээс асууж тодруулдаг. Бичгийн ажил + богино ярилцлага = хамгийн тохиромжтой.',
     p2: 'Ийм төрлийн хүн тексттэй ажиллахдаа чадварлаг, дээрээс нь хааяа хүнтэй ярьж, асуулт асууж, ойлголтоо баталгаажуулдаг. Ганцаараа ч, хэн нэгэнтэй суугаад ч ярьж чаддаг “сайн сурагч” юм.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/description.png',
       alt: 'MIXED-READWRITE',
     },
   },
@@ -43,7 +43,7 @@ export const SOLO_READWRITE: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/proscons.png',
       alt: 'MIXED-READWRITE',
     },
   },
@@ -54,7 +54,7 @@ export const SOLO_READWRITE: VisualData = {
       'Ямар ч тайлбар авсан сүүлд нь тэмдэглэлдээ буулгаж үлдээгээрэй.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/generaladvices.png',
       alt: 'MIXED-READWRITE',
     },
   },
@@ -70,7 +70,7 @@ export const SOLO_READWRITE: VisualData = {
       'Шалгалтын өмнө гол сэдвүүдийн хураангуйг засаж хянах.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/situations.png',
       alt: 'MIXED-READWRITE',
     },
   },
@@ -99,7 +99,7 @@ export const SOLO_READWRITE: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/generalExamples.png',
       alt: 'MIXED-READWRITE',
     },
   },
@@ -112,7 +112,7 @@ export const SOLO_READWRITE: VisualData = {
       'Өнөөдрийн гол 1 сэдвийн хуучин тэмдэглэлийг нь сайжруулсан, шинэ хувилбар болгон бичсэн.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedreadwrite/dailyChecklist.png',
       alt: 'MIXED-READWRITE',
     },
   },

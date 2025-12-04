@@ -27,7 +27,7 @@ export const SOLO_VISUAL: VisualData = {
     p1: 'Чи юмыг зураг, схем, хүснэгтээр харж байж хамгийн сайн ойлгоно. Бусдын яриаг удаан сонсохоос илүү ганцаараа сууж, мэдээллээ цэгцтэй дүрслэх үедээ тархи чинь хамгийн сайн ажилладаг.',
     p2: 'Олон хүнтэй, чимээтэй орчинд суухаар тархи чинь харааны хэт ачаалал аваад ядраад эхэлнэ. Дотроо “бүгдийг яриад байлгүй, нэг цаас, нэг үзэг өгөөд орхи” гэж боддог төрлийн хүн.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisual/description.png',
       alt: 'SOLO-VISUAL',
     },
   },
@@ -44,7 +44,7 @@ export const SOLO_VISUAL: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisual/proscons.png',
       alt: 'SOLO-VISUAL',
     },
   },
@@ -55,7 +55,7 @@ export const SOLO_VISUAL: VisualData = {
       '“Уншсан бол заавал зураглалтай үлдээх” гэсэн дүрэм барь.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisual/generaladvices.png',
       alt: 'SOLO-VISUAL',
     },
   },
@@ -71,7 +71,7 @@ export const SOLO_VISUAL: VisualData = {
       'Ширээ, дэлгэцээ харааны хүн шиг цэгцтэй байлга – илүүц зүйл анхаарлыг чинь иднэ.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisual/situations.png',
       alt: 'SOLO-VISUAL',
     },
   },
@@ -96,7 +96,7 @@ export const SOLO_VISUAL: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisual/generalExamples.png',
       alt: 'SOLO-VISUAL',
     },
   },
@@ -109,7 +109,7 @@ export const SOLO_VISUAL: VisualData = {
       'Суралцсаны дараа 3–5 минут зарцуулж нүдэнд харагдах нэг зураглал нэмж зурсан байх.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisual/dailyChecklist.png',
       alt: 'SOLO-VISUAL',
     },
   },

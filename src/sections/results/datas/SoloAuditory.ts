@@ -27,7 +27,7 @@ export const SOLO_AUDITORY: VisualData = {
     p1: 'Та дуу хоолой, хэлсэн үг, өөрийн тайлбараасаа сайн суралцдаг. Олон хүнтэй дэмий ярихаас илүү ганцаараа нам гүмд, өөртэйгөө ярьж байж ойлгодог.',
     p2: 'Ийм төрлийн хүн чимээгүй газар өөртэйгөө “ярьж сурдаг”. Хэн нэгэн заавал хажууд байлгах албагүй, өөрөө текстийг уншаад, дотроо эсвэл аяархан байнга тайлбарлаж байдаг. “Чангаар хэлж чадахгүй бол ойлгоогүй” гэдэг дотоод шалгууртай.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/description.png',
       alt: 'SOLO-AUDITORY',
     },
   },
@@ -44,7 +44,7 @@ export const SOLO_AUDITORY: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/proscons.png',
       alt: 'SOLO-AUDITORY',
     },
   },
@@ -54,7 +54,7 @@ export const SOLO_AUDITORY: VisualData = {
       'Дуу бичих (voice memo) ашиглаж, гол сэдвүүдийг богино аудио болгон үлдээгээрэй.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/generaladvices.png',
       alt: 'SOLO-AUDITORY',
     },
   },
@@ -70,7 +70,7 @@ export const SOLO_AUDITORY: VisualData = {
       'Гэрт чимээ их байвал алхаж явахдаа ч, угаалгын өрөөнд ч өөрөө өөртөө тайлбарлаж болно.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/situations.png',
       alt: 'SOLO-AUDITORY',
     },
   },
@@ -99,7 +99,7 @@ export const SOLO_AUDITORY: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/generalExamples.png',
       alt: 'SOLO-AUDITORY',
     },
   },
@@ -112,7 +112,7 @@ export const SOLO_AUDITORY: VisualData = {
       'Нэг хуудсыг олон дахин дуугүй уншихын оронд ойлголтоо амаараа хэлэх.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloauditory/dailyChecklist.png',
       alt: 'SOLO-AUDITORY',
     },
   },

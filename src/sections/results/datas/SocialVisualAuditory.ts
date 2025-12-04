@@ -30,7 +30,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     p1: 'Та бусадтай ярилцаж, хамт зураг зурж байж ойлгодог төдийгүй чимээгүй сонсогч байхаасаа илүү асууж, хариулж, тайлбарлаж байхдаа тархиа хамгийн сайн ажиллуулдаг. Гэхдээ “дэмий чалчаа” биш – фокус яриа хэрэгтэй. Хамтдаа ярилцсныг “самбар дээрх зураг” болгох үед жинхэнэ суралцах явц эхэлдэг.',
     p2: 'Ийм төрлийн хүн самбар, флипчарт, ханын сонин гарч ирэхээр “Ашгүй дээ, одоо л миний ээлж ирлээ” гэж дотроо баярлана. Мөн чимээгүй, ганцаараа олон цаг суух шууд нойрыг нь хүргэнэ. Асуулт асууж, хариулж, хүнтэй маргаж, ойлголтоо “дуу чимээтэй илэрхийлэх” явцдаа аливаа 80%-ийг сурч авдаг.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/description.png',
       alt: 'SOCIAL-VISUALAUDITORY',
     },
   },
@@ -49,7 +49,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       '“Сонссон = сурсан” гэж андуураад, бодит ажил хийхгүй байх эрсдэлтэй.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/proscons.png',
       alt: 'SOCIAL-VISUALAUDITORY',
     },
   },
@@ -62,7 +62,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       'Бусдад заах боломж бүрийг хичээлийн давтлага гэж хар.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/generaladvices.png',
       alt: 'SOCIAL-VISUALAUDITORY',
     },
   },
@@ -81,7 +81,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       'Шалгалтын өмнө асуулт–хариултын хэлбэрээр хамтдаа дасгал хий.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/situations.png',
       alt: 'SOCIAL-VISUALAUDITORY',
     },
   },
@@ -110,7 +110,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/generalExamples.png',
       alt: 'SOCIAL-VISUALAUDITORY',
     },
   },
@@ -124,7 +124,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       '“Зүгээр чимээгүй сонсогч” байхаас зайлсхийж, ярианд идэвхтэй оролцсон.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/dailyChecklist.png',
       alt: 'SOCIAL-VISUALAUDITORY',
     },
   },

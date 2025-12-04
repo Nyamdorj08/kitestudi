@@ -26,7 +26,7 @@ export const SOLO_READWRITE: VisualData = {
     p1: 'Та текстэн мэдээллийг уншиж бичиж, жагсаалт, хураангуй гаргахдаа сайн. Чимээгүй ганцаараа сууж, өөрийн үгээр бичиж байж ойлгодог.',
     p2: 'Ийм төрлийн хүн текстэн мэдээлэл дээр ноёрхдог. Хүмүүс видео, аудио, мийм ярьж байхад дотроо “надад PDF-ыг нь л өг, өөрөө уншчихъя” гэж бодож байдаг. Ганцаараа сууж, бичиж, цэгцэлж, хураангуй гаргахдаа амар тайвныг мэдэрдэг.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/description.png',
       alt: 'SOLO-READWRITE',
     },
   },
@@ -43,7 +43,7 @@ export const SOLO_READWRITE: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/description.png',
       alt: 'SOLO-READWRITE',
     },
   },
@@ -54,7 +54,7 @@ export const SOLO_READWRITE: VisualData = {
       'Зөвхөн тодруулагч биш, шинэ хуудас дээр тэмдэглэх” гэдэг дүрэм барь.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/generaladvices.png',
       alt: 'SOLO-READWRITE',
     },
   },
@@ -70,7 +70,7 @@ export const SOLO_READWRITE: VisualData = {
       'Хуучин хураангуйгаа дахин бичиж, илүү цэгцтэй хувилбар гарга.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/situations.png',
       alt: 'SOLO-READWRITE',
     },
   },
@@ -99,7 +99,7 @@ export const SOLO_READWRITE: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/generalExamples.png',
       alt: 'SOLO-READWRITE',
     },
   },
@@ -112,7 +112,7 @@ export const SOLO_READWRITE: VisualData = {
       'Зөвхөн тодруулах биш, шинэ хураангуй хуудас нэмсэн.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/dailyChecklist.png',
       alt: 'SOLO-READWRITE',
     },
   },

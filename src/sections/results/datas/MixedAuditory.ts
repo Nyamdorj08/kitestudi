@@ -27,7 +27,7 @@ export const MIXED_AUDITORY: VisualData = {
     p1: 'Та сонсож, ярьж байхдаа сайн сурна. Гэхдээ дан ганцаараа ч биш, дан хамтдаа ч биш – эхлээд өөрөө боловсруулаад, дараа нь хүнтэй богино ярилцлага хийх нь тохиромжтой.',
     p2: 'Ийм төрлийн хүн сонсох + ярих хоёрыг хослуулдаг. Ганцаараа аливааг тайлбарлаж бодож чадна, гэхдээ хааяа хүнтэй ярих, асуулт асуух шаардлагатай гэж мэдэрдэг. “Надад богино тайлбар өг, би түүнийг өөрийнхөө давтаж ойлгоё” гэдэг сэтгэхүйтэй.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/description.png',
       alt: 'MIXED-AUDITORY',
     },
   },
@@ -44,7 +44,7 @@ export const MIXED_AUDITORY: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/proscons.png',
       alt: 'MIXED-AUDITORY',
     },
   },
@@ -55,7 +55,7 @@ export const MIXED_AUDITORY: VisualData = {
       'Аудио материалуудыг идэвхтэй ашигла: зогсоох → давтаж хэл → үргэлжлүүлэх.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/generaladvices.png',
       alt: 'MIXED-AUDITORY',
     },
   },
@@ -71,7 +71,7 @@ export const MIXED_AUDITORY: VisualData = {
       'Шалгалтын өмнө найзтайгаа “2 минутын тайлбар солилцож” байх',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/situations.png',
       alt: 'MIXED-AUDITORY',
     },
   },
@@ -100,7 +100,7 @@ export const MIXED_AUDITORY: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/generalExamples.png',
       alt: 'MIXED-AUDITORY',
     },
   },
@@ -113,7 +113,7 @@ export const MIXED_AUDITORY: VisualData = {
       'Шалгалтын сэдвээс нэгийг нь 2 минутын аман шалгалт шиг хариулж өөртөө тайлбарласан.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/dailyChecklist.png',
       alt: 'MIXED-AUDITORY',
     },
   },

@@ -26,7 +26,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
     p1: 'Та хамтарсан практик ажлаар дамжиж суралцахдаа хамгийн сайн. Зүгээр олон хүнтэй чалчих биш, бүгдээрээ бодлого боддог, ажилладаг бүлэг танд хэрэгтэй.',
     p2: 'Ийм төрлийн хүний хамгийн сайн сурдаг орчин: хамтдаа бодлого бодож, даалгавар хийж, дүрд тоглодог (role-play) хийдэг бүлэг. Зүгээр лекц сонсохоор залхуурдаг бөгөөд гарт нь ажил өгвөл толгой цохино.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/description.png',
       alt: 'SOCIAL-KINESTHETIC',
     },
   },
@@ -43,7 +43,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/proscons.png',
       alt: 'SOCIAL-KINESTHETIC',
     },
   },
@@ -54,7 +54,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
       'Бусдад алхам алхмаар заахыг өөрөө ч бас хичээлээ давтаж байна гэж хар.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/generaladvices.png',
       alt: 'SOCIAL-KINESTHETIC',
     },
   },
@@ -70,7 +70,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
       'Жишиг шалгалт (mock-test) хийж, дараа нь хариугаа ярилцаж засаж сайжруулах.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/situations.png',
       alt: 'SOCIAL-KINESTHETIC',
     },
   },
@@ -99,7 +99,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/generalExamples.png',
       alt: 'SOCIAL-KINESTHETIC',
     },
   },
@@ -112,7 +112,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
       'Багаараа хичээл давтах (group study) дээр зөвхөн ярих биш, бодлого, дасгал ажилласан.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/dailyChecklist.png',
       alt: 'SOCIAL-KINESTHETIC',
     },
   },

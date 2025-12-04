@@ -29,7 +29,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     p1: 'Та аливааг зураг, схем, хүснэгтээр харж байж хамгийн сайн ойлгодог бөгөөд дуу хоолой, хэлсэн үг, өөрийн тайлбараасаа сайн суралцдаг. Бусдын яриаг удаан сонсохоос илүү ганцаараа сууж, мэдээллээ цэгцтэй дүрслэх үедээ тархи чинь хамгийн сайн ажиллахын зэрэгцээ олон хүнтэй дэмий ярихаас илүү ганцаараа нам гүмд, өөртэйгөө ярьж байж ойлгодог.',
     p2: 'Ийм төрлийн хүн толгой доторхоо зураг, схем, хүснэгт болгож байж тайвширна. Олон хүнтэй, чимээтэй орчинд суухаар тархи нь харааны хэт ачаалал аваад ядраад эхэлнэ. “Бүгдийг надад тайлбарлаад байлгүй, нэг цаас, нэг үзэг өгөөд орхи” гэж боддог. Мөн чимээгүй газар өөртэйгөө “ярьж сурдаг” – ойлгосон зүйлээ дотроо эсвэл аяархан хэлж баталгаажуулдаг.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisual/description.png',
       alt: 'SOLO-VISUAL',
     },
   },
@@ -46,7 +46,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       'Хэт чимээтэй орчин дотроо ярих үйл явцыг тасалдуулдаг тул “тийм орчинд би сурч чаддаггүй” гэж шууд бууж өгөх магадлалтай.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/proscons.png',
       alt: 'SOLO-VISUALAUDITORY',
     },
   },
@@ -58,7 +58,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       'Дуу бичих (voice memo) ашиглаж, гол сэдвүүдийг богино аудио болгон үлдээгээрэй.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/generaladvices.png',
       alt: 'SOLO-VISUALAUDITORY',
     },
   },
@@ -76,7 +76,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       'Хараагаар тогтоодог хүний хувьд ширээ, дэлгэцээ цэгцтэй байлга.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/situations.png',
       alt: 'SOLO-VISUALAUDITORY',
     },
   },
@@ -101,7 +101,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/generalExamples.png',
       alt: 'SOLO-VISUALAUDITORY',
     },
   },
@@ -115,7 +115,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
       'Өнөөдөр сурсан гол 2 санааг алхаж явахдаа эсвэл гэр лүүгээ явахдаа чангаар давтсан.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/dailyChecklist.png',
       alt: 'SOLO-VISUALAUDITORY',
     },
   },

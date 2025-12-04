@@ -27,7 +27,7 @@ export const SOCIAL_VISUAL: VisualData = {
     p1: 'Та бусадтай ярилцаж, хамт зураг зурж байж ойлгодог. Хамтдаа ярилцсныг “самбар дээрх зураг” болгох үед жинхэнэ суралцах явц эхэлдэг.',
     p2: 'Ийм төрлийн хүн самбар, флипчарт, ханын сонин гарч ирэхээр “ Ашгүй дээ, одоо л миний ээлж ирлээ” гэж дотроо баярлана. Зүгээр урт яриа сонсохоос илүү бусадтай хамт зураг зурах, схем гаргах үедээ бүх юмыг сайтар ойлгодог.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/description.png',
       alt: 'SOCIAL-VISUAL',
     },
   },
@@ -44,7 +44,7 @@ export const SOCIAL_VISUAL: VisualData = {
     ],
 
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/proscons.png',
       alt: 'SOCIAL-VISUAL',
     },
   },
@@ -55,7 +55,7 @@ export const SOCIAL_VISUAL: VisualData = {
       'Уншсан бол заавал зураглалтай үлдээх” гэсэн дүрэм барь.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/generaladvices.png',
       alt: 'SOCIAL-VISUAL',
     },
   },
@@ -71,7 +71,7 @@ export const SOCIAL_VISUAL: VisualData = {
       'Шалгалтын өмнө 2–3 хүнтэй “зургаар давтах” жижиг бүлэг байгуул.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/situations.png',
       alt: 'SOCIAL-VISUAL',
     },
   },
@@ -100,8 +100,8 @@ export const SOCIAL_VISUAL: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solo-visual/illustration.png',
-      alt: 'SOLO-VISUAL',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/generalExamples.png',
+      alt: 'SOCIAL-VISUAL',
     },
   },
   dailyChecklist: {
@@ -113,7 +113,7 @@ export const SOCIAL_VISUAL: VisualData = {
       'Өнөөдрийн хамгийн чухал сэдвийг хоёр өнгийн үзгээр (гол санаа/жишээ) ялгаж тэмдэглэсэн.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/illustration.png',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisual/dailyChecklist.png',
       alt: 'SOCIAL-VISUAL',
     },
   },
