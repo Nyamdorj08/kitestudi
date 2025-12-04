@@ -1,6 +1,6 @@
 import { VisualData } from '../Visual';
 
-export const SOLO_VISUALWRITING: VisualData = {
+export const SOLO_VISUALREADWRITE: VisualData = {
   title: 'Таны суралцах онцлог',
   mainType: 'Орон зайн буюу хараагаар / Бичгэн буюу уншиж бичих аргаар хосолсон',
 
@@ -132,7 +132,7 @@ export const SOLO_VISUALWRITING: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/0XvLM8VidDIvQbvm3uE80h?si=c7724bd9d42b433e',
     },
   ],
 };

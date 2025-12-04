@@ -132,7 +132,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/17b2ccfkXXHCUzaR84jlQk?si=73217f9acb214519',
     },
   ],
 };

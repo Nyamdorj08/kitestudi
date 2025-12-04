@@ -120,7 +120,7 @@ export const MIXED_VISUAL: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/5L6XQE2YnGDQFIFewPrNuA?si=a6461cc0335f4b2f',
     },
   ],
 };

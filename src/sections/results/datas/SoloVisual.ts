@@ -116,7 +116,7 @@ export const SOLO_VISUAL: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/4YrSzIymfjvSYNtkXBgbse?si=43b84e20adab4486',
     },
   ],
 };
