@@ -20,7 +20,7 @@ export const MIXED_AUDITORYREADWRITE: VisualData = {
     text: 'Хүмүүстэй ярьж, асуулт асууж, тайлбарлаж байхдаа болон текст дээр ажиллаад эргэлзээгээ богино ярилцлагаар тодруулбал сайн сурдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwrite/coreidea.png',
-      alt: 'MIXED-AUDITORYREADWRITE',
+      alt: 'MIXED_AUDITORYREADWRITE',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const MIXED_AUDITORYREADWRITE: VisualData = {
     p2: 'Ийм төрлийн хүн ярианаас энерги авдаг. Чимээгүй, ганцаараа олон цаг суух шууд нойрыг нь хүргэнэ. Асуулт асууж, хариулж, хүнтэй маргаж, ойлголтоо “дуу чимээтэй илэрхийлэх” явцдаа аливаа 80%-ийг сурч авдаг. Ганцаараа ч, хэн нэгэнтэй суугаад ч ярьж чаддаг “сайн сурагч” юм.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwrite/description.png',
-      alt: 'MIXED-AUDITORYREADWRITE',
+      alt: 'MIXED_AUDITORYREADWRITE',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const MIXED_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwrite/proscons.png',
-      alt: 'MIXED-AUDITORYREADWRITE',
+      alt: 'MIXED_AUDITORYREADWRITE',
     },
   },
   generalAdvice: {
@@ -58,7 +58,7 @@ export const MIXED_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwrite/generaladvices.png',
-      alt: 'MIXED-AUDITORYREADWRITE',
+      alt: 'MIXED_AUDITORYREADWRITE',
     },
   },
   situations: {
@@ -76,7 +76,7 @@ export const MIXED_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwrite/situations.png',
-      alt: 'MIXED-AUDITORYREADWRITE',
+      alt: 'MIXED_AUDITORYREADWRITE',
     },
   },
   generalExamples: {
@@ -104,7 +104,7 @@ export const MIXED_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwrite/generalExamples.png',
-      alt: 'MIXED-AUDITORYREADWRITE',
+      alt: 'MIXED_AUDITORYREADWRITE',
     },
   },
   dailyChecklist: {
@@ -117,7 +117,7 @@ export const MIXED_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwrite/dailyChecklist.png',
-      alt: 'MIXED-AUDITORYREADWRITE',
+      alt: 'MIXED_AUDITORYREADWRITE',
     },
   },
   playlists: [

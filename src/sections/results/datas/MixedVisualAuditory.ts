@@ -1,6 +1,6 @@
 import { VisualData } from '../Visual';
 
-export const MIXED_VISUAL_AUDITORY: VisualData = {
+export const MIXED_VISUALAUDITORY: VisualData = {
   title: 'Таны суралцах онцлог',
   mainType: 'Орон зайн / харааны + авиазүйн буюу сонсголоор',
   chips: [
@@ -21,7 +21,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
     text: 'Эхлээд ганцаараа зураг гаргаад, дараа нь хүнтэй ярилцаж нягталбал хамгийн сайн сурдаг. Богино тайлбар сонсоод, түүнийгээ өөр үгээр давтан хэлэх үед ойлголт тань бат бөх тогтдог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/coreidea.png',
-      alt: 'MIXED-VISUALAUDITORY',
+      alt: 'MIXED_VISUALAUDITORY',
     },
   },
 
@@ -30,7 +30,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
     p2: 'Ганцаараа байж чадна, гэхдээ дан ганцаараа удаан сурах үед эргэлзэж магадгүй. Иймээс эхний алхам – зураг; дараагийн алхам – ярилцлага байх нь танд хамгийн оновчтой.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/description.png',
-      alt: 'MIXED-VISUALAUDITORY',
+      alt: 'MIXED_VISUALAUDITORY',
     },
   },
 
@@ -50,7 +50,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/proscons.png',
-      alt: 'MIXED-VISUALAUDITORY',
+      alt: 'MIXED_VISUALAUDITORY',
     },
   },
 
@@ -63,7 +63,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/generaladvices.png',
-      alt: 'MIXED-VISUALAUDITORY',
+      alt: 'MIXED_VISUALAUDITORY',
     },
   },
 
@@ -82,7 +82,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/situations.png',
-      alt: 'MIXED-VISUALAUDITORY',
+      alt: 'MIXED_VISUALAUDITORY',
     },
   },
 
@@ -111,7 +111,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/generalExamples.png',
-      alt: 'MIXED-VISUALAUDITORY',
+      alt: 'MIXED_VISUALAUDITORY',
     },
   },
 
@@ -125,7 +125,7 @@ export const MIXED_VISUAL_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditory/dailyChecklist.png',
-      alt: 'MIXED-VISUALAUDITORY',
+      alt: 'MIXED_VISUALAUDITORY',
     },
   },
 

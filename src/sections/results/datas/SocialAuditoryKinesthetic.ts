@@ -20,7 +20,7 @@ export const SOCIAL_AUDITORYKINESTHETIC: VisualData = {
     text: 'Хүмүүстэй ярьж, асуулт асууж, тайлбарлахын зэрэгцээ хамт даалгавар хийж, бодлого бодож, дүрд тоглож (role-play) хийж байж хамгийн сайн сурдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditorykinesthetic/coreidea.png',
-      alt: 'SOCIAL-AUDITORYKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOCIAL_AUDITORYKINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүн ярианаас энерги авдаг. Асуулт асууж, хариулж, хүнтэй маргаж, ойлголтоо “дуу чимээтэй илэрхийлэх” явцдаа аливаа 80%-ийг сурч авдаг. Хамгийн сайн сурдаг орчин: хамтдаа бодлого бодож, даалгавар хийж, дүрд тоглодог (role-play) хийдэг бүлэг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditorykinesthetic/description.png',
-      alt: 'SOCIAL-AUDITORYKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYKINESTHETIC',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const SOCIAL_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditorykinesthetic/proscons.png',
-      alt: 'SOCIAL-AUDITORYKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -58,7 +58,7 @@ export const SOCIAL_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditorykinesthetic/generaladvices.png',
-      alt: 'SOCIAL-AUDITORYKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYKINESTHETIC',
     },
   },
   situations: {
@@ -76,7 +76,7 @@ export const SOCIAL_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditorykinesthetic/situations.png',
-      alt: 'SOCIAL-AUDITORYKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYKINESTHETIC',
     },
   },
   generalExamples: {
@@ -104,7 +104,7 @@ export const SOCIAL_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditorykinesthetic/generalExamples.png',
-      alt: 'SOCIAL-AUDITORYKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -118,7 +118,7 @@ export const SOCIAL_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditorykinesthetic/dailyChecklist.png',
-      alt: 'SOCIAL-AUDITORYKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYKINESTHETIC',
     },
   },
   playlists: [

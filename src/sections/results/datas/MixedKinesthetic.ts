@@ -19,7 +19,7 @@ export const MIXED_KINESTHETIC: VisualData = {
     text: '“Өөрөө оролдож үзээд, гацвал хүнээс асууж, засах аргаар дахин оролдох.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/coreidea.png',
-      alt: 'MIXED-KINESTHETIC',
+      alt: 'MIXED_KINESTHETIC',
     },
   },
   description: {
@@ -27,7 +27,7 @@ export const MIXED_KINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүн “би эхлээд өөрөө оролдоно, болохгүй бол хүнээс зөв замыг нь асууна, дараа нь дахиад өөрөө хийнэ” гэсэн дараалалтай байдаг. Хийж үз → хариу үнэлгээ → дахин хийж үз.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/description.png',
-      alt: 'MIXED-KINESTHETIC',
+      alt: 'MIXED_KINESTHETIC',
     },
   },
   prosCons: {
@@ -43,7 +43,7 @@ export const MIXED_KINESTHETIC: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/proscons.png',
-      alt: 'MIXED-KINESTHETIC',
+      alt: 'MIXED_KINESTHETIC',
     },
   },
   generalAdvice: {
@@ -54,7 +54,7 @@ export const MIXED_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/generaladvices.png',
-      alt: 'MIXED-KINESTHETIC',
+      alt: 'MIXED_KINESTHETIC',
     },
   },
   situations: {
@@ -69,7 +69,7 @@ export const MIXED_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/situations.png',
-      alt: 'MIXED-KINESTHETIC',
+      alt: 'MIXED_KINESTHETIC',
     },
   },
 
@@ -102,7 +102,7 @@ export const MIXED_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/generalExamples.png',
-      alt: 'MIXED-KINESTHETIC',
+      alt: 'MIXED_KINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -115,7 +115,7 @@ export const MIXED_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/dailyChecklist.png',
-      alt: 'MIXED-KINESTHETIC',
+      alt: 'MIXED_KINESTHETIC',
     },
   },
   playlists: [

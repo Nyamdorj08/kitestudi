@@ -57,7 +57,7 @@ export const MIXED_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditoryreadwrite/generaladvices.png',
-      alt: 'MIXED-VISUALAUDITORYREADWRITE',
+      alt: 'MIXED_VISUALAUDITORYREADWRITE',
     },
   },
   situations: {
@@ -75,7 +75,7 @@ export const MIXED_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditoryreadwrite/situations.png',
-      alt: 'MIXED-VISUALAUDITORYREADWRITE',
+      alt: 'MIXED_VISUALAUDITORYREADWRITE',
     },
   },
   generalExamples: {
@@ -103,7 +103,7 @@ export const MIXED_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditoryreadwrite/generalExamples.png',
-      alt: 'MIXED-VISUALAUDITORYREADWRITE',
+      alt: 'MIXED_VISUALAUDITORYREADWRITE',
     },
   },
   dailyChecklist: {
@@ -117,7 +117,7 @@ export const MIXED_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditoryreadwrite/dailyChecklist.png',
-      alt: 'MIXED-VISUAL-AUDITORY-READWRITE',
+      alt: 'MIXED_VISUALAUDITORYREADWRITE',
     },
   },
   playlists: [

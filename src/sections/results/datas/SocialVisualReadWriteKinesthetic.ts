@@ -1,8 +1,8 @@
 import { VisualData } from '../Visual';
 
-export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
+export const SOCIAL_VISUALREADWRITEKINESTHETIC: VisualData = {
   title: 'Таны суралцах онцлог',
-  mainType: 'Харааны / Бичгэн / Хөдөлгөөнөөр + Нийгмийн',
+  mainType: 'Орон зайн / Бичгэн / Хөдөлгөөнөөр + Нийгмийн',
   chips: [
     {
       label: 'Үндсэн хэв маяг: Хараа, Бичиг, Хөдөлгөөн хосолсон',
@@ -17,18 +17,18 @@ export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
   ],
   coreIdea: {
     title: 'Товчоор',
-    text: 'Хүмүүстэй ярьж байхдаа хамтын схем, самбар ашиглангаа хамтарсан тэмдэглэл, чат, бичгээр асуулт–хариулт хийж суралцах бол таны онцлог.',
+    text: 'Хүмүүстэй ярьж байхдаа хамтын схем, самбар ашиглангаа хамтарсан тэмдэглэл, чат, бичгээр асуулт–хариулт хийж суралцах бол таны онцлог. Хүмүүстэй хамт даалгавар хийж, бодлого бодохдоо дуртай.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwritekinesthetic/coreidea.png',
-      alt: 'SOCIAL_READWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwritekinesthetic/coreidea.png',
+      alt: 'SOCIAL_VISUALREADWRITEKINESTHETIC',
     },
   },
   description: {
     p1: 'Та бусадтай ярилцаж, хамт зураг зурж байж ойлгодог. Хамтдаа ярилцсаныг “самбар дээрх зураг” болгох үед жинхэнэ суралцах явц эхэлдэг. Та текст дээр сайн, хүмүүстэй хамт бичих, унших, shared document дээр ажиллах үедээ илүү сайн сурдаг.',
-    p2: 'Ийм төрлийн хүний хамгийн сайн сурдаг орчин: хамтдаа бодлого бодож, даалгавар хийж, дүрд тоглодог (role-play) хийдэг бүлэг. Зүгээр лекц сонсохоор залхуурдаг бөгөөд гарт нь ажил өгвөл толгой цохино.',
+    p2: 'Мөн ийм төрлийн хүний хамгийн сайн сурдаг орчин: хамтдаа бодлого бодож, даалгавар хийж, дүрд тоглодог (role-play) хийдэг бүлэг. Зүгээр лекц сонсохоор залхуурдаг бөгөөд гарт нь ажил өгвөл толгой цохино.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwritekinesthetic/description.png',
-      alt: 'SOCIAL_READWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwritekinesthetic/description.png',
+      alt: 'SOCIAL_VISUALREADWRITEKINESTHETIC',
     },
   },
   prosCons: {
@@ -43,8 +43,8 @@ export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
       'Хүнгүй үед “би ганцаараа хийж чадахгүй” гэсэн буруу итгэл үнэмшилтэй болж, өөрийгөө хязгаарлаж магадгүй.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwritekinesthetic/proscons.png',
-      alt: 'SOCIAL_READWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwritekinesthetic/proscons.png',
+      alt: 'SOCIAL_VISUALREADWRITEKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -54,8 +54,8 @@ export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
       'Бусдад алхам алхмаар заахыг өөрөө ч бас хичээлээ давтаж байна гэж хар.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwritekinesthetic/generaladvices.png',
-      alt: 'SOCIAL_READWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwritekinesthetic/generaladvices.png',
+      alt: 'SOCIAL_VISUALREADWRITEKINESTHETIC',
     },
   },
   situations: {
@@ -70,8 +70,8 @@ export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
       'Жишиг шалгалт (mock-test) хийж, дараа нь хариугаа ярилцаж засаж сайжруулах.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwritekinesthetic/situations.png',
-      alt: 'SOCIAL_READWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwritekinesthetic/situations.png',
+      alt: 'SOCIAL_VISUALREADWRITEKINESTHETIC',
     },
   },
   generalExamples: {
@@ -86,7 +86,7 @@ export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
       },
       {
         topic: 'Их сургуулийн хичээл',
-        text: '“Бизнесийн төлөвлөгөө” дээр ганцаараа PPT хийх биш, багаараа стартапын санаа гаргаж, дүрд тоглох (role-play): нэг нь хөрөнгө оруулагч, нэг нь CEO, нэг нь маркетинг г.м – та тэдний дунд яаж ч хамаагүй биеэрээ ажиллаж байхдаа сурна.',
+        text: '“Бизнесийн төлөвлөгөө” төрлийн хичээл дээр ганцаараа PPT хийх биш, багаараа нэг стартапын санаа гаргаж, зах зээлийн судалгаа хийж, pitch-ээ хий. Дүрд тоглох (role-play): нэг нь хөрөнгө оруулагч, нэг нь CEO, нэг нь маркетинг г.м – та тэдний дунд яаж ч хамаагүй биеэрээ ажиллаж байхдаа сурна.',
       },
       {
         topic: 'Шинэ программ',
@@ -98,8 +98,8 @@ export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwritekinesthetic/generalExamples.png',
-      alt: 'SOCIAL_READWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwritekinesthetic/generalExamples.png',
+      alt: 'SOCIAL_VISUALREADWRITEKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -112,8 +112,8 @@ export const SOCIAL_READWRITEKINESTHETIC: VisualData = {
       'Багаараа хичээл давтах (group study) дээр зөвхөн ярих биш, бодлого, дасгал ажилласан байх.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialreadwritekinesthetic/dailyChecklist.png',
-      alt: 'SOCIAL_READWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwritekinesthetic/dailyChecklist.png',
+      alt: 'SOCIAL_VISUALREADWRITEKINESTHETIC',
     },
   },
   playlists: [

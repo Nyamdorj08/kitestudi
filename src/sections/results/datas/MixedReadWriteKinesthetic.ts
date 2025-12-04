@@ -20,7 +20,7 @@ export const MIXED_READWRITEKINESTHETIC: VisualData = {
     text: 'Текст дээр ажиллаад эргэлзээгээ богино ярилцлагаар тодруулахын зэрэгцээ өөрөө оролдож үзээд, гацвал хүнээс асууж, засах аргаар сайн сурдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedreadwritekinesthetic/coreidea.png',
-      alt: 'MIXED-READWRITEKINESTHETIC',
+      alt: 'MIXED_READWRITEKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const MIXED_READWRITEKINESTHETIC: VisualData = {
     p2: '“Би эхлээд өөрөө оролдоно, болохгүй бол хүнээс зөв замыг нь асууна, дараа нь дахиад өөрөө хийнэ” гэсэн дараалалтай байдаг. Хийж үз → хариу үнэлгээ → дахин хийж үз.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedreadwritekinesthetic/description.png',
-      alt: 'MIXED-READWRITEKINESTHETIC',
+      alt: 'MIXED_READWRITEKINESTHETIC',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const MIXED_READWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedreadwritekinesthetic/proscons.png',
-      alt: 'MIXED-READWRITEKINESTHETIC',
+      alt: 'MIXED_READWRITEKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -58,7 +58,7 @@ export const MIXED_READWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedreadwritekinesthetic/generaladvices.png',
-      alt: 'MIXED-READWRITEKINESTHETIC',
+      alt: 'MIXED_READWRITEKINESTHETIC',
     },
   },
   situations: {
@@ -76,7 +76,7 @@ export const MIXED_READWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedreadwritekinesthetic/situations.png',
-      alt: 'MIXED-READWRITEKINESTHETIC',
+      alt: 'MIXED_READWRITEKINESTHETIC',
     },
   },
   generalExamples: {
@@ -104,7 +104,7 @@ export const MIXED_READWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedreadwritekinesthetic/generalExamples.png',
-      alt: 'MIXED-READWRITEKINESTHETIC',
+      alt: 'MIXED_READWRITEKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -118,7 +118,7 @@ export const MIXED_READWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedreadwritekinesthetic/dailyChecklist.png',
-      alt: 'MIXED-READWRITEKINESTHETIC',
+      alt: 'MIXED_READWRITEKINESTHETIC',
     },
   },
   playlists: [

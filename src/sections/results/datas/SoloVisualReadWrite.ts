@@ -22,7 +22,7 @@ export const SOLO_VISUALWRITING: VisualData = {
     text: '“Харагдахгүй бол ойлгоогүй” – бүх чухал сэдвийг схем болгож хардаг бөгөөд бичиж чадах хэмжээнд ойлгосон үед л жинхэнэ тогтдог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwrite/coreidea.png',
-      alt: 'SOLO-VISUALREADWRITE',
+      alt: 'SOLO_VISUALREADWRITE',
     },
   },
 
@@ -31,7 +31,7 @@ export const SOLO_VISUALWRITING: VisualData = {
     p2: 'Ийм төрлийн хүн текстэн мэдээлэл дээр ноёрхдог. Бусад нь мийм, видео, аудио ярьж байхад “надад PDF нь байхад болно” гэж боддог. Бичиж, цэгцэлж, хураангуй гаргах үед тайвширч, гүн ойлголт сууж өгдөг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwrite/description.png',
-      alt: 'SOLO-VISUALREADWRITE',
+      alt: 'SOLO_VISUALREADWRITE',
     },
   },
 
@@ -50,7 +50,7 @@ export const SOLO_VISUALWRITING: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwrite/proscons.png',
-      alt: 'SOLO-VISUALREADWRITE',
+      alt: 'SOLO_VISUALREADWRITE',
     },
   },
 
@@ -63,7 +63,7 @@ export const SOLO_VISUALWRITING: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwrite/generaladvices.png',
-      alt: 'SOLO-VISUALREADWRITE',
+      alt: 'SOLO_VISUALREADWRITE',
     },
   },
 
@@ -82,7 +82,7 @@ export const SOLO_VISUALWRITING: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwrite/situations.png',
-      alt: 'SOLO-VISUALREADWRITE',
+      alt: 'SOLO_VISUALREADWRITE',
     },
   },
 
@@ -111,7 +111,7 @@ export const SOLO_VISUALWRITING: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwrite/generalExamples.png',
-      alt: 'SOLO-VISUALREADWRITE',
+      alt: 'SOLO_VISUALREADWRITE',
     },
   },
 
@@ -125,7 +125,7 @@ export const SOLO_VISUALWRITING: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwrite/dailyChecklist.png',
-      alt: 'SOLO-VISUALREADWRITE',
+      alt: 'SOLO_VISUALREADWRITE',
     },
   },
 

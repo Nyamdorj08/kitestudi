@@ -21,7 +21,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     text: '“Харагдахгүй бол ойлгоогүй” – бүх чухал сэдвийг схем болгож хардаг бөгөөд ганцаараа сууж аливааг өөртөө чангаар тайлбарлаж байж “суралцлаа” гэж тооцдог хүн юм.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/coreidea.png',
-      alt: 'SOLO-VISUALAUDITORY',
+      alt: 'SOLO_VISUALAUDITORY',
     },
   },
 
@@ -29,8 +29,8 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     p1: 'Та аливааг зураг, схем, хүснэгтээр харж байж хамгийн сайн ойлгодог бөгөөд дуу хоолой, хэлсэн үг, өөрийн тайлбараасаа сайн суралцдаг. Бусдын яриаг удаан сонсохоос илүү ганцаараа сууж, мэдээллээ цэгцтэй дүрслэх үедээ тархи чинь хамгийн сайн ажиллахын зэрэгцээ олон хүнтэй дэмий ярихаас илүү ганцаараа нам гүмд, өөртэйгөө ярьж байж ойлгодог.',
     p2: 'Ийм төрлийн хүн толгой доторхоо зураг, схем, хүснэгт болгож байж тайвширна. Олон хүнтэй, чимээтэй орчинд суухаар тархи нь харааны хэт ачаалал аваад ядраад эхэлнэ. “Бүгдийг надад тайлбарлаад байлгүй, нэг цаас, нэг үзэг өгөөд орхи” гэж боддог. Мөн чимээгүй газар өөртэйгөө “ярьж сурдаг” – ойлгосон зүйлээ дотроо эсвэл аяархан хэлж баталгаажуулдаг.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisual/description.png',
-      alt: 'SOLO-VISUAL',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/description.png',
+      alt: 'SOLO_VISUALAUDITORY',
     },
   },
 
@@ -47,7 +47,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/proscons.png',
-      alt: 'SOLO-VISUALAUDITORY',
+      alt: 'SOLO_VISUALAUDITORY',
     },
   },
 
@@ -59,7 +59,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/generaladvices.png',
-      alt: 'SOLO-VISUALAUDITORY',
+      alt: 'SOLO_VISUALAUDITORY',
     },
   },
 
@@ -77,7 +77,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/situations.png',
-      alt: 'SOLO-VISUALAUDITORY',
+      alt: 'SOLO_VISUALAUDITORY',
     },
   },
 
@@ -102,7 +102,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/generalExamples.png',
-      alt: 'SOLO-VISUALAUDITORY',
+      alt: 'SOLO_VISUALAUDITORY',
     },
   },
 
@@ -116,7 +116,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditory/dailyChecklist.png',
-      alt: 'SOLO-VISUALAUDITORY',
+      alt: 'SOLO_VISUALAUDITORY',
     },
   },
 

@@ -20,7 +20,7 @@ export const SOLO_VISUALAUDITORYREADWRITEKINESTHETIC: VisualData = {
     text: 'Харааны, сонсголын, бичгийн болон унших, практик ажиллах гээд бүхий л хэв маягийг ашиглан сайтар суралцаж чаддаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwritekinesthetic/coreidea.png',
-      alt: 'SOLO-MULTIMODAL',
+      alt: 'SOLO_MULTIMODAL',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOLO_VISUALAUDITORYREADWRITEKINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүн чимээгүй газар өөртэйгөө “ярьж”, бичиж, зурж сурдаг. Текстэн мэдээлэл дээр ноёрхдог бөгөөд хүн зааж өгөхийг хүлээх биш, өөрөө гардан хийж үзэх дуртай.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwritekinesthetic/description.png',
-      alt: 'SOLO-MULTIMODAL',
+      alt: 'SOLO_MULTIMODAL',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const SOLO_VISUALAUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwritekinesthetic/proscons.png',
-      alt: 'SOLO-MULTIMODAL',
+      alt: 'SOLO_MULTIMODAL',
     },
   },
   generalAdvice: {
@@ -58,7 +58,7 @@ export const SOLO_VISUALAUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwritekinesthetic/generaladvices.png',
-      alt: 'SOLO-MULTIMODAL',
+      alt: 'SOLO_MULTIMODAL',
     },
   },
   situations: {
@@ -76,7 +76,7 @@ export const SOLO_VISUALAUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwritekinesthetic/situations.png',
-      alt: 'SOLO-MULTIMODAL',
+      alt: 'SOLO_MULTIMODAL',
     },
   },
   generalExamples: {
@@ -104,7 +104,7 @@ export const SOLO_VISUALAUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwritekinesthetic/generalExamples.png',
-      alt: 'SOLO-MULTIMODAL',
+      alt: 'SOLO_MULTIMODAL',
     },
   },
   dailyChecklist: {
@@ -118,7 +118,7 @@ export const SOLO_VISUALAUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwritekinesthetic/dailyChecklist.png',
-      alt: 'SOLO-MULTIMODAL',
+      alt: 'SOLO_MULTIMODAL',
     },
   },
   playlists: [

@@ -2,7 +2,7 @@ import { VisualData } from '../Visual';
 
 export const MIXED_VISUALREADWRITEKINESTHETIC: VisualData = {
   title: 'Таны суралцах онцлог',
-  mainType: 'Харааны / Бичгэн / Хөдөлгөөнөөр + Холимог (ганцаараа + хүнтэй)',
+  mainType: 'Орон зайн / Бичгэн / Хөдөлгөөнөөр + Холимог (ганцаараа + хүнтэй)',
   chips: [
     {
       label: 'Үндсэн хэв маяг: Хараа, Бичиг, Хөдөлгөөн хосолсон',
@@ -20,7 +20,7 @@ export const MIXED_VISUALREADWRITEKINESTHETIC: VisualData = {
     text: 'Эхлээд өөрөө схем зохиож, уншиж бичин, сонсож сайн ойлгодог боловч бусадтай хамтран сурах, алдаагаа шалгуулах зэргээр сайжирдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwritekinesthetic/coreidea.png',
-      alt: 'MIXED-VISUALREADWRITEKINESTHETIC',
+      alt: 'MIXED_VISUALREADWRITEKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const MIXED_VISUALREADWRITEKINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүн “би эхлээд өөрөө оролдоно, болохгүй бол хүнээс зөв замыг нь асууна, дараа нь дахиад өөрөө хийнэ” гэсэн дараалалтай байдаг. Хийж үз → хариу үнэлгээ → дахин хийж үз.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwritekinesthetic/description.png',
-      alt: 'MIXED-VISUALREADWRITEKINESTHETIC',
+      alt: 'MIXED_VISUALREADWRITEKINESTHETIC',
     },
   },
   prosCons: {
@@ -36,17 +36,15 @@ export const MIXED_VISUALREADWRITEKINESTHETIC: VisualData = {
       'Сэдвийг эхлээд дүрс байдлаар эмхэлж, дараа нь тайлбар сонсож, асуулт асууж чаддаг.',
       'Бусдын тайлбарыг текст болгож хийсвэрлэж чаддаг тул баримт, ойлголт гээх нь бага.',
       'Ур чадвар шаардсан зүйлс дээр (код бичих, дизайн, бодлого бодох, лаборатори) маш сайн ажилладаг.',
-      'Туршин үзэж, дараа нь хариу үнэлгээ (feedback) авч, өөрчлөлтийг шууд шалгаж чаддаг.',
     ],
     cons: [
       'Бусдын тайлбаргүйгээр өөрийн зургаа 100% зөв гэж бодвол будилна.',
       'Бичиж авсандаа хэт найдаад, дүрсээр эсвэл дадлага ажлаар олж авах нэмэлт мэдээлэл, шинэ зүйлийг тоохгүй орхиж болно.',
       'Хажуугаас нь хэлж өгөх хүнгүй, ганцаараа үед шийдвэргүй болох, эсвэл буруу аргаа олон дахин давтах эрсдэлтэй.',
-      'Хэт олон хүнээс санал (feedback) аваад будилах.',
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwritekinesthetic/proscons.png',
-      alt: 'MIXED-VISUALREADWRITEKINESTHETIC',
+      alt: 'MIXED_VISUALREADWRITEKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -57,7 +55,7 @@ export const MIXED_VISUALREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwritekinesthetic/generaladvices.png',
-      alt: 'MIXED-VISUALREADWRITEKINESTHETIC',
+      alt: 'MIXED_VISUALREADWRITEKINESTHETIC',
     },
   },
   situations: {
@@ -65,45 +63,43 @@ export const MIXED_VISUALREADWRITEKINESTHETIC: VisualData = {
       'Лекцийн үеэр товч схем зурж яваад, дараа нь хажуугийн хүнтэйгээ 5 минут ярилц.',
       'Лекцийн дараа 1–2 асуулт асууж, хариуг нь шууд тэмдэглэлдээ нэмж бич.',
       'Онол дээр “нэг бодит жишээг алхам бүртэй нь хэлж өгнө үү” гэх мэтээр өөртөө хялбаршуулж асууж сур.',
-      'Багийн ажлын үед “гараараа хийж байгаа хүн” бай (код бичих, дасгал хийх г.м).',
     ],
     homeStudy: [
       '1 сэдэв – ганцаараа зураглах, дараагийн сэдэв – 10–15 минутын ярилцлага гэж ээлжил.',
       'Хамтдаа сурах (group study) бол shared doc ашиглаж, текст дээр төвлөр.',
       'Цаг харж, тодорхой тооны бодлого, дасгал ажиллах.',
-      '20-30 минут өөрөө бодлого бодож, дараа нь 5-10 минут хүний тусламж (feedback) ав.',
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwritekinesthetic/situations.png',
-      alt: 'MIXED-VISUALREADWRITEKINESTHETIC',
+      alt: 'MIXED_VISUALREADWRITEKINESTHETIC',
     },
   },
   generalExamples: {
     examples: [
       {
         topic: 'Хэл сурах',
-        text: 'IELTS ярианы сэдвүүдийг A4 дээр mind map болгоод, дараа нь найзтайгаа тэр зураг дээр үндэслээд ярилц. “Эхлээд би ингэж зурсан, чамд нэмэх юм байна уу?” гээд санаа солилц.',
+        text: 'IELTS ярианы шалгалтын “home, work, travel” сэдвүүдийг A4 дээр тус бүрийг нь mind map болгоод, дараа нь найзтайгаа тэр зураг дээр үндэслээд ярилц. “Эхлээд би ингэж зурсан, чамд нэмэх юм байна уу?” гээд санаа солилц.',
       },
       {
         topic: 'Тоо бодох',
-        text: '“Статистик” хичээл дээр regression, p-value г.м ойлголтыг англи/монгол нэршлээр нь бичиж, доор нь “би үүнийг амьдрал дээр ингэж харж байна” гэсэн богино тайлбар нэм. Хэрвээ ойлгохгүй байвал найзаасаа текстээр асууж залруул.',
+        text: '“Статистик” хичээл дээр regression, correlation гэх мэт ойлголтыг англи нэртэй нь, монгол тайлбартай нь бичиж, доор нь “би үүнийг амьдрал дээр ингэж харж байна” гэсэн богино тайлбар нэм. Хэрвээ ойлгохгүй байвал найзаасаа текстээр асууж залруул.',
       },
       {
         topic: 'Их сургуулийн хичээл',
-        text: '“Программ хангамжийн инженерчлэл” дээр UML diagram хийж байхдаа өөрөө эхлээд ноорог гарга, дараа нь багшаар засуул. Засаж сайжруулсан аргаа шууд ашигла – бусдын саналыг туршин үзэж байж ахиц гарна.',
+        text: '“Программ хангамжийн инженерчлэл” дээр UML diagram, sequence diagram хийж байхдаа өөрөө эхлээд ноорог гарга, дараа нь багшаар засуул. Засаж сайжруулсан аргаа шууд ашигла – бусдын саналыг туршин үзэж байж ахиц гарна.',
       },
       {
         topic: 'Шинэ программ',
-        text: 'SPSS/Stata сурахдаа урсгалыг цаасан дээр зур, дараа нь лабораторийн цаг дээр багш/лаборантад зургаа үзүүлээд, “ямар алхам дутуу байна?” гэж асууж сайжруулах.',
+        text: 'SPSS эсвэл Stata сурахдаа “survey импортлох → variable-тэйгээ танилцах → график зурах” гэсэн урсгалыг цаасан дээр зур, дараа нь лабораторийн цаг дээр багш/лаборантад зургаа үзүүлээд, “ямар алхам дутуу байна?” гэж асууж сайжруулах.',
       },
       {
         topic: 'Найзтайгаа хамт сурах',
-        text: 'Код/төсөл тайлбарлахдаа аман ярианаас илүү “өө GitHub-ийн issue-дээ бичээд өг, би уншъя” гэдэг. Хоёр талын хэлбэрийг холихын тулд эхлээд бичгээр ярилцаж, дараа нь богино дуудлага хийгээд бичсэн зүйлээ хамт чагтлаад яв.',
+        text: 'Хөгжүүлэгч найз тань кодоо маш сайн тайлбарладаг ч, та аман ярианаас илүү “өө GitHub-ийн issue-дээ бичээд өг, би уншъя” гэдэг. Хоёр талын хэлбэрийг холихын тулд эхлээд түүнтэй бичгээр ярилцаж, дараа нь богино дуудлага хийгээд бичсэн зүйлээ хамт чагтлаад яв.',
       },
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwritekinesthetic/generalExamples.png',
-      alt: 'MIXED-VISUALREADWRITEKINESTHETIC',
+      alt: 'MIXED_VISUALREADWRITEKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -117,7 +113,7 @@ export const MIXED_VISUALREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwritekinesthetic/dailyChecklist.png',
-      alt: 'MIXED-VISUALREADWRITEKINESTHETIC',
+      alt: 'MIXED_VISUALREADWRITEKINESTHETIC',
     },
   },
   playlists: [

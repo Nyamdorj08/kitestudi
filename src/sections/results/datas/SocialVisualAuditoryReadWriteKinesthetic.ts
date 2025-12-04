@@ -1,11 +1,11 @@
 import { VisualData } from '../Visual';
 
-export const SOCIAL_VISUALAUDITORYKINESTHETIC: VisualData = {
+export const SOCIAL_VISUALAUDITORYREADWRITEKINESTHETIC: VisualData = {
   title: 'Таны суралцах онцлог',
-  mainType: 'Харааны / Сонсголын / Хөдөлгөөнөөр + Нийгмийн',
+  mainType: 'Олон талт (VARK) + Нийгмийн',
   chips: [
     {
-      label: 'Үндсэн хэв маяг: Хараа, Сонсгол, Хөдөлгөөн хосолсон',
+      label: 'Үндсэн хэв маяг: Бүх хэв маяг хосолсон (Multimodal)',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
@@ -17,61 +17,66 @@ export const SOCIAL_VISUALAUDITORYKINESTHETIC: VisualData = {
   ],
   coreIdea: {
     title: 'Товчоор',
-    text: 'Хүмүүстэй ярьж байхдаа хамтын схем, самбар ашиглан асуулт асууж, тайлбарлахын зэрэгцээ хамт даалгавар хийж, дүрд тоглож суралцаж чаддаг.',
+    text: 'Харааны, сонсголын, бичгийн болон унших, практик ажиллах гээд бүхий л хэв маягийг ашиглан сайтар суралцаж чаддаг.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditorykinesthetic/coreidea.png',
-      alt: 'SOCIAL_VISUALAUDITORYKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwritekinesthetic/coreidea.png',
+      alt: 'SOCIAL_MULTIMODAL',
     },
   },
   description: {
-    p1: 'Та бусадтай ярилцаж, хамт зураг зурж байж ойлгодог бөгөөд чимээгүй сонсогч байхаасаа илүү асууж, хариулж, тайлбарлаж байхдаа тархиа хамгийн сайн ажиллуулдаг. Та хамтарсан практик ажлаар дамжиж суралцахдаа гаргууд.',
-    p2: 'Ийм төрлийн хүний хамгийн сайн сурдаг орчин: хамтдаа бодлого бодож, даалгавар хийж, дүрд тоглодог (role-play) хийдэг бүлэг. Зүгээр лекц сонсохоор залхуурдаг бөгөөд гарт нь ажил өгвөл толгой цохино.',
+    p1: 'Та бусадтай ярилцаж, хамт зураг зурж байж ойлгодог бөгөөд чимээгүй сонсогч байхаасаа илүү асуулт асууж, хариулж, тайлбарлаж байхдаа тархиа хамгийн сайн ажиллуулдаг.',
+    p2: 'Ийм төрлийн хүн текстээрээ хамт сурах дуртай: shared doc, чат, асуулт хариулт (Q&A), comment, хамтарсан тэмдэглэл зэрэг бол түүний талбар. Зүгээр лекц сонсохоор залхуурдаг бөгөөд гарт нь ажил өгвөл толгой цохино.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditorykinesthetic/description.png',
-      alt: 'SOCIAL_VISUALAUDITORYKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwritekinesthetic/description.png',
+      alt: 'SOCIAL_MULTIMODAL',
     },
   },
   prosCons: {
     pros: [
       'Багийн дотор дүрслэн зурах үүргийг авч, санааг схем болгож өгнө.',
       'Бусдад зааж, тайлбарлаж байхдаа өөрөө хамгийн сайн сурдаг.',
+      'Бусдад тайлбар бичиж өгөөд, тэгэх болгондоо өөрөө нэг давтаж байдаг.',
       'Хүмүүстэй харилцаа сайтай, яриасаг ч, үнэндээ бодит ажлаа хийвэл нүүр улайхгүй хийж чадна.',
     ],
     cons: [
       'Бүлгийн уур амьсгал муу байвал (хүн ярьдаггүй, идэвхгүй) өөрөө ч унтарна.',
       'Ганцаараа чимээгүй бэлтгэх ёстой даалгаврыг үл тоомсорлох хандлагатай.',
+      'Групп чатаа хэт нээж, бичигдэж буй бүх мессежид хариулах гэж өөрийгөө ядрааж болно.',
       'Хүнгүй үед “би ганцаараа хийж чадахгүй” гэсэн буруу итгэл үнэмшилтэй болж, өөрийгөө хязгаарлаж магадгүй.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditorykinesthetic/proscons.png',
-      alt: 'SOCIAL_VISUALAUDITORYKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwritekinesthetic/proscons.png',
+      alt: 'SOCIAL_MULTIMODAL',
     },
   },
   generalAdvice: {
     advices: [
       'Бүлгээр суух болгонд зураглал хийх том цаас, флипчарт, цаас гаргаж ир.',
       'Богино, фокусалсан асуулт асуух дадалтай бол.',
+      'Чатад зөвхөн мийм биш, жинхэнэ тайлбар, хураангуй хий.',
       'Бусдад алхам алхмаар заахыг өөрөө ч бас хичээлээ давтаж байна гэж хар.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditorykinesthetic/generaladvices.png',
-      alt: 'SOCIAL_VISUALAUDITORYKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwritekinesthetic/generaladvices.png',
+      alt: 'SOCIAL_MULTIMODAL',
     },
   },
   situations: {
     lecture: [
       'Ойр суудаг хүмүүстэйгээ гол санааг богино ярилцаад, схем зур.',
       'Завсарлага, лекцийн дараа ангийнхаа 1–2 хүнтэй гол сэдвийн талаар ярилц.',
+      'Хэлэлцүүлгийн чухал хариултуудыг шууд бичиж аваарай.',
       'Лаб, семинар дээр “ажилладаг хүн” бай, зүгээр үзэгч биш.',
     ],
     homeStudy: [
       'Найзтайгаа видео дуудлага (video call) хийж, screen share дээр диаграмм зурж тайлбарла.',
       'Messenger дээр сэдэв бүрийг 1 минутын voice message байдлаар тайлбарлаж явуул.',
+      'Шалгалтын өмнө хамтдаа асуулт, хариулт (Q&A) документ гаргаж, бүгдээрээ засвар хий.',
       'Жишиг шалгалт (mock-test) хийж, дараа нь хариугаа ярилцаж засаж сайжруулах.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditorykinesthetic/situations.png',
-      alt: 'SOCIAL_VISUALAUDITORYKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwritekinesthetic/situations.png',
+      alt: 'SOCIAL_MULTIMODAL',
     },
   },
   generalExamples: {
@@ -86,34 +91,33 @@ export const SOCIAL_VISUALAUDITORYKINESTHETIC: VisualData = {
       },
       {
         topic: 'Их сургуулийн хичээл',
-        text: '“Бизнесийн төлөвлөгөө” дээр ганцаараа PPT хийх биш, багаараа стартапын санаа гаргаж, дүрд тоглох (role-play): нэг нь хөрөнгө оруулагч, нэг нь CEO, нэг нь маркетинг г.м – та тэдний дунд яаж ч хамаагүй биеэрээ ажиллаж байхдаа сурна.',
+        text: '“Судалгааны арга зүй” дээр ангийнхантайгаа хамт Google Docs дээр судалгааны арга барил сонгох шийдвэрийг бичгээр хэлэлц. Хэн юу санал болгосныг чам шиг хүн цэгцтэй нэрлэж, тайлбарлаж чадна.',
       },
       {
         topic: 'Шинэ программ',
-        text: 'AutoCAD, Premiere, Photoshop зэргийг сурахдаа сайн мэддэг хүний шууд хажууд нь сууж “энэ юу хийдэг вэ?” гээд шууд (real-time) асууж сур. Видео үзэхээс илүү “амьд багш”-тай ярих нь тохирно.',
+        text: 'Premiere Pro сурахдаа найзуудтайгаа хамт TikTok/Reels-ийн богино видео цуврал бүтээ. Нэг нь камер барьж, нэг нь монтаж хийнэ, нэг нь thumbnail хийнэ. Бусдад тайлбарлаж зааж өгөх үедээ бүүр сайн сурна.',
       },
       {
-        topic: 'Фитнес, спорт',
-        text: 'Та фитнес клуб дээр дасгалжуулагчтай ярилцахдаа “зүгээр дасгал харж хийх” биш, яагаад ийм дасгал, ямар булчин, хэдэн удаа гэдгийг амаар асууж, дахин өөрийн үгээр давтаж хэл.',
+        topic: 'Facebook/Telegram community',
+        text: 'Та ямар нэгэн мэргэжлийн группт орсон бол “зүгээр уншигч” биш, урт, цэгцтэй коммент бичдэг хүн. Ном уншсан, видео үзсэн, туршлага хуримтлуулсан бол “би ингэж ойлгосон, миний хувьд…” гээд бодлоо бичгээр хуваалцах.',
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditorykinesthetic/generalExamples.png',
-      alt: 'SOCIAL_VISUALAUDITORYKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwritekinesthetic/generalExamples.png',
+      alt: 'SOCIAL_MULTIMODAL',
     },
   },
   dailyChecklist: {
     checklists: [
       'Хэн нэгэнтэй хамт суухдаа нэг цаасан дээр хамт зураг зурсан байх.',
-      'Групп ярилцлагын гол санааг нэг зураг/хүснэгт болгон үлдээсэн байх.',
-      'Багаар суралцах, дуудлагынхаа явцад би өөрөө ярьж, идэвхтэй оролцсон байх.',
-      'Messenger/voice chat дээр нэг сэдвийг voice message–ээр тайлбарлаж илгээсэн байх.',
+      'Найз/бүлэгтэйгээ нэг сэдвийг 2 минутын тайлбар хэлж, асуулт авч үзсэн байх.',
+      'Лекц/ярилцлагын дараа өөрийн болон бусдын тэмдэглэлийг нэгтгэсэн байх.',
       'Шалгалтын төрлийн бодлого/даалгаврыг жишиг шалгалт (mock exam) хэлбэрээр хамт хийсэн байх.',
       'Багаараа хичээл давтах (group study) дээр зөвхөн ярих биш, бодлого, дасгал ажилласан байх.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditorykinesthetic/dailyChecklist.png',
-      alt: 'SOCIAL_VISUALAUDITORYKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwritekinesthetic/dailyChecklist.png',
+      alt: 'SOCIAL_MULTIMODAL',
     },
   },
   playlists: [

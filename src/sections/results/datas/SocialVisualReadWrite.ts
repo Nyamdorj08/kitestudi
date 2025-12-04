@@ -1,6 +1,6 @@
 import { VisualData } from '../Visual';
 
-export const SOLO_VISUALAUDITORY: VisualData = {
+export const SOCIAL_VISUALAUDITORY: VisualData = {
   title: 'Таны суралцах онцлог',
   mainType: 'Орон зайн буюу хараагаар / Бичгэн буюу уншиж бичих аргаар хосолсон',
   chips: [
@@ -21,7 +21,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     text: 'Хамтарсан тэмдэглэл, чат, бичгэн асуулт–хариулт бол таны онцлог бөгөөд хүмүүстэй ярьж байхдаа хамтын схем, самбар ашиглавал хамгийн сайн сурна.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/coreidea.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 
@@ -30,7 +30,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     p2: '“Ярьж байхаар биччих, тэгвэл бүтэн үлдэнэ” гэж боддог. Зүгээр урт яриа сонсохоос илүү бусадтай хамт зураг зурах, схем гаргах үедээ бүх юмыг сайтар ойлгодог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/description.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 
@@ -49,7 +49,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwrite/proscons.png',
-      alt: 'SOCIAL-VISUALREADWRITE',
+      alt: 'SOCIAL_VISUALREADWRITE',
     },
   },
 
@@ -62,7 +62,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwrite/generaladvices.png',
-      alt: 'SOCIAL-VISUALREADWRITE',
+      alt: 'SOCIAL_VISUALREADWRITE',
     },
   },
 
@@ -80,7 +80,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwrite/situations.png',
-      alt: 'SOCIAL-VISUALREADWRITE',
+      alt: 'SOCIAL_VISUALREADWRITE',
     },
   },
 
@@ -105,7 +105,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwrite/generalExamples.png',
-      alt: 'SOCIAL-VISUALREADWRITE',
+      alt: 'SOCIAL_VISUALREADWRITE',
     },
   },
 
@@ -119,7 +119,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwrite/dailyChecklist.png',
-      alt: 'SOCIAL-VISUALREADWRITE',
+      alt: 'SOCIAL_VISUALREADWRITE',
     },
   },
 

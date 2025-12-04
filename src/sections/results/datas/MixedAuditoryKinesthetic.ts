@@ -20,7 +20,7 @@ export const MIXED_AUDITORYKINESTHETIC: VisualData = {
     text: 'Өөрөө оролдож үзээд, гацвал хүнээс асууж, засах аргаар дахин оролддог бөгөөд богино тайлбар сонсож, түүнийгээ өөр үгээр давтан хэлэх үед хамгийн сайн сурдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditorykinesthetic/coreidea.png',
-      alt: 'MIXED-AUDITORYKINESTHETIC',
+      alt: 'MIXED_AUDITORYKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const MIXED_AUDITORYKINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүн сонсох + ярих хоёрыг хослуулдаг. Ганцаараа аливааг тайлбарлаж бодож чадна, гэхдээ хааяа хүнтэй ярих, асуулт асуух шаардлагатай гэж мэдэрдэг. “Надад богино тайлбар өг, би түүнийг өөрийнхөөрөө давтаж ойлгоё” гэдэг сэтгэхүйтэй.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditorykinesthetic/description.png',
-      alt: 'MIXED-AUDITORYKINESTHETIC',
+      alt: 'MIXED_AUDITORYKINESTHETIC',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const MIXED_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditorykinesthetic/proscons.png',
-      alt: 'MIXED-AUDITORYKINESTHETIC',
+      alt: 'MIXED_AUDITORYKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -57,7 +57,7 @@ export const MIXED_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditorykinesthetic/generaladvices.png',
-      alt: 'MIXED-AUDITORYKINESTHETIC',
+      alt: 'MIXED_AUDITORYKINESTHETIC',
     },
   },
   situations: {
@@ -75,7 +75,7 @@ export const MIXED_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditorykinesthetic/situations.png',
-      alt: 'MIXED-AUDITORYKINESTHETIC',
+      alt: 'MIXED_AUDITORYKINESTHETIC',
     },
   },
   generalExamples: {
@@ -99,7 +99,7 @@ export const MIXED_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditorykinesthetic/generalExamples.png',
-      alt: 'MIXED-AUDITORYKINESTHETIC',
+      alt: 'MIXED_AUDITORYKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -112,13 +112,13 @@ export const MIXED_AUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditorykinesthetic/dailyChecklist.png',
-      alt: 'MIXED-AUDITORY-KINESTHETIC',
+      alt: 'MIXED_AUDITORYKINESTHETIC',
     },
   },
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/1heNTD1pplxC90QPR0rkXN?si=2f79400418214b2f',
     },
   ],
 };

@@ -19,7 +19,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
     text: ' “Хүмүүстэй хамт даалгавар хийж, бодлого бодож, дүрд тоглож (role-play) хийж байж хамгийн сайн сурна.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/coreidea.png',
-      alt: 'SOCIAL-KINESTHETIC',
+      alt: 'SOCIAL_KINESTHETIC',
     },
   },
   description: {
@@ -27,7 +27,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүний хамгийн сайн сурдаг орчин: хамтдаа бодлого бодож, даалгавар хийж, дүрд тоглодог (role-play) хийдэг бүлэг. Зүгээр лекц сонсохоор залхуурдаг бөгөөд гарт нь ажил өгвөл толгой цохино.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/description.png',
-      alt: 'SOCIAL-KINESTHETIC',
+      alt: 'SOCIAL_KINESTHETIC',
     },
   },
   prosCons: {
@@ -44,7 +44,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/proscons.png',
-      alt: 'SOCIAL-KINESTHETIC',
+      alt: 'SOCIAL_KINESTHETIC',
     },
   },
   generalAdvice: {
@@ -55,7 +55,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/generaladvices.png',
-      alt: 'SOCIAL-KINESTHETIC',
+      alt: 'SOCIAL_KINESTHETIC',
     },
   },
   situations: {
@@ -71,7 +71,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/situations.png',
-      alt: 'SOCIAL-KINESTHETIC',
+      alt: 'SOCIAL_KINESTHETIC',
     },
   },
 
@@ -100,7 +100,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/generalExamples.png',
-      alt: 'SOCIAL-KINESTHETIC',
+      alt: 'SOCIAL_KINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -113,7 +113,7 @@ export const SOCIAL_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialkinesthetic/dailyChecklist.png',
-      alt: 'SOCIAL-KINESTHETIC',
+      alt: 'SOCIAL_KINESTHETIC',
     },
   },
   playlists: [

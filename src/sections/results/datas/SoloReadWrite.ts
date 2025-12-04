@@ -19,7 +19,7 @@ export const SOLO_READWRITE: VisualData = {
     text: 'Бичиж чадах хэмжээнд ойлгосон үед л жинхэнэ тогтдог',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/coreidea.png',
-      alt: 'SOLO-READWRITE',
+      alt: 'SOLO_READWRITE',
     },
   },
   description: {
@@ -27,7 +27,7 @@ export const SOLO_READWRITE: VisualData = {
     p2: 'Ийм төрлийн хүн текстэн мэдээлэл дээр ноёрхдог. Хүмүүс видео, аудио, мийм ярьж байхад дотроо “надад PDF-ыг нь л өг, өөрөө уншчихъя” гэж бодож байдаг. Ганцаараа сууж, бичиж, цэгцэлж, хураангуй гаргахдаа амар тайвныг мэдэрдэг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/description.png',
-      alt: 'SOLO-READWRITE',
+      alt: 'SOLO_READWRITE',
     },
   },
   prosCons: {
@@ -44,7 +44,7 @@ export const SOLO_READWRITE: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/description.png',
-      alt: 'SOLO-READWRITE',
+      alt: 'SOLO_READWRITE',
     },
   },
   generalAdvice: {
@@ -55,7 +55,7 @@ export const SOLO_READWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/generaladvices.png',
-      alt: 'SOLO-READWRITE',
+      alt: 'SOLO_READWRITE',
     },
   },
   situations: {
@@ -71,7 +71,7 @@ export const SOLO_READWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/situations.png',
-      alt: 'SOLO-READWRITE',
+      alt: 'SOLO_READWRITE',
     },
   },
 
@@ -100,7 +100,7 @@ export const SOLO_READWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/generalExamples.png',
-      alt: 'SOLO-READWRITE',
+      alt: 'SOLO_READWRITE',
     },
   },
   dailyChecklist: {
@@ -113,7 +113,7 @@ export const SOLO_READWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloreadwrite/dailyChecklist.png',
-      alt: 'SOLO-READWRITE',
+      alt: 'SOLO_READWRITE',
     },
   },
   playlists: [

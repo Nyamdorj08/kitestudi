@@ -21,7 +21,7 @@ export const MIXED_VISUALREADWRITE: VisualData = {
     text: 'Текст дээр ажиллаад эргэлзээгээ богино ярилцлагаар тодруулбал сайн сурдаг хүн бөгөөд эхлээд ганцаараа зураг гарга, дараа нь хүнтэй ярьж шалгуулдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwrite/coreidea.png',
-      alt: 'MIXED-VISUALREADWRITE',
+      alt: 'MIXED_VISUALREADWRITE',
     },
   },
 
@@ -30,7 +30,7 @@ export const MIXED_VISUALREADWRITE: VisualData = {
     p2: 'Бичгийн ажил + богино ярилцлага = хамгийн тохиромжтой. Дотроо “би ингэж харж байгаа, зөв үү?” гэх сэтгэлгээ давамгайлдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwrite/description.png',
-      alt: 'MIXED-VISUALREADWRITE',
+      alt: 'MIXED_VISUALREADWRITE',
     },
   },
 
@@ -49,7 +49,7 @@ export const MIXED_VISUALREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwrite/proscons.png',
-      alt: 'MIXED-VISUALREADWRITE',
+      alt: 'MIXED_VISUALREADWRITE',
     },
   },
 
@@ -62,7 +62,7 @@ export const MIXED_VISUALREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwrite/generaladvices.png',
-      alt: 'MIXED-VISUALREADWRITE',
+      alt: 'MIXED_VISUALREADWRITE',
     },
   },
 
@@ -81,7 +81,7 @@ export const MIXED_VISUALREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwrite/situations.png',
-      alt: 'MIXED-VISUALREADWRITE',
+      alt: 'MIXED_VISUALREADWRITE',
     },
   },
 
@@ -110,7 +110,7 @@ export const MIXED_VISUALREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwrite/generalExamples.png',
-      alt: 'MIXED-VISUALREADWRITE',
+      alt: 'MIXED_VISUALREADWRITE',
     },
   },
 
@@ -124,7 +124,7 @@ export const MIXED_VISUALREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualreadwrite/dailyChecklist.png',
-      alt: 'MIXED-VISUALREADWRITE',
+      alt: 'MIXED_VISUALREADWRITE',
     },
   },
 

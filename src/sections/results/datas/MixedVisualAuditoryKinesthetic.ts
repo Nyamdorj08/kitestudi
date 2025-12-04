@@ -20,7 +20,7 @@ export const MIXED_VISUALAUDITORYKINESTHETIC: VisualData = {
     text: 'Эхлээд өөрөө схемчлэн зураг гарга, дараа нь хүнтэй ярьж шалгуул. Богино тайлбар сонсож, түүнийгээ өөр үгээр давтан хэлэх үед хамгийн сайн сурдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditorykinesthetic/coreidea.png',
-      alt: 'MIXED-VISUALAUDITORYKINESTHETIC',
+      alt: 'MIXED_VISUALAUDITORYKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const MIXED_VISUALAUDITORYKINESTHETIC: VisualData = {
     p2: 'Мөн та “би эхлээд өөрөө оролдоно, болохгүй бол хүнээс зөв замыг нь асууна, дараа нь дахиад өөрөө хийнэ” гэсэн дараалалтай байдаг. Хийж үз → хариу үнэлгээ → дахин хийж үз.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditorykinesthetic/description.png',
-      alt: 'MIXED-VISUALAUDITORYKINESTHETIC',
+      alt: 'MIXED_VISUALAUDITORYKINESTHETIC',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const MIXED_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditorykinesthetic/proscons.png',
-      alt: 'MIXED-VISUALAUDITORYKINESTHETIC',
+      alt: 'MIXED_VISUALAUDITORYKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -57,7 +57,7 @@ export const MIXED_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditorykinesthetic/generaladvices.png',
-      alt: 'MIXED-VISUALAUDITORYKINESTHETIC',
+      alt: 'MIXED_VISUALAUDITORYKINESTHETIC',
     },
   },
   situations: {
@@ -75,7 +75,7 @@ export const MIXED_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditorykinesthetic/situations.png',
-      alt: 'MIXED-VISUALAUDITORYKINESTHETIC',
+      alt: 'MIXED_VISUALAUDITORYKINESTHETIC',
     },
   },
   generalExamples: {
@@ -103,7 +103,7 @@ export const MIXED_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditorykinesthetic/generalExamples.png',
-      alt: 'MIXED-VISUALAUDITORYKINESTHETIC',
+      alt: 'MIXED_VISUALAUDITORYKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -117,7 +117,7 @@ export const MIXED_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisualauditorykinesthetic/dailyChecklist.png',
-      alt: 'MIXED-VISUALAUDITORYKINESTHETIC',
+      alt: 'MIXED_VISUALAUDITORYKINESTHETIC',
     },
   },
   playlists: [

@@ -20,7 +20,7 @@ export const MIXED_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     text: 'Богино тайлбар сонсож, түүнийгээ өөр үгээр давтан хэлэх ба текст дээр ажиллаад эргэлзээгээ богино ярилцлагаар тодруулбал сайн сурдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwritekinesthetic/coreidea.png',
-      alt: 'MIXED-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'MIXED_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const MIXED_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүн “би эхлээд өөрөө оролдоно, болохгүй бол хүнээс зөв замыг нь асууна, дараа нь дахиад өөрөө хийнэ” гэсэн дараалалтай байдаг. Хийж үз → хариу үнэлгээ → дахин хийж үз.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwritekinesthetic/description.png',
-      alt: 'MIXED-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'MIXED_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   prosCons: {
@@ -45,7 +45,7 @@ export const MIXED_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwritekinesthetic/proscons.png',
-      alt: 'MIXED-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'MIXED_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -56,7 +56,7 @@ export const MIXED_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwritekinesthetic/generaladvices.png',
-      alt: 'MIXED-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'MIXED_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   situations: {
@@ -72,7 +72,7 @@ export const MIXED_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwritekinesthetic/situations.png',
-      alt: 'MIXED-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'MIXED_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   generalExamples: {
@@ -100,7 +100,7 @@ export const MIXED_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwritekinesthetic/generalExamples.png',
-      alt: 'MIXED-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'MIXED_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -114,7 +114,7 @@ export const MIXED_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditoryreadwritekinesthetic/dailyChecklist.png',
-      alt: 'MIXED-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'MIXED_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   playlists: [
