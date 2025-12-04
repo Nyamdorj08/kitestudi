@@ -1,6 +1,6 @@
 import { VisualData } from '../Visual';
 
-export const SOLO_VISUALWRITING: VisualData = {
+export const SOLO_VISUALREADWRITE: VisualData = {
   title: 'Таны суралцах онцлог',
   mainType: 'Орон зайн буюу хараагаар / Бичгэн буюу уншиж бичих аргаар хосолсон',
 

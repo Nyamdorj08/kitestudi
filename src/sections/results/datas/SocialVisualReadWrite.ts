@@ -1,6 +1,6 @@
 import { VisualData } from '../Visual';
 
-export const SOCIAL_VISUALAUDITORY: VisualData = {
+export const SOCIAL_VISUALREADWRITE: VisualData = {
   title: 'Таны суралцах онцлог',
   mainType: 'Орон зайн буюу хараагаар / Бичгэн буюу уншиж бичих аргаар хосолсон',
   chips: [
@@ -20,8 +20,8 @@ export const SOCIAL_VISUALAUDITORY: VisualData = {
     title: 'Товчоор',
     text: 'Хамтарсан тэмдэглэл, чат, бичгэн асуулт–хариулт бол таны онцлог бөгөөд хүмүүстэй ярьж байхдаа хамтын схем, самбар ашиглавал хамгийн сайн сурна.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/coreidea.png',
-      alt: 'SOCIAL_VISUALAUDITORY',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwrite/coreidea.png',
+      alt: 'SOCIAL_VISUALREADWRITE',
     },
   },
 
@@ -29,8 +29,8 @@ export const SOCIAL_VISUALAUDITORY: VisualData = {
     p1: 'Та текст дээр сайн, хүмүүстэй хамт бичих, унших, shared document дээр ажиллах үедээ илүү сайн сурдаг бөгөөд бусадтай ярилцаж, хамт зураг зурж байж ойлгодог. Хамтдаа ярилцсныг “самбар дээрх зураг” болгох үед жинхэнэ суралцах явц эхэлдэг.',
     p2: '“Ярьж байхаар биччих, тэгвэл бүтэн үлдэнэ” гэж боддог. Зүгээр урт яриа сонсохоос илүү бусадтай хамт зураг зурах, схем гаргах үедээ бүх юмыг сайтар ойлгодог.',
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/description.png',
-      alt: 'SOCIAL_VISUALAUDITORY',
+      src: 'https://studyy.b-cdn.net/illustrations/socialvisualreadwrite/description.png',
+      alt: 'SOCIAL_VISUALREADWRITE',
     },
   },
 

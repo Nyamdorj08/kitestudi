@@ -120,7 +120,7 @@ export const MIXED_AUDITORYREADWRITEKINESTHETIC: VisualData = {
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/0u64g8O6IYEqHDCr4hTJFz?si=3922caf3888049cb',
     },
   ],
 };
