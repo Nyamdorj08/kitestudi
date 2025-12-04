@@ -4,12 +4,12 @@ export const SOCIAL_KINESTHETIC: VisualData = {
   mainType: 'Бие махбодын / хөдөлгөөнөөр',
   chips: [
     {
-      label: ' Бие махбодын буюу хөдөлгөөнөөр',
+      label: 'Үндсэн хэв маяг: Бие махбодын буюу хөдөлгөөнөөр',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
     {
-      label: 'Нийгмийн',
+      label: 'Харилцах хэв маяг: Нийгмийн',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },

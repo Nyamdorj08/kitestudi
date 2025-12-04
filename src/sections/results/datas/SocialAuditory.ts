@@ -5,7 +5,7 @@ export const SOCIAL_AUDITORY: VisualData = {
   mainType: 'Авиа зүйн / сонсголоор',
   chips: [
     {
-      label: 'Авиа зүйн буюу сонсголоор',
+      label: 'Үндсэн хэв маяг: Авиа зүйн буюу сонсголоор',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },

@@ -4,12 +4,12 @@ export const SOLO_KINESTHETIC: VisualData = {
   mainType: 'Бие махбодын / хөдөлгөөнөөр',
   chips: [
     {
-      label: ' Бие махбодын буюу хөдөлгөөнөөр',
+      label: 'Үндсэн хэв маяг: Бие махбодын буюу хөдөлгөөнөөр',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
     {
-      label: 'Ганцаараа',
+      label: 'Харилцах хэв маяг: Ганцаараа',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },

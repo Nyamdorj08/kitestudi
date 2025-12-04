@@ -4,12 +4,12 @@ export const SOCIAL_READWRITE: VisualData = {
   mainType: 'Бичиг / уншлагаар',
   chips: [
     {
-      label: 'Бичгэн буюу уншиж бичих аргаар',
+      label: 'Үндсэн хэв маяг: Бичгэн буюу уншиж бичих аргаар',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
     {
-      label: 'Нийгмийн',
+      label: 'Харилцах хэв маяг: Нийгмийн',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },

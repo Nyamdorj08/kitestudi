@@ -10,7 +10,7 @@ export const MIXED_VISUAL: VisualData = {
       textColor: 'grey.100',
     },
     {
-      label: 'Холимог (ганцаараа + хүнтэй ярилцах хосолсон)',
+      label: 'Харилцах хэв маяг: Холимог (ганцаараа + хүнтэй ярилцах хосолсон)',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },

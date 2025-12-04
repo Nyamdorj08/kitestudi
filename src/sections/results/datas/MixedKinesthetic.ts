@@ -4,19 +4,19 @@ export const MIXED_KINESTHETIC: VisualData = {
   mainType: 'Бие махбодын / хөдөлгөөнөөр',
   chips: [
     {
-      label: ' Бие махбодын буюу хөдөлгөөнөөр',
+      label: 'Үндсэн хэв маяг: Бие махбодын буюу хөдөлгөөнөөр',
       color: 'rgba(45,212,191,0.16)',
       textColor: 'grey.100',
     },
     {
-      label: 'Холимог (ганцаараа + хүнтэй ярилцах хосолсон)',
+      label: 'Харилцах хэв маяг:Холимог (ганцаараа + хүнтэй ярилцах хосолсон)',
       color: 'rgba(96,165,250,0.16)',
       textColor: 'text.primary',
     },
   ],
   coreIdea: {
     title: 'Товчоор',
-    text: ' “Өөрөө оролдож үзээд, гацвал хүнээс асууж, засах аргаар дахин оролдох.',
+    text: '“Өөрөө оролдож үзээд, гацвал хүнээс асууж, засах аргаар дахин оролдох.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/coreidea.png',
       alt: 'MIXED-KINESTHETIC',
