@@ -19,7 +19,7 @@ export const SOLO_KINESTHETIC: VisualData = {
     text: ' “Уншаад ойлгоно” биш, хийж байж ойлгоно.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/coreidea.png',
-      alt: 'SOLO-KINESTHETIC',
+      alt: 'SOLO_KINESTHETIC',
     },
   },
   description: {
@@ -27,7 +27,7 @@ export const SOLO_KINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүн өөрөө хийж байж сурдаг. Хүн зааж өгөхийг хүлээх биш, өөрөө оролдож үзэх дуртай. “Надад pdf тайлбар битгий өг, жишээ бодлого, даалгавар өгчих” гэдэг сэтгэлгээтэй.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/description.png',
-      alt: 'SOLO-KINESTHETIC',
+      alt: 'SOLO_KINESTHETIC',
     },
   },
   prosCons: {
@@ -44,7 +44,7 @@ export const SOLO_KINESTHETIC: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/proscons.png',
-      alt: 'SOLO-KINESTHETIC',
+      alt: 'SOLO_KINESTHETIC',
     },
   },
   generalAdvice: {
@@ -55,7 +55,7 @@ export const SOLO_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/generaladvices.png',
-      alt: 'SOLO-KINESTHETIC',
+      alt: 'SOLO_KINESTHETIC',
     },
   },
   situations: {
@@ -71,7 +71,7 @@ export const SOLO_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/situations.png',
-      alt: 'SOLO-KINESTHETIC',
+      alt: 'SOLO_KINESTHETIC',
     },
   },
 
@@ -100,7 +100,7 @@ export const SOLO_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/generalExamples.png',
-      alt: 'SOLO-KINESTHETIC',
+      alt: 'SOLO_KINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -113,7 +113,7 @@ export const SOLO_KINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solokinesthetic/dailyChecklist.png',
-      alt: 'SOLO-KINESTHETIC',
+      alt: 'SOLO_KINESTHETIC',
     },
   },
   playlists: [

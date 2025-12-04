@@ -20,7 +20,7 @@ export const SOLO_VISUALAUDITORYREADWRITE: VisualData = {
     text: '“Харагдахгүй бол ойлгоогүй” – бүх чухал сэдвийг схем болгож хардаг. Ганцаараа сууж аливааг өөртөө чангаар тайлбарлаж байж “суралцлаа” гэж тооцдог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwrite/coreidea.png',
-      alt: 'SOLO-VISUALAUDITORYREADWRITE',
+      alt: 'SOLO_VISUALAUDITORYREADWRITE',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOLO_VISUALAUDITORYREADWRITE: VisualData = {
     p2: 'Ийм төрлийн хүн толгой доторхоо зураг, схем, хүснэгт болгож байж тайвширдаг бөгөөд чимээгүй газар өөртэйгөө “ярьж сурдаг”. Ихэнхдээ: “Бүгдийг надад тайлбарлаад байлгүй, нэг цаас, нэг үзэг өгөөд орхи” гэж дотроо боддог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwrite/description.png',
-      alt: 'SOLO-VISUALAUDITORYREADWRITE',
+      alt: 'SOLO_VISUALAUDITORYREADWRITE',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const SOLO_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwrite/proscons.png',
-      alt: 'SOLO-VISUALAUDITORYREADWRITE',
+      alt: 'SOLO_VISUALAUDITORYREADWRITE',
     },
   },
   generalAdvice: {
@@ -57,7 +57,7 @@ export const SOLO_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwrite/generaladvices.png',
-      alt: 'SOLO-VISUALAUDITORYREADWRITE',
+      alt: 'SOLO_VISUALAUDITORYREADWRITE',
     },
   },
   situations: {
@@ -75,7 +75,7 @@ export const SOLO_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwrite/situations.png',
-      alt: 'SOLO-VISUALAUDITORYREADWRITE',
+      alt: 'SOLO_VISUALAUDITORYREADWRITE',
     },
   },
   generalExamples: {
@@ -103,7 +103,7 @@ export const SOLO_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwrite/generalExamples.png',
-      alt: 'SOLO-VISUALAUDITORYREADWRITE',
+      alt: 'SOLO_VISUALAUDITORYREADWRITE',
     },
   },
   dailyChecklist: {
@@ -117,7 +117,7 @@ export const SOLO_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditoryreadwrite/dailyChecklist.png',
-      alt: 'SOLO-VISUAL-AUDITORY-READWRITE',
+      alt: 'SOLO_VISUALAUDITORYREADWRITE',
     },
   },
   playlists: [

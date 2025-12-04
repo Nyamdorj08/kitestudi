@@ -20,7 +20,7 @@ export const SOCIAL_VISUAL: VisualData = {
     text: 'Хүмүүстэй ярьж байхдаа хамтын схем, самбар ашиглавал хамгийн сайн сурна.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisual/coreidea.png',
-      alt: 'SOCIAL-VISUAL',
+      alt: 'SOCIAL_VISUAL',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOCIAL_VISUAL: VisualData = {
     p2: 'Ийм төрлийн хүн самбар, флипчарт, ханын сонин гарч ирэхээр “ Ашгүй дээ, одоо л миний ээлж ирлээ” гэж дотроо баярлана. Зүгээр урт яриа сонсохоос илүү бусадтай хамт зураг зурах, схем гаргах үедээ бүх юмыг сайтар ойлгодог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisual/description.png',
-      alt: 'SOCIAL-VISUAL',
+      alt: 'SOCIAL_VISUAL',
     },
   },
   prosCons: {
@@ -45,7 +45,7 @@ export const SOCIAL_VISUAL: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisual/proscons.png',
-      alt: 'SOCIAL-VISUAL',
+      alt: 'SOCIAL_VISUAL',
     },
   },
   generalAdvice: {
@@ -56,7 +56,7 @@ export const SOCIAL_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisual/generaladvices.png',
-      alt: 'SOCIAL-VISUAL',
+      alt: 'SOCIAL_VISUAL',
     },
   },
   situations: {
@@ -72,7 +72,7 @@ export const SOCIAL_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisual/situations.png',
-      alt: 'SOCIAL-VISUAL',
+      alt: 'SOCIAL_VISUAL',
     },
   },
 
@@ -101,7 +101,7 @@ export const SOCIAL_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisual/generalExamples.png',
-      alt: 'SOCIAL-VISUAL',
+      alt: 'SOCIAL_VISUAL',
     },
   },
   dailyChecklist: {
@@ -114,7 +114,7 @@ export const SOCIAL_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisual/dailyChecklist.png',
-      alt: 'SOCIAL-VISUAL',
+      alt: 'SOCIAL_VISUAL',
     },
   },
   playlists: [

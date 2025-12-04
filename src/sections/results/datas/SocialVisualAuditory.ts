@@ -22,7 +22,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     text: 'Хүмүүстэй ярьж байхдаа хамтын схем, самбар ашиглахын зэрэгцээ асуулт асууж, тайлбарлаж байхдаа хамгийн сайн сурна.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/coreidea.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 
@@ -31,7 +31,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     p2: 'Ийм төрлийн хүн самбар, флипчарт, ханын сонин гарч ирэхээр “Ашгүй дээ, одоо л миний ээлж ирлээ” гэж дотроо баярлана. Мөн чимээгүй, ганцаараа олон цаг суух шууд нойрыг нь хүргэнэ. Асуулт асууж, хариулж, хүнтэй маргаж, ойлголтоо “дуу чимээтэй илэрхийлэх” явцдаа аливаа 80%-ийг сурч авдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/description.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 
@@ -50,7 +50,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/proscons.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 
@@ -63,7 +63,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/generaladvices.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 
@@ -82,7 +82,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/situations.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 
@@ -111,7 +111,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/generalExamples.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 
@@ -125,7 +125,7 @@ export const SOLO_VISUALAUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditory/dailyChecklist.png',
-      alt: 'SOCIAL-VISUALAUDITORY',
+      alt: 'SOCIAL_VISUALAUDITORY',
     },
   },
 

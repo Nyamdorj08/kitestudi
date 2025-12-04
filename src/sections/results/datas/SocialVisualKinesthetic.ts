@@ -20,7 +20,7 @@ export const SOCIAL_VISUALKINESTHETIC: VisualData = {
     text: 'Хүмүүстэй хамт даалгавар хийж, бодлого бодож, дүрд тоглож (role-play) хийхийн зэрэгцээ хамтын схем, самбар ашиглавал хамгийн сайн сурна.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualkinesthetic/coreidea.png',
-      alt: 'SOCIAL-VISUALKINESTHETIC',
+      alt: 'SOCIAL_VISUALKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOCIAL_VISUALKINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүний хамгийн сайн сурдаг орчин: хамтдаа бодлого бодож, даалгавар хийж, дүрд тоглодог (role-play) бүлэг. Зүгээр урт яриа сонсохоос илүү бусадтай хамт зураг зурах, схем гаргах үедээ бүх юмыг сайтар ойлгодог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualkinesthetic/description.png',
-      alt: 'SOCIAL-VISUALKINESTHETIC',
+      alt: 'SOCIAL_VISUALKINESTHETIC',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const SOCIAL_VISUALKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualkinesthetic/proscons.png',
-      alt: 'SOCIAL-VISUALKINESTHETIC',
+      alt: 'SOCIAL_VISUALKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -58,7 +58,7 @@ export const SOCIAL_VISUALKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualkinesthetic/generaladvices.png',
-      alt: 'SOCIAL-VISUALKINESTHETIC',
+      alt: 'SOCIAL_VISUALKINESTHETIC',
     },
   },
   situations: {
@@ -76,7 +76,7 @@ export const SOCIAL_VISUALKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualkinesthetic/situations.png',
-      alt: 'SOCIAL-VISUALKINESTHETIC',
+      alt: 'SOCIAL_VISUALKINESTHETIC',
     },
   },
   generalExamples: {
@@ -104,7 +104,7 @@ export const SOCIAL_VISUALKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualkinesthetic/generalExamples.png',
-      alt: 'SOCIAL-VISUALKINESTHETIC',
+      alt: 'SOCIAL_VISUALKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -117,7 +117,7 @@ export const SOCIAL_VISUALKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualkinesthetic/dailyChecklist.png',
-      alt: 'SOCIAL-VISUALKINESTHETIC',
+      alt: 'SOCIAL_VISUALKINESTHETIC',
     },
   },
   playlists: [

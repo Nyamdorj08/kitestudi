@@ -20,7 +20,7 @@ export const SOLO_AUDITORY: VisualData = {
     text: 'Ганцаараа сууж аливааг өөртөө чангаар тайлбарлаж байж “суралцлаа” гэж тооцдог хүн юм.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditory/coreidea.png',
-      alt: 'SOLO-AUDITORY',
+      alt: 'SOLO_AUDITORY',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOLO_AUDITORY: VisualData = {
     p2: 'Ийм төрлийн хүн чимээгүй газар өөртэйгөө “ярьж сурдаг”. Хэн нэгэн заавал хажууд байлгах албагүй, өөрөө текстийг уншаад, дотроо эсвэл аяархан байнга тайлбарлаж байдаг. “Чангаар хэлж чадахгүй бол ойлгоогүй” гэдэг дотоод шалгууртай.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditory/description.png',
-      alt: 'SOLO-AUDITORY',
+      alt: 'SOLO_AUDITORY',
     },
   },
   prosCons: {
@@ -45,7 +45,7 @@ export const SOLO_AUDITORY: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditory/proscons.png',
-      alt: 'SOLO-AUDITORY',
+      alt: 'SOLO_AUDITORY',
     },
   },
   generalAdvice: {
@@ -55,7 +55,7 @@ export const SOLO_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditory/generaladvices.png',
-      alt: 'SOLO-AUDITORY',
+      alt: 'SOLO_AUDITORY',
     },
   },
   situations: {
@@ -71,7 +71,7 @@ export const SOLO_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditory/situations.png',
-      alt: 'SOLO-AUDITORY',
+      alt: 'SOLO_AUDITORY',
     },
   },
 
@@ -100,7 +100,7 @@ export const SOLO_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditory/generalExamples.png',
-      alt: 'SOLO-AUDITORY',
+      alt: 'SOLO_AUDITORY',
     },
   },
   dailyChecklist: {
@@ -113,7 +113,7 @@ export const SOLO_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditory/dailyChecklist.png',
-      alt: 'SOLO-AUDITORY',
+      alt: 'SOLO_AUDITORY',
     },
   },
   playlists: [

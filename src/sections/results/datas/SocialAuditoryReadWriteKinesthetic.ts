@@ -20,7 +20,7 @@ export const SOCIAL_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     text: 'Хүмүүстэй ярьж, асуулт асууж, тайлбарлахын зэрэгцээ хамт даалгавар хийж, бодлого бодож, дүрд тоглож (role-play) хийж байхдаа хамгийн сайн сурдаг. Хамтарсан тэмдэглэл, чат, бичгээр асуулт–хариулт бол таны онцлог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwritekinesthetic/coreidea.png',
-      alt: 'SOCIAL-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOCIAL_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     p2: 'Ийм төрлийн хүний хамгийн сайн сурдаг орчин: хамтдаа бодлого бодож, даалгавар хийж, дүрд тоглодог (role-play) хийдэг бүлэг. Зүгээр лекц сонсохоор залхуурдаг бөгөөд гарт нь ажил өгвөл толгой цохино.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwritekinesthetic/description.png',
-      alt: 'SOCIAL-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   prosCons: {
@@ -44,7 +44,7 @@ export const SOCIAL_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwritekinesthetic/proscons.png',
-      alt: 'SOCIAL-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -55,7 +55,7 @@ export const SOCIAL_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwritekinesthetic/generaladvices.png',
-      alt: 'SOCIAL-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   situations: {
@@ -71,7 +71,7 @@ export const SOCIAL_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwritekinesthetic/situations.png',
-      alt: 'SOCIAL-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   generalExamples: {
@@ -99,7 +99,7 @@ export const SOCIAL_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwritekinesthetic/generalExamples.png',
-      alt: 'SOCIAL-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -113,7 +113,7 @@ export const SOCIAL_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwritekinesthetic/dailyChecklist.png',
-      alt: 'SOCIAL-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOCIAL_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   playlists: [

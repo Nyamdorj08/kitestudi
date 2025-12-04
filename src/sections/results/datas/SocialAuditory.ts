@@ -20,7 +20,7 @@ export const SOCIAL_AUDITORY: VisualData = {
     text: 'Хүмүүстэй ярьж, асуулт асууж, тайлбарлаж байхдаа хамгийн сайн сурдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditory/coreidea.png',
-      alt: 'SOCIAL-AUDITORY',
+      alt: 'SOCIAL_AUDITORY',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOCIAL_AUDITORY: VisualData = {
     p2: 'Ийм төрлийн хүн ярианаас энерги авдаг. Чимээгүй, ганцаараа олон цаг суух нь шууд нойрыг нь хүргэнэ. Асуулт асууж, хариулж, хүнтэй маргаж, ойлголтоо “дуу чимээтэй илэрхийлэх” явцдаа аливаа 80%-ийг сурч авдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditory/description.png',
-      alt: 'SOCIAL-AUDITORY',
+      alt: 'SOCIAL_AUDITORY',
     },
   },
   prosCons: {
@@ -45,7 +45,7 @@ export const SOCIAL_AUDITORY: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditory/proscons.png',
-      alt: 'SOCIAL-AUDITORY',
+      alt: 'SOCIAL_AUDITORY',
     },
   },
   generalAdvice: {
@@ -56,7 +56,7 @@ export const SOCIAL_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditory/generaladvices.png',
-      alt: 'SOCIAL-AUDITORY',
+      alt: 'SOCIAL_AUDITORY',
     },
   },
   situations: {
@@ -72,7 +72,7 @@ export const SOCIAL_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditory/situations.png',
-      alt: 'SOCIAL-AUDITORY',
+      alt: 'SOCIAL_AUDITORY',
     },
   },
 
@@ -101,7 +101,7 @@ export const SOCIAL_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditory/generalExamples.png',
-      alt: 'SOCIAL-AUDITORY',
+      alt: 'SOCIAL_AUDITORY',
     },
   },
   dailyChecklist: {
@@ -114,7 +114,7 @@ export const SOCIAL_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditory/dailyChecklist.png',
-      alt: 'SOCIAL-AUDITORY',
+      alt: 'SOCIAL_AUDITORY',
     },
   },
   playlists: [

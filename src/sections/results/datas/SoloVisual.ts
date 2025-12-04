@@ -20,7 +20,7 @@ export const SOLO_VISUAL: VisualData = {
     text: 'Харагдахгүй бол ойлгоогүй” – бүх чухал сэдвийг схем, зураг, хүснэгт болгож хувиргахад тархи чинь хамгийн сайн ажиллана.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisual/coreidea.png',
-      alt: 'SOLO-VISUAL',
+      alt: 'SOLO_VISUAL',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOLO_VISUAL: VisualData = {
     p2: 'Олон хүнтэй, чимээтэй орчинд суухаар тархи чинь харааны хэт ачаалал аваад ядраад эхэлнэ. Дотроо “бүгдийг яриад байлгүй, нэг цаас, нэг үзэг өгөөд орхи” гэж боддог төрлийн хүн.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisual/description.png',
-      alt: 'SOLO-VISUAL',
+      alt: 'SOLO_VISUAL',
     },
   },
   prosCons: {
@@ -45,7 +45,7 @@ export const SOLO_VISUAL: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisual/proscons.png',
-      alt: 'SOLO-VISUAL',
+      alt: 'SOLO_VISUAL',
     },
   },
   generalAdvice: {
@@ -56,7 +56,7 @@ export const SOLO_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisual/generaladvices.png',
-      alt: 'SOLO-VISUAL',
+      alt: 'SOLO_VISUAL',
     },
   },
   situations: {
@@ -72,7 +72,7 @@ export const SOLO_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisual/situations.png',
-      alt: 'SOLO-VISUAL',
+      alt: 'SOLO_VISUAL',
     },
   },
 
@@ -97,7 +97,7 @@ export const SOLO_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisual/generalExamples.png',
-      alt: 'SOLO-VISUAL',
+      alt: 'SOLO_VISUAL',
     },
   },
   dailyChecklist: {
@@ -110,7 +110,7 @@ export const SOLO_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisual/dailyChecklist.png',
-      alt: 'SOLO-VISUAL',
+      alt: 'SOLO_VISUAL',
     },
   },
   playlists: [

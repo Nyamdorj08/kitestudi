@@ -28,7 +28,7 @@ export const SOCIAL_VISUALAUDITORYREADWRITE: VisualData = {
     p2: 'Мөн та хүн текстээрээ хамт сурах дуртай: shared doc, чат, асуулт хариулт (Q&A), comment, хамтарсан тэмдэглэл зэрэг бол түүний талбар. “Ярьж байхаар биччих, тэгвэл бүтэн үлдэнэ” гэж боддог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwrite/description.png',
-      alt: 'SOCIAL-VISUALAUDITORYREADWRITE',
+      alt: 'SOCIAL_VISUALAUDITORYREADWRITE',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const SOCIAL_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwrite/proscons.png',
-      alt: 'SOCIAL-VISUALAUDITORYREADWRITE',
+      alt: 'SOCIAL_VISUALAUDITORYREADWRITE',
     },
   },
   generalAdvice: {
@@ -58,7 +58,7 @@ export const SOCIAL_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwrite/generaladvices.png',
-      alt: 'SOCIAL-VISUALAUDITORYREADWRITE',
+      alt: 'SOCIAL_VISUALAUDITORYREADWRITE',
     },
   },
   situations: {
@@ -76,7 +76,7 @@ export const SOCIAL_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwrite/situations.png',
-      alt: 'SOCIAL-VISUALAUDITORYREADWRITE',
+      alt: 'SOCIAL_VISUALAUDITORYREADWRITE',
     },
   },
   generalExamples: {
@@ -104,7 +104,7 @@ export const SOCIAL_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwrite/generalExamples.png',
-      alt: 'SOCIAL-VISUALAUDITORYREADWRITE',
+      alt: 'SOCIAL_VISUALAUDITORYREADWRITE',
     },
   },
   dailyChecklist: {
@@ -118,7 +118,7 @@ export const SOCIAL_VISUALAUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialvisualauditoryreadwrite/dailyChecklist.png',
-      alt: 'SOCIAL-VISUALAUDITORYREADWRITE',
+      alt: 'SOCIAL_VISUALAUDITORYREADWRITE',
     },
   },
   playlists: [

@@ -20,7 +20,7 @@ export const SOLO_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     text: 'Ганцаараа сууж аливааг өөртөө чангаар тайлбарлаж байж “суралцлаа” гэж тооцдог. Бичиж чадах хэмжээнд ойлгосон үед мөн гараараа хийж байж л жинхэнэ тогтдог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwritekinesthetic/coreidea.png',
-      alt: 'SOLO-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOLO_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOLO_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     p2: 'Мөн ийм төрлийн хүн өөрөө хийж байж сурдаг. Хүн зааж өгөхийг хүлээх биш, өөрөө оролдож үзэх дуртай. “Надад pdf тайлбар битгий өг, жишээ бодлого, даалгавар өгчих” гэдэг сэтгэлгээтэй.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwritekinesthetic/description.png',
-      alt: 'SOLO-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOLO_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const SOLO_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwritekinesthetic/proscons.png',
-      alt: 'SOLO-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOLO_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -57,7 +57,7 @@ export const SOLO_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwritekinesthetic/generaladvices.png',
-      alt: 'SOLO-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOLO_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   situations: {
@@ -73,7 +73,7 @@ export const SOLO_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwritekinesthetic/situations.png',
-      alt: 'SOLO-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOLO_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   generalExamples: {
@@ -101,7 +101,7 @@ export const SOLO_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwritekinesthetic/generalExamples.png',
-      alt: 'SOLO-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOLO_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -115,7 +115,7 @@ export const SOLO_AUDITORYREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwritekinesthetic/dailyChecklist.png',
-      alt: 'SOLO-AUDITORYREADWRITEKINESTHETIC',
+      alt: 'SOLO_AUDITORYREADWRITEKINESTHETIC',
     },
   },
   playlists: [

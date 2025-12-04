@@ -20,7 +20,7 @@ export const SOLO_VISUALAUDITORYKINESTHETIC: VisualData = {
     text: 'Бүх чухал сэдвийг схем болгож хардаг. Ганцаараа сууж аливааг өөртөө чангаар тайлбарлаж байж “суралцлаа” гэж тооцдог. Мөн “уншаад ойлгоно” биш хийж байж ойлгоно.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditorykinesthetic/coreidea.png',
-      alt: 'SOLO-VISUALAUDITORYKINESTHETIC',
+      alt: 'SOLO_VISUALAUDITORYKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOLO_VISUALAUDITORYKINESTHETIC: VisualData = {
     p2: 'Мөн та өөрөө хийж байж сурдаг. Хүн зааж өгөхийг хүлээх биш, өөрөө оролдож үзэх дуртай. “Надад pdf тайлбар битгий өг, жишээ бодлого, даалгавар өгчих” гэдэг сэтгэлгээтэй.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditorykinesthetic/description.png',
-      alt: 'SOLO-VISUALAUDITORYKINESTHETIC',
+      alt: 'SOLO_VISUALAUDITORYKINESTHETIC',
     },
   },
   prosCons: {
@@ -44,7 +44,7 @@ export const SOLO_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditorykinesthetic/proscons.png',
-      alt: 'SOLO-VISUALAUDITORYKINESTHETIC',
+      alt: 'SOLO_VISUALAUDITORYKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -55,7 +55,7 @@ export const SOLO_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditorykinesthetic/generaladvices.png',
-      alt: 'SOLO-VISUALAUDITORYKINESTHETIC',
+      alt: 'SOLO_VISUALAUDITORYKINESTHETIC',
     },
   },
   situations: {
@@ -71,7 +71,7 @@ export const SOLO_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditorykinesthetic/situations.png',
-      alt: 'SOLO-VISUALAUDITORYKINESTHETIC',
+      alt: 'SOLO_VISUALAUDITORYKINESTHETIC',
     },
   },
   generalExamples: {
@@ -99,7 +99,7 @@ export const SOLO_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditorykinesthetic/generalExamples.png',
-      alt: 'SOLO-VISUALAUDITORYKINESTHETIC',
+      alt: 'SOLO_VISUALAUDITORYKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -113,7 +113,7 @@ export const SOLO_VISUALAUDITORYKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualauditorykinesthetic/dailyChecklist.png',
-      alt: 'SOLO-VISUALAUDITORYKINESTHETIC',
+      alt: 'SOLO_VISUALAUDITORYKINESTHETIC',
     },
   },
   playlists: [

@@ -20,7 +20,7 @@ export const MIXED_VISUAL: VisualData = {
     text: 'Эхлээд ганцаараа зураг гарга, дараа нь хүнтэй ярьж шалгуул.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/coreidea.png',
-      alt: 'MIXED-VISUAL',
+      alt: 'MIXED_VISUAL',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const MIXED_VISUAL: VisualData = {
     p2: 'Энэ хүн эхлээд өөрийн толгойд зураг гаргаад, дараа нь хүнтэй ярьж байж баталгаажуулах дуртай. Дотроо “би ингэж харж байгаа, зөв үү?” гэдэг маягийн сэтгэлгээтэй. Ганцаараа сууж чадна, гэхдээ дан ганцаараа удаан явахад эргэлзээд эхэлдэг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/description.png',
-      alt: 'MIXED-VISUAL',
+      alt: 'MIXED_VISUAL',
     },
   },
   prosCons: {
@@ -45,7 +45,7 @@ export const MIXED_VISUAL: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/proscons.png',
-      alt: 'MIXED-VISUAL',
+      alt: 'MIXED_VISUAL',
     },
   },
   generalAdvice: {
@@ -56,7 +56,7 @@ export const MIXED_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/generaladvices.png',
-      alt: 'MIXED-VISUAL',
+      alt: 'MIXED_VISUAL',
     },
   },
   situations: {
@@ -72,7 +72,7 @@ export const MIXED_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/situations.png',
-      alt: 'MIXED-VISUAL',
+      alt: 'MIXED_VISUAL',
     },
   },
 
@@ -101,7 +101,7 @@ export const MIXED_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/generalExamples.png',
-      alt: 'MIXED-VISUAL',
+      alt: 'MIXED_VISUAL',
     },
   },
   dailyChecklist: {
@@ -114,7 +114,7 @@ export const MIXED_VISUAL: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedvisual/dailyChecklist.png',
-      alt: 'MIXED-VISUAL',
+      alt: 'MIXED_VISUAL',
     },
   },
   playlists: [

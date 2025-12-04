@@ -19,7 +19,7 @@ export const SOCIAL_READWRITE: VisualData = {
     text: 'Хамтарсан тэмдэглэл, чат, бичгээр асуулт–хариулт бол таны онцлог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/coreidea.png',
-      alt: 'SOCIAL-READWRITE',
+      alt: 'SOCIAL_READWRITE',
     },
   },
   description: {
@@ -27,7 +27,7 @@ export const SOCIAL_READWRITE: VisualData = {
     p2: 'Ийм төрлийн хүн текстээрээ хамт сурах дуртай: shared doc, чат, асуулт хариулт (Q&A), comment, хамтарсан тэмдэглэл зэрэг бол түүний талбар. “Ярьж байхаар биччих, тэгвэл бүтэн үлдэнэ” гэж боддог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/description.png',
-      alt: 'SOCIAL-READWRITE',
+      alt: 'SOCIAL_READWRITE',
     },
   },
   prosCons: {
@@ -44,7 +44,7 @@ export const SOCIAL_READWRITE: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/proscons.png',
-      alt: 'SOCIAL-READWRITE',
+      alt: 'SOCIAL_READWRITE',
     },
   },
   generalAdvice: {
@@ -55,7 +55,7 @@ export const SOCIAL_READWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/generaladvices.png',
-      alt: 'SOCIAL-READWRITE',
+      alt: 'SOCIAL_READWRITE',
     },
   },
   situations: {
@@ -71,7 +71,7 @@ export const SOCIAL_READWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/situations.png',
-      alt: 'SOCIAL-READWRITE',
+      alt: 'SOCIAL_READWRITE',
     },
   },
 
@@ -100,7 +100,7 @@ export const SOCIAL_READWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/generalExamples.png',
-      alt: 'SOCIAL-READWRITE',
+      alt: 'SOCIAL_READWRITE',
     },
   },
   dailyChecklist: {
@@ -113,7 +113,7 @@ export const SOCIAL_READWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialreadwrite/dailyChecklist.png',
-      alt: 'SOCIAL-READWRITE',
+      alt: 'SOCIAL_READWRITE',
     },
   },
   playlists: [

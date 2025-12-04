@@ -2,7 +2,7 @@ import { VisualData } from '../Visual';
 
 export const SOLO_VISUALREADWRITEKINESTHETIC: VisualData = {
   title: 'Таны суралцах онцлог',
-  mainType: 'Харааны / Бичгэн / Хөдөлгөөнөөр + Ганцаарчилсан',
+  mainType: 'Орон зайн / Бичгэн / Хөдөлгөөнөөр + Ганцаарчилсан',
   chips: [
     {
       label: 'Үндсэн хэв маяг: Хараа, Бичиг, Хөдөлгөөн хосолсон',
@@ -20,7 +20,7 @@ export const SOLO_VISUALREADWRITEKINESTHETIC: VisualData = {
     text: '“Харагдахгүй бол ойлгоогүй” – бүх чухал сэдвийг схем болгож хардаг бөгөөд бичиж чадах хэмжээнд ойлгосон үед л жинхэнэ тогтдог. “Уншаад ойлгоно” гэхээсээ хийж байж ойлгоно.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/coreidea.png',
-      alt: 'SOLO-VISUALREADWRITEKINESTHETIC',
+      alt: 'SOLO_VISUALREADWRITEKINESTHETIC',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOLO_VISUALREADWRITEKINESTHETIC: VisualData = {
     p2: 'Мөн ийм төрлийн хүн өөрөө хийж байж сурдаг. Хүн зааж өгөхийг хүлээх биш, өөрөө оролдож үзэх дуртай. “Надад pdf тайлбар битгий өг, жишээ бодлого, даалгавар өгчих” гэдэг сэтгэлгээтэй.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/description.png',
-      alt: 'SOLO-VISUALREADWRITEKINESTHETIC',
+      alt: 'SOLO_VISUALREADWRITEKINESTHETIC',
     },
   },
   prosCons: {
@@ -36,17 +36,15 @@ export const SOLO_VISUALREADWRITEKINESTHETIC: VisualData = {
       'Олон янзын мэдээллийг нэг зурагт нэгтгэхдээ сайн.',
       'Бүх юмыг өөрийн үгээр бичиж, загвартай тэмдэглэл гаргадаг тул хожим төөрч будилахгүй.',
       'Бодит амьдрал дээр хэрэглэх чадвар өндөр (зөвхөн шалгалтаа даваад орхидог биш, хийж чаддаг хүн).',
-      'Шалгалтын эсээ, бичгийн ажил, тайланг логик сайтай бичдэг.',
     ],
     cons: [
       'Багш нь зураг, схемээр хичээлээ харуулдаггүй, материал цэгцгүй байх үед хурдан залхана.',
       'Онол уншсаар байгаад бодит дасгал, бодлого бодох зэргийг чадахгүй байх эрсдэлтэй.',
       'Ганцаараа оролдсоор байгаад маш их цаг алдах магадлалтай, ялангуяа буруу чиглэл рүү яваад байвал.',
-      'Хэт төгс тэмдэглэл хөөж, хэрэггүй зүйл хүртэл бичиж суудаг.',
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/proscons.png',
-      alt: 'SOLO-VISUALREADWRITEKINESTHETIC',
+      alt: 'SOLO_VISUALREADWRITEKINESTHETIC',
     },
   },
   generalAdvice: {
@@ -56,8 +54,8 @@ export const SOLO_VISUALREADWRITEKINESTHETIC: VisualData = {
       '“Өнөөдөр хэдэн бодлого/дасгал хийв?” гэдгээ гол үзүүлэлт болго.',
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/generaladvices.png',
-      alt: 'SOLO-VISUALREADWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/generalAdvice.png',
+      alt: 'SOLO_VISUALREADWRITEKINESTHETIC',
     },
   },
   situations: {
@@ -73,14 +71,14 @@ export const SOLO_VISUALREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/situations.png',
-      alt: 'SOLO-VISUALREADWRITEKINESTHETIC',
+      alt: 'SOLO_VISUALREADWRITEKINESTHETIC',
     },
   },
   generalExamples: {
     examples: [
       {
         topic: 'Хэл сурах',
-        text: 'Англи үг цээжлэхдээ “food, job” гэх мэт ангилал гаргаад mind map хий. “airport” гэсэн сэдэв дээр онгоц, паспорт гээд жижиг зураг нэмээд, үгээр нь бич. Шалгалтын өмнө жагсаалт биш, энэ зураглалуудаа үз.',
+        text: 'Англи үг цээжлэхдээ “food, job, travel” гэх мэт ангилал гаргаад, оюуны зураглал хий. Жишээ нь “airport” гэсэн сэдэв дээр нисэх онгоц, паспорт, чемодан гээд жижиг зураг нэмээд, тэдгээрийг монгол / англи үгээр нь бич. Шалгалтын өмнө зүгээр үгсийн жагсаалт биш, энэ оюуны зураглалуудаа үз.',
       },
       {
         topic: 'Тоо бодох',
@@ -88,20 +86,20 @@ export const SOLO_VISUALREADWRITEKINESTHETIC: VisualData = {
       },
       {
         topic: 'Их сургуулийн хичээл',
-        text: '“Санхүүгийн тайлан шинжилгээ” дээр нэг компанийн (жишээ нь, APU, Gobi) жилийн тайланг татаж аваад, Excel дээр ratio-нуудыг нь бодож үз. Зөвхөн онолоор биш, амьд тоон дээр ажилла.',
+        text: '“Санхүүгийн тайлан шинжилгээ” дээр нэг компанийн (жишээ нь, APU, Gobi) жилийн тайланг татаж аваад, өөрийн Excel дээр ratio-нуудыг нь бодож үз. Зөвхөн онолоор биш, амьд тоон дээр ажилла.',
       },
       {
         topic: 'Шинэ программ',
-        text: 'Excel сурахдаа эхлээд цаасан дээр “Гэр бүлийн төсөв” хүснэгтийн загварыг зур. Дараа нь Excel дээр яг тэр бүтцийг хийх – интерфэйсийг бас гараар зур, ямар таб дээр юу байдгийг тэмдэглэ.',
+        text: 'Excel сурахдаа эхний өдөртөө “Монголын гэр бүлийн төсөв” гэж жижиг хүснэгт зохиогоод, ямар багана хэрэгтэйг цаасан дээрээ гарга. Дараа нь Excel дээр яг тэр бүтцийг хийх – интерфэйсийг бас гараар зур, ямар таб дээр юу байдгийг тэмдэглэ.',
       },
       {
         topic: 'Хоол хийх',
-        text: 'YouTube дээр жор үзээд, сонсоод л орхих биш – шууд гал тогоондоо орж гараараа гурил нухаж, мах амталж байж сурдаг. Жор уншаад суувал уйдна, хөдөлгөөн эхлэхэд тархи нь ажиллана.',
+        text: 'YouTube дээр жор үзээд, сонсоод л орхих биш – шууд гал тогоондоо орж гараараа гурил нухаж, мах амталж, шарах шүүгээ асааж байж сурдаг. Жор уншаад суувал уйдна, хөдөлгөөн эхлэхэд тархи нь ажиллана.',
       },
     ],
     illustration: {
-      src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/generalExamples.png',
-      alt: 'SOLO-VISUALREADWRITEKINESTHETIC',
+      src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/examples.png',
+      alt: 'SOLO_VISUALREADWRITEKINESTHETIC',
     },
   },
   dailyChecklist: {
@@ -115,7 +113,7 @@ export const SOLO_VISUALREADWRITEKINESTHETIC: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/solovisualreadwritekinesthetic/dailyChecklist.png',
-      alt: 'SOLO-VISUALREADWRITEKINESTHETIC',
+      alt: 'SOLO_VISUALREADWRITEKINESTHETIC',
     },
   },
   playlists: [

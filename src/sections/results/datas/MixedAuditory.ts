@@ -20,7 +20,7 @@ export const MIXED_AUDITORY: VisualData = {
     text: 'Богино тайлбар сонсож, түүнийгээ өөр үгээрээ давтан хэлэх үед хамгийн сайн сурна.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/coreidea.png',
-      alt: 'MIXED-AUDITORY',
+      alt: 'MIXED_AUDITORY',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const MIXED_AUDITORY: VisualData = {
     p2: 'Ийм төрлийн хүн сонсох + ярих хоёрыг хослуулдаг. Ганцаараа аливааг тайлбарлаж бодож чадна, гэхдээ хааяа хүнтэй ярих, асуулт асуух шаардлагатай гэж мэдэрдэг. “Надад богино тайлбар өг, би түүнийг өөрийнхөө давтаж ойлгоё” гэдэг сэтгэхүйтэй.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/description.png',
-      alt: 'MIXED-AUDITORY',
+      alt: 'MIXED_AUDITORY',
     },
   },
   prosCons: {
@@ -45,7 +45,7 @@ export const MIXED_AUDITORY: VisualData = {
 
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/proscons.png',
-      alt: 'MIXED-AUDITORY',
+      alt: 'MIXED_AUDITORY',
     },
   },
   generalAdvice: {
@@ -56,7 +56,7 @@ export const MIXED_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/generaladvices.png',
-      alt: 'MIXED-AUDITORY',
+      alt: 'MIXED_AUDITORY',
     },
   },
   situations: {
@@ -72,7 +72,7 @@ export const MIXED_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/situations.png',
-      alt: 'MIXED-AUDITORY',
+      alt: 'MIXED_AUDITORY',
     },
   },
 
@@ -101,7 +101,7 @@ export const MIXED_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/generalExamples.png',
-      alt: 'MIXED-AUDITORY',
+      alt: 'MIXED_AUDITORY',
     },
   },
   dailyChecklist: {
@@ -114,13 +114,13 @@ export const MIXED_AUDITORY: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/mixedauditory/dailyChecklist.png',
-      alt: 'MIXED-AUDITORY',
+      alt: 'MIXED_AUDITORY',
     },
   },
   playlists: [
     {
       src: 'spotify',
-      url: '',
+      url: 'https://open.spotify.com/playlist/2gKY6Rrei2vcbUmaURCdAb?si=5f56d0410aa4444a',
     },
   ],
 };

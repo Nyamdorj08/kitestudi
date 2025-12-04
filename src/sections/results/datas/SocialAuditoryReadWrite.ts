@@ -20,7 +20,7 @@ export const SOCIAL_AUDITORYREADWRITE: VisualData = {
     text: 'Хамтарсан тэмдэглэл, чат, бичгээр асуулт–хариулт бол таны онцлог бөгөөд хүмүүстэй ярьж, асуулт асууж, тайлбарлаж байхдаа хамгийн сайн сурдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwrite/coreidea.png',
-      alt: 'SOCIAL-AUDITORYREADWRITE',
+      alt: 'SOCIAL_AUDITORYREADWRITE',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOCIAL_AUDITORYREADWRITE: VisualData = {
     p2: 'Ийм төрлийн хүн текстээрээ хамт сурах дуртай: shared doc, чат, асуулт хариулт (Q&A), comment, хамтарсан тэмдэглэл зэрэг бол түүний талбар. “Ярьж байхаар биччих, тэгвэл бүтэн үлдэнэ” гэж боддог. Асуулт асууж, хариулж, хүнтэй маргаж, ойлголтоо “дуу чимээтэй илэрхийлэх” явцдаа аливаа 80%-ийг сурч авдаг.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwrite/description.png',
-      alt: 'SOCIAL-AUDITORYREADWRITE',
+      alt: 'SOCIAL_AUDITORYREADWRITE',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const SOCIAL_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwrite/proscons.png',
-      alt: 'SOCIAL-AUDITORYREADWRITE',
+      alt: 'SOCIAL_AUDITORYREADWRITE',
     },
   },
   generalAdvice: {
@@ -58,7 +58,7 @@ export const SOCIAL_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwrite/generaladvices.png',
-      alt: 'SOCIAL-AUDITORYREADWRITE',
+      alt: 'SOCIAL_AUDITORYREADWRITE',
     },
   },
   situations: {
@@ -76,7 +76,7 @@ export const SOCIAL_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwrite/situations.png',
-      alt: 'SOCIAL-AUDITORYREADWRITE',
+      alt: 'SOCIAL_AUDITORYREADWRITE',
     },
   },
   generalExamples: {
@@ -104,7 +104,7 @@ export const SOCIAL_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwrite/generalExamples.png',
-      alt: 'SOCIAL-AUDITORYREADWRITE',
+      alt: 'SOCIAL_AUDITORYREADWRITE',
     },
   },
   dailyChecklist: {
@@ -117,7 +117,7 @@ export const SOCIAL_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/socialauditoryreadwrite/dailyChecklist.png',
-      alt: 'SOCIAL-AUDITORYREADWRITE',
+      alt: 'SOCIAL_AUDITORYREADWRITE',
     },
   },
   playlists: [

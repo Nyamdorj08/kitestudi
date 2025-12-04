@@ -20,7 +20,7 @@ export const SOLO_AUDITORYREADWRITE: VisualData = {
     text: 'Бичиж чадах хэмжээнд ойлгосон үед л жинхэнэ тогтдог бөгөөд ганцаараа сууж аливааг өөртөө чангаар тайлбарлаж байж “суралцлаа” гэж тооцдог.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwrite/coreidea.png',
-      alt: 'SOLO-AUDITORYREADWRITE',
+      alt: 'SOLO_AUDITORYREADWRITE',
     },
   },
   description: {
@@ -28,7 +28,7 @@ export const SOLO_AUDITORYREADWRITE: VisualData = {
     p2: 'Хүмүүс видео, аудио, мийм ярьж байхад дотроо “надад PDF-ыг нь л өг, өөрөө уншчихъя” гэж боддог. “Чангаар хэлж чадахгүй бол ойлгоогүй” гэдэг дотоод шалгууртай.',
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwrite/description.png',
-      alt: 'SOLO-AUDITORYREADWRITE',
+      alt: 'SOLO_AUDITORYREADWRITE',
     },
   },
   prosCons: {
@@ -46,7 +46,7 @@ export const SOLO_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwrite/proscons.png',
-      alt: 'SOLO-AUDITORYREADWRITE',
+      alt: 'SOLO_AUDITORYREADWRITE',
     },
   },
   generalAdvice: {
@@ -58,7 +58,7 @@ export const SOLO_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwrite/generaladvices.png',
-      alt: 'SOLO-AUDITORYREADWRITE',
+      alt: 'SOLO_AUDITORYREADWRITE',
     },
   },
   situations: {
@@ -76,7 +76,7 @@ export const SOLO_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwrite/situations.png',
-      alt: 'SOLO-AUDITORYREADWRITE',
+      alt: 'SOLO_AUDITORYREADWRITE',
     },
   },
   generalExamples: {
@@ -104,7 +104,7 @@ export const SOLO_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwrite/GeneralExamples.png',
-      alt: 'SOLO-AUDITORYREADWRITE',
+      alt: 'SOLO_AUDITORYREADWRITE',
     },
   },
   dailyChecklist: {
@@ -117,7 +117,7 @@ export const SOLO_AUDITORYREADWRITE: VisualData = {
     ],
     illustration: {
       src: 'https://studyy.b-cdn.net/illustrations/soloauditoryreadwrite/dailyChecklist.png',
-      alt: 'SOLO-AUDITORYREADWRITE',
+      alt: 'SOLO_AUDITORYREADWRITE',
     },
   },
   playlists: [
