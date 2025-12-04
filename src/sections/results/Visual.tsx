@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import Fade from '@mui/material/Fade';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 type VisualChip = {
   label: string;
@@ -66,6 +66,32 @@ type VisualProps = {
   data: VisualData;
 };
 
+const BulletList = ({ items }: { items: string[] }) => (
+  <Stack
+    component="ul"
+    spacing={0.8}
+    sx={{
+      pl: 2,
+      m: 0,
+      listStyle: 'disc',
+    }}
+  >
+    {items.map((item, index) => (
+      <Typography
+        key={index}
+        component="li"
+        variant="body2"
+        sx={{
+          color: 'grey.100',
+          lineHeight: 1.7,
+        }}
+      >
+        {item}
+      </Typography>
+    ))}
+  </Stack>
+);
+
 export const Visual = ({ data }: VisualProps) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -80,7 +106,6 @@ export const Visual = ({ data }: VisualProps) => {
           sx={{
             p: isMobile ? 2.5 : 3,
             borderRadius: 4,
-            border: '1px solid rgba(56,189,248,0.5)',
             bgcolor: 'rgba(15,23,42,0.96)',
             boxShadow: '0 24px 70px rgba(15,23,42,0.95)',
             position: 'relative',
@@ -123,7 +148,6 @@ export const Visual = ({ data }: VisualProps) => {
                     borderRadius: 3,
                     overflow: 'hidden',
                     bgcolor: 'rgba(15,23,42,0.9)',
-                    border: '1px solid rgba(56,189,248,0.25)',
                     p: 1,
                     maxWidth: 117,
                     width: '100%',
@@ -206,7 +230,6 @@ export const Visual = ({ data }: VisualProps) => {
                   mt: 2,
                   borderRadius: 2.5,
                   bgcolor: 'rgba(15,23,42,0.98)',
-                  border: '1px solid rgba(56,189,248,0.35)',
                   p: 1.8,
                 }}
               >
@@ -231,7 +254,6 @@ export const Visual = ({ data }: VisualProps) => {
             p: isMobile ? 2 : 2.5,
             borderRadius: 3,
             bgcolor: 'rgba(15,23,42,0.9)',
-            border: '1px solid rgba(148,163,184,0.35)',
           }}
         >
           <Stack direction={{ xs: 'column', md: 'row' }} spacing={2.5} alignItems="stretch">
@@ -252,7 +274,6 @@ export const Visual = ({ data }: VisualProps) => {
                     borderRadius: 3,
                     overflow: 'hidden',
                     bgcolor: 'rgba(15,23,42,0.9)',
-                    border: '1px solid rgba(56,189,248,0.25)',
                     p: 1,
                     maxWidth: 117,
                     width: '100%',
@@ -310,7 +331,6 @@ export const Visual = ({ data }: VisualProps) => {
                   borderRadius: 3,
                   overflow: 'hidden',
                   bgcolor: 'rgba(15,23,42,0.9)',
-                  border: '1px solid rgba(56,189,248,0.25)',
                   p: 1,
                   maxWidth: 117,
                   width: '100%',
@@ -338,20 +358,13 @@ export const Visual = ({ data }: VisualProps) => {
                 p: isMobile ? 2 : 2.3,
                 borderRadius: 3,
                 bgcolor: 'rgba(22,101,52,0.26)',
-                border: '1px solid rgba(74,222,128,0.4)',
               }}
             >
               <Typography variant="subtitle1" sx={{ color: 'emerald.200', fontWeight: 700, mb: 1 }}>
                 Давуу тал
               </Typography>
-              <Typography variant="body2" sx={{ color: 'grey.100' }}>
-                {data.prosCons.pros.map((item, index) => (
-                  <span key={index}>
-                    • {item}
-                    {index < data.prosCons.pros.length - 1 && <br />}
-                  </span>
-                ))}
-              </Typography>
+
+              <BulletList items={data.prosCons.pros} />
             </Box>
 
             <Box
@@ -360,20 +373,13 @@ export const Visual = ({ data }: VisualProps) => {
                 p: isMobile ? 2 : 2.3,
                 borderRadius: 3,
                 bgcolor: 'rgba(127,29,29,0.22)',
-                border: '1px solid rgba(248,113,113,0.5)',
               }}
             >
               <Typography variant="subtitle1" sx={{ color: 'red.200', fontWeight: 700, mb: 1 }}>
                 Сул тал
               </Typography>
-              <Typography variant="body2" sx={{ color: 'grey.100' }}>
-                {data.prosCons.cons.map((item, index) => (
-                  <span key={index}>
-                    • {item}
-                    {index < data.prosCons.cons.length - 1 && <br />}
-                  </span>
-                ))}
-              </Typography>
+
+              <BulletList items={data.prosCons.cons} />
             </Box>
           </Stack>
         </Stack>
@@ -388,7 +394,6 @@ export const Visual = ({ data }: VisualProps) => {
             p: isMobile ? 2 : 2.5,
             borderRadius: 3,
             bgcolor: 'rgba(15,23,42,0.9)',
-            border: '1px solid rgba(148,163,184,0.35)',
           }}
         >
           <Stack direction={{ xs: 'column', md: 'row' }} spacing={2.5}>
@@ -409,7 +414,6 @@ export const Visual = ({ data }: VisualProps) => {
                     borderRadius: 3,
                     overflow: 'hidden',
                     bgcolor: 'rgba(15,23,42,0.9)',
-                    border: '1px solid rgba(56,189,248,0.25)',
                     p: 1,
                     maxWidth: 117,
                     width: '100%',
@@ -434,14 +438,8 @@ export const Visual = ({ data }: VisualProps) => {
               <Typography variant="subtitle1" sx={{ color: 'teal.100', fontWeight: 700, mb: 1 }}>
                 Ерөнхий зөвлөмж
               </Typography>
-              <Typography variant="body2" sx={{ color: 'grey.100' }}>
-                {data.generalAdvice.advices.map((item, index) => (
-                  <span key={index}>
-                    • {item}
-                    {index < data.generalAdvice.advices.length - 1 && <br />}
-                  </span>
-                ))}
-              </Typography>
+
+              <BulletList items={data.generalAdvice.advices} />
             </Box>
           </Stack>
         </Box>
@@ -452,26 +450,25 @@ export const Visual = ({ data }: VisualProps) => {
       label: 'Ситуаци',
       content: (
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={2.5}>
-          <Stack spacing={2.5} sx={{ flex: 1.8 }}>
+          <Stack
+            spacing={2.5}
+            sx={{
+              flex: 1.8,
+              order: { xs: 1, md: 0 },
+            }}
+          >
             <Box
               sx={{
                 p: isMobile ? 2 : 2.3,
                 borderRadius: 3,
                 bgcolor: 'rgba(15,23,42,0.9)',
-                border: '1px solid rgba(30,64,175,0.5)',
               }}
             >
               <Typography variant="subtitle2" sx={{ color: 'blue.100', fontWeight: 700, mb: 0.75 }}>
                 Хичээл / лекц дээр
               </Typography>
-              <Typography variant="body2" sx={{ color: 'grey.100' }}>
-                {data.situations.lecture.map((item, index) => (
-                  <span key={index}>
-                    • {item}
-                    {index < data.situations.lecture.length - 1 && <br />}
-                  </span>
-                ))}
-              </Typography>
+
+              <BulletList items={data.situations.lecture} />
             </Box>
 
             <Box
@@ -479,20 +476,13 @@ export const Visual = ({ data }: VisualProps) => {
                 p: isMobile ? 2 : 2.3,
                 borderRadius: 3,
                 bgcolor: 'rgba(15,23,42,0.9)',
-                border: '1px solid rgba(30,64,175,0.5)',
               }}
             >
               <Typography variant="subtitle2" sx={{ color: 'blue.100', fontWeight: 700, mb: 0.75 }}>
                 Гэртээ бие даан
               </Typography>
-              <Typography variant="body2" sx={{ color: 'grey.100' }}>
-                {data.situations.homeStudy.map((item, index) => (
-                  <span key={index}>
-                    • {item}
-                    {index < data.situations.homeStudy.length - 1 && <br />}
-                  </span>
-                ))}
-              </Typography>
+
+              <BulletList items={data.situations.homeStudy} />
             </Box>
           </Stack>
 
@@ -506,6 +496,7 @@ export const Visual = ({ data }: VisualProps) => {
                 alignItems: 'center',
                 maxWidth: { md: 117 },
                 mt: { xs: 1.5, md: 0 },
+                order: { xs: 0, md: 1 },
               }}
             >
               <Box
@@ -513,7 +504,6 @@ export const Visual = ({ data }: VisualProps) => {
                   borderRadius: 3,
                   overflow: 'hidden',
                   bgcolor: 'rgba(15,23,42,0.9)',
-                  border: '1px solid rgba(56,189,248,0.25)',
                   p: 1,
                   maxWidth: 117,
                   width: '100%',
@@ -545,11 +535,15 @@ export const Visual = ({ data }: VisualProps) => {
             p: isMobile ? 2 : 2.5,
             borderRadius: 3,
             bgcolor: 'rgba(15,23,42,0.96)',
-            border: '1px solid rgba(30,64,175,0.5)',
           }}
         >
           <Stack direction={{ xs: 'column', md: 'row' }} spacing={2.5}>
-            <Box sx={{ flex: 1.8 }}>
+            <Box
+              sx={{
+                flex: 1.8,
+                order: { xs: 1, md: 0 },
+              }}
+            >
               <Typography variant="subtitle1" sx={{ color: 'teal.100', fontWeight: 700, mb: 1.5 }}>
                 Жишээ хэрэглээ
               </Typography>
@@ -581,6 +575,7 @@ export const Visual = ({ data }: VisualProps) => {
                   alignItems: 'center',
                   maxWidth: { md: 117 },
                   mt: { xs: 1.5, md: 0 },
+                  order: { xs: 0, md: 1 },
                 }}
               >
                 <Box
@@ -588,7 +583,6 @@ export const Visual = ({ data }: VisualProps) => {
                     borderRadius: 3,
                     overflow: 'hidden',
                     bgcolor: 'rgba(15,23,42,0.9)',
-                    border: '1px solid rgba(56,189,248,0.25)',
                     p: 1,
                     maxWidth: 117,
                     width: '100%',
@@ -623,21 +617,15 @@ export const Visual = ({ data }: VisualProps) => {
               p: isMobile ? 2 : 2.3,
               borderRadius: 3,
               bgcolor: 'rgba(15,118,110,0.22)',
-              border: '1px dashed rgba(45,212,191,0.7)',
               flex: 1.8,
+              order: { xs: 1, md: 0 },
             }}
           >
             <Typography variant="subtitle2" sx={{ color: 'teal.100', fontWeight: 700, mb: 0.75 }}>
               Өнөөдрийн хийх зүйлсийн checklist
             </Typography>
-            <Typography variant="body2" sx={{ color: 'grey.100' }}>
-              {data.dailyChecklist.checklists.map((item, index) => (
-                <span key={index}>
-                  • {item}
-                  {index < data.dailyChecklist.checklists.length - 1 && <br />}
-                </span>
-              ))}
-            </Typography>
+
+            <BulletList items={data.dailyChecklist.checklists} />
           </Box>
 
           {data.dailyChecklist.illustration && (
@@ -650,6 +638,7 @@ export const Visual = ({ data }: VisualProps) => {
                 alignItems: 'center',
                 maxWidth: { md: 117 },
                 mt: { xs: 1.5, md: 0 },
+                order: { xs: 0, md: 1 },
               }}
             >
               <Box
@@ -657,7 +646,6 @@ export const Visual = ({ data }: VisualProps) => {
                   borderRadius: 3,
                   overflow: 'hidden',
                   bgcolor: 'rgba(15,23,42,0.9)',
-                  border: '1px solid rgba(56,189,248,0.25)',
                   p: 1,
                   maxWidth: 117,
                   width: '100%',
@@ -681,6 +669,27 @@ export const Visual = ({ data }: VisualProps) => {
       ),
     },
   ];
+
+  const navContainerRef = useRef<HTMLDivElement | null>(null);
+  const activeTabRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    const container = navContainerRef.current;
+    const activeEl = activeTabRef.current;
+
+    if (!container || !activeEl) return;
+
+    const containerWidth = container.clientWidth;
+    const elWidth = activeEl.offsetWidth;
+    const elLeft = activeEl.offsetLeft;
+
+    const targetScrollLeft = elLeft - containerWidth / 2 + elWidth / 2;
+
+    container.scrollTo({
+      left: targetScrollLeft,
+      behavior: 'smooth',
+    });
+  }, [activeStep]);
 
   const maxSteps = slides.length;
 
@@ -717,15 +726,51 @@ export const Visual = ({ data }: VisualProps) => {
 
         <Chip
           size="small"
-          label={`Слайд ${activeStep + 1}/${maxSteps} · ${slides[activeStep].label}`}
+          label={`Слайд ${activeStep + 1}/${maxSteps}`}
           sx={{
             bgcolor: 'rgba(15,23,42,0.9)',
             borderRadius: 999,
-            border: '1px solid rgba(148,163,184,0.5)',
             color: 'grey.200',
             fontSize: 11,
           }}
         />
+      </Box>
+
+      <Box
+        ref={navContainerRef}
+        sx={{
+          display: 'flex',
+          gap: 1,
+          overflowX: 'auto',
+          pb: 0.5,
+          '::-webkit-scrollbar': { display: 'none' },
+        }}
+      >
+        {slides.map((slide, index) => {
+          const isActive = index === activeStep;
+          return (
+            <Button
+              key={slide.label}
+              size="small"
+              onClick={() => setActiveStep(index)}
+              ref={isActive ? activeTabRef : null}
+              sx={{
+                whiteSpace: 'nowrap',
+                borderRadius: 999,
+                px: isActive ? 1.8 : 1.4,
+                py: 0.4,
+                minHeight: 0,
+                textTransform: 'none',
+                fontSize: 11,
+                bgcolor: isActive ? 'rgba(56,189,248,0.16)' : 'rgba(15,23,42,0.85)',
+                color: 'grey.100',
+                flexShrink: 0,
+              }}
+            >
+              {index + 1}. {slide.label}
+            </Button>
+          );
+        })}
       </Box>
 
       <Fade key={activeStep} in timeout={250}>
@@ -744,7 +789,6 @@ export const Visual = ({ data }: VisualProps) => {
           borderRadius: 999,
           px: 1.5,
           py: 0.75,
-          border: '1px solid rgba(51,65,85,0.9)',
           '& .MuiMobileStepper-dots': {
             flexGrow: 1,
             justifyContent: 'center',
@@ -766,8 +810,9 @@ export const Visual = ({ data }: VisualProps) => {
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
             endIcon={theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+            sx={{ textTransform: 'none', fontSize: 12 }}
           >
-            {!isMobile && 'Дараах'}
+            Дараах слайд
           </Button>
         }
         backButton={
@@ -776,8 +821,9 @@ export const Visual = ({ data }: VisualProps) => {
             onClick={handleBack}
             disabled={activeStep === 0}
             startIcon={theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+            sx={{ textTransform: 'none', fontSize: 12 }}
           >
-            {!isMobile && 'Өмнөх'}
+            Өмнөх слайд
           </Button>
         }
       />

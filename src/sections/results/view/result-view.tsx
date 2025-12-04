@@ -110,6 +110,41 @@ export const ResultView = () => {
 
         {!loading && result && (result.status === 'paid' || result.status === 'completed') && (
           <Container maxWidth="md">
+            <Box
+              sx={{
+                width: { xs: '100%', md: 'auto' },
+                flex: 1,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                // maxWidth: { md: 220 },
+                mt: { xs: 1.5, md: 0 },
+                mb: 5,
+              }}
+            >
+              <Box
+                sx={{
+                  borderRadius: 3,
+                  overflow: 'hidden',
+                  p: 1,
+                  maxWidth: 220,
+                  width: '100%',
+                }}
+              >
+                <Box
+                  component="img"
+                  src={'/full_white_logo.png'}
+                  alt={'STUDII-MAIN'}
+                  sx={{
+                    width: '100%',
+                    display: 'block',
+                    objectFit: 'cover',
+                    maxHeight: isMobile ? 220 : 260,
+                  }}
+                />
+              </Box>
+            </Box>
+
             <Paper
               sx={{
                 position: 'relative',

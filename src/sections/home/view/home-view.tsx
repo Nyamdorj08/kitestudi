@@ -18,7 +18,6 @@ import {
   useTheme,
   Fade,
   Stack,
-  IconButton,
 } from '@mui/material';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -27,8 +26,6 @@ import { CircularLoadingBlur } from 'src/components/circular-loading-blur';
 import { StudiiService } from 'src/services';
 import { questions } from 'src/utils/constants';
 import { getErrorMessage } from 'src/utils/error-message';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import { eventview, pageview } from 'src/utils/fpixel';
 import { hasCommonEmailTypo, isValidEmail } from 'src/utils/validators';
 import { FooterView } from 'src/sections/Footer';
@@ -151,206 +148,94 @@ export const HomeView = () => {
         }}
       >
         <CircularLoadingBlur loading={loading} />
+
         <Paper
-          elevation={8}
           sx={{
             width: '100%',
-            maxWidth: 680,
-            p: isMobile ? 3 : 5,
-            borderRadius: 0,
-            backdropFilter: 'blur(22px)',
-            border: '1px solid rgba(129, 230, 217, 0.3)',
-            boxShadow: '0 0 60px 10px rgba(56, 189, 248, 0.18)',
-            background: 'linear-gradient(135deg, rgba(15,23,42,0.92), rgba(15,23,42,0.98))',
+            maxWidth: 720,
+            p: isMobile ? 3 : 4,
+            borderRadius: 4,
+            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(129,230,217,0.35)',
+            background: 'linear-gradient(135deg, rgba(15,23,42,0.96), rgba(15,23,42,0.98))',
+            boxShadow: '0 0 40px 6px rgba(56,189,248,0.20)',
           }}
         >
+          {/* START STAGE */}
           {stage === 'start' && (
             <Fade in>
               <Box textAlign="center">
-                {/* <Stack
-                  direction="row"
-                  spacing={1}
-                  justifyContent="center"
-                  alignItems="center"
-                  mb={2}
-                >
+                <Stack spacing={2.5} alignItems="center">
                   <Box
                     sx={{
-                      px: 1.8,
-                      py: 0.6,
-                      borderRadius: 999,
-                      fontSize: '0.75rem',
-                      textTransform: 'uppercase',
-                      letterSpacing: 1,
-                      bgcolor: 'rgba(15,118,110,0.25)',
-                      border: '1px solid rgba(45,212,191,0.6)',
-                      color: 'text.primary',
-                    }}
-                  >
-                    📚 Суралцах хэв маягийн гүн анализ
-                  </Box>
-                </Stack> */}
-
-                <Box
-                  sx={{
-                    width: { xs: '100%', md: 'auto' },
-                    flex: 1,
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    // maxWidth: { md: 220 },
-                    mt: { xs: 1.5, md: 0 },
-                    mb: 1.5,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      borderRadius: 3,
-                      overflow: 'hidden',
-                      p: 1,
-                      maxWidth: 220,
-                      width: '100%',
+                      width: { xs: 150, md: 180 },
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
                     }}
                   >
                     <Box
                       component="img"
-                      src={'/full_white_logo.png'}
-                      alt={'STUDII-MAIN'}
+                      src="/full_white_logo.png"
+                      alt="STUDII-MAIN"
                       sx={{
                         width: '100%',
                         display: 'block',
-                        objectFit: 'cover',
-                        maxHeight: isMobile ? 220 : 260,
                       }}
                     />
                   </Box>
-                </Box>
 
-                {/* <Typography
-                  variant="h4"
-                  fontWeight={800}
-                  sx={{
-                    mb: 1.5,
-                    color: 'text.primary',
-                    textShadow: '0 1px 2px rgba(56,189,248,0.4)',
-                  }}
-                >
-                  STUDII
-                </Typography> */}
+                  <Box>
+                    <Typography
+                      variant="h5"
+                      fontWeight={800}
+                      sx={{
+                        mb: 1.5,
+                        color: 'text.primary',
+                      }}
+                    >
+                      Чиний суралцах системийг задлан шинжилнэ
+                    </Typography>
+                    <Typography variant="body1" fontSize="0.97rem" sx={{ color: 'text.secondary' }}>
+                      Чи ямар үед хамгийн хурдан, гүн, удаан мартахгүйгээр сурдаг вэ?
+                      <br />
+                      <strong>
+                        Бодол, зуршил, цагийн менежмент чинь суралцах чадварыг хаана нь гацааж
+                        байгааг ил гаргаж өгнө.
+                      </strong>
+                    </Typography>
+                  </Box>
 
-                <Typography
-                  variant="body1"
-                  fontSize="1.02rem"
-                  sx={{ color: 'text.secondary', mb: 1.5 }}
-                >
-                  Чи ямар үед хамгийн хурдан, гүн, удаан мартахгүйгээр сурдаг вэ?
-                  <br />
-                  <strong>
-                    Таны бодол, зуршил, цагийн менежмент хэрхэн суралцах чадварыг тань алдагдуулж
-                    байгааг ил гаргана.
-                  </strong>
-                </Typography>
-
-                {/* <Box
-                  mt={2.5}
-                  p={2}
-                  sx={{
-                    borderRadius: 0,
-                    background:
-                      'linear-gradient(135deg, rgba(15,118,110,0.12), rgba(59,130,246,0.16))',
-                    border: '1px solid rgba(45,212,191,0.4)',
-                    color: 'text.primary',
-                    fontWeight: 500,
-                    fontSize: '0.95rem',
-                    display: 'inline-block',
-                  }}
-                >
-                  4900₮ — Надад бол нэг аяга кофе ☕
-                  <br />
-                  Харин чамд бол дараагийн олон жилийн{' '}
-                  <strong>суралцах арга барилын roadmap</strong> болно.
-                </Box> */}
-
-                <Stack alignItems="center" spacing={2.5} mt={4}>
                   <Button
                     variant="contained"
                     size="large"
                     onClick={() => setStage('quiz')}
                     sx={{
                       px: 6,
-                      py: 1.5,
-                      borderRadius: 8,
-                      fontSize: '1.1rem',
+                      py: 1.4,
+                      borderRadius: 999,
+                      fontSize: '1.02rem',
                       background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
-                      fontWeight: 'bold',
-                      boxShadow: '0 0 18px rgba(34,197,94,0.45)',
+                      fontWeight: 700,
+                      boxShadow: '0 0 22px rgba(34,197,94,0.45)',
                       '&:hover': {
                         background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
-                        transform: 'scale(1.04)',
-                        boxShadow: '0 0 26px rgba(52,211,153,0.7)',
+                        transform: 'translateY(-1px)',
+                        boxShadow: '0 0 30px rgba(52,211,153,0.7)',
                       },
-                      transition: 'all 0.18s ease-in-out',
+                      transition: 'all 0.16s ease-in-out',
                     }}
                   >
                     Тест эхлүүлэх
                   </Button>
 
-                  {/* <Box
-                    sx={{
-                      width: { xs: '100%', md: 'auto' },
-                      flex: 1,
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      maxWidth: { md: 117 },
-                      mt: { xs: 1.5, md: 0 },
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        borderRadius: 3,
-                        overflow: 'hidden',
-
-                        p: 1,
-                        maxWidth: 117,
-                        width: '100%',
-                      }}
-                    >
-                      <Box
-                        component="img"
-                        src={
-                          'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/description.png'
-                        }
-                        alt={'STUDII-MAIN'}
-                        sx={{
-                          width: '100%',
-                          display: 'block',
-                          objectFit: 'cover',
-                          maxHeight: isMobile ? 220 : 260,
-                        }}
-                      />
-                    </Box>
-                  </Box> */}
-
                   <Stack
                     direction={isMobile ? 'column' : 'row'}
-                    spacing={1.5}
+                    spacing={1.2}
                     alignItems="center"
                     justifyContent="center"
+                    sx={{ mt: 1 }}
                   >
-                    {/* <Button
-                      variant="text"
-                      onClick={() => setShowPreview(true)}
-                      sx={{
-                        fontWeight: 500,
-                        color: 'primary.light',
-                        textDecoration: 'underline',
-                        '&:hover': { color: 'primary.main' },
-                      }}
-                    >
-                      🔍 Жишээ дүгнэлт харах
-                    </Button> */}
-
                     <Button
                       variant="text"
                       onClick={() => setShowWhy(true)}
@@ -370,118 +255,249 @@ export const HomeView = () => {
             </Fade>
           )}
 
+          {/* QUIZ STAGE */}
           {stage === 'quiz' && (
-            <>
-              <LinearProgress
-                variant="determinate"
-                value={progressPercent}
-                sx={{
-                  mb: 3,
-                  height: 8,
-                  borderRadius: 999,
-                  backgroundColor: 'rgba(15,23,42,0.9)',
-                  '& .MuiLinearProgress-bar': {
-                    background: 'linear-gradient(90deg, #22c55e, #38bdf8, #6366f1)',
-                  },
-                }}
-              />
-              <Fade in={fadeIn} timeout={300} key={currentIndex}>
+            <Box sx={{ maxWidth: 560, mx: 'auto' }}>
+              <Stack spacing={2.5}>
+                <Box
+                  sx={{
+                    width: { xs: 140, md: 160 },
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    mx: 'auto',
+                  }}
+                >
+                  <Box
+                    component="img"
+                    src="/full_white_logo.png"
+                    alt="STUDII-MAIN"
+                    sx={{
+                      width: '100%',
+                      display: 'block',
+                    }}
+                  />
+                </Box>
+
                 <Box>
-                  <Stack direction="row" alignItems="center" justifyContent="space-between" mb={1}>
+                  <Stack
+                    direction="row"
+                    justifyContent="space-between"
+                    alignItems="center"
+                    mb={0.5}
+                  >
                     <Typography
-                      variant="subtitle2"
-                      fontWeight={700}
-                      sx={{
-                        fontSize: '0.95rem',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 1,
-                        color: 'text.secondary',
-                      }}
+                      variant="body2"
+                      sx={{ color: 'grey.300', fontSize: '0.8rem', fontWeight: 500 }}
                     >
-                      ⚡ Асуулт {currentIndex + 1} / {questions.length}
+                      Асуулт {currentIndex + 1} / {questions.length}
                     </Typography>
                     <Typography
                       variant="caption"
                       sx={{ color: 'text.secondary', fontSize: '0.75rem' }}
                     >
-                      Нэг асуултад ~10–20 секунд зарцуулбал тохиромжтой
+                      {progressPercent - 5}% бөглөсөн
                     </Typography>
                   </Stack>
 
-                  <Typography
-                    variant="h6"
-                    fontWeight={600}
-                    gutterBottom
-                    sx={{ color: 'text.primary' }}
-                  >
-                    {currentQuestion.question}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{ mb: 2, color: 'text.secondary', fontStyle: 'italic' }}
-                  >
-                    ☑️ Таны бодит байдалд хамгийн ойр тохирох хувилбарыг сонгоорой.
-                  </Typography>
-
-                  <RadioGroup
-                    value={isCustomSelected ? 'custom' : selectedValue || ''}
-                    onChange={handleOptionChange}
-                  >
-                    {currentQuestion.options.map((opt, idx) => (
-                      <FormControlLabel
-                        key={idx}
-                        value={opt.value}
-                        label={opt.label}
-                        control={
-                          <Radio
-                            sx={{
-                              color: 'primary.light',
-                            }}
-                          />
-                        }
-                        sx={{
-                          mb: 0.5,
-                          color: 'text.primary',
-                          borderRadius: 2,
-                          px: 1,
-                          '&:hover': {
-                            backgroundColor: 'rgba(15,23,42,0.6)',
-                          },
-                        }}
-                      />
-                    ))}
-                  </RadioGroup>
-
-                  <Box mt={4} display="flex" justifyContent="space-between">
-                    <Button
-                      onClick={handleBack}
-                      disabled={currentIndex === 0}
-                      sx={{ color: 'text.secondary' }}
-                    >
-                      Өмнөх
-                    </Button>
-                    <Button
-                      variant="contained"
-                      onClick={handleNext}
-                      disabled={!answers[currentIndex] || answers[currentIndex] === 0}
-                      sx={{
-                        px: 4,
-                        py: 1,
-                        background: 'linear-gradient(90deg, #0f766e, #2563eb)',
-                        '&:hover': {
-                          background: 'linear-gradient(90deg, #0f766e, #1d4ed8)',
-                        },
-                      }}
-                    >
-                      {currentIndex < questions.length - 1 ? 'Дараах' : 'Дуусгах'}
-                    </Button>
-                  </Box>
+                  <LinearProgress
+                    variant="determinate"
+                    value={progressPercent}
+                    sx={{
+                      mb: 1.3,
+                      height: 7,
+                      borderRadius: 999,
+                      backgroundColor: 'rgba(15,23,42,0.9)',
+                      overflow: 'hidden',
+                      '& .MuiLinearProgress-bar': {
+                        background: 'linear-gradient(90deg, #22c55e, #38bdf8, #6366f1)',
+                      },
+                    }}
+                  />
                 </Box>
-              </Fade>
-            </>
+
+                <Fade in={fadeIn} timeout={250} key={currentIndex}>
+                  <Box
+                    sx={{
+                      borderRadius: 3,
+                      p: { xs: 1.8, md: 2.4 },
+                      bgcolor: 'rgba(15,23,42,0.96)',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        position: 'absolute',
+                        inset: 0,
+                        background:
+                          'radial-gradient(circle at top left, rgba(56,189,248,0.16), transparent 60%)',
+                        pointerEvents: 'none',
+                      }}
+                    />
+
+                    <Box sx={{ position: 'relative', zIndex: 1 }}>
+                      <Typography
+                        variant="h6"
+                        fontWeight={600}
+                        sx={{
+                          color: 'text.primary',
+                          mb: 1,
+                          fontSize: { xs: '1.05rem', md: '1.15rem' },
+                        }}
+                      >
+                        {currentQuestion.question}
+                      </Typography>
+
+                      <Typography
+                        variant="body2"
+                        sx={{
+                          color: 'text.secondary',
+                          fontStyle: 'italic',
+                          fontSize: '0.85rem',
+                          mb: 2.4,
+                        }}
+                      >
+                        ☑️ Таны бодит байдалд хамгийн ойр тохирох хувилбарыг сонгоорой.
+                      </Typography>
+
+                      <RadioGroup
+                        value={isCustomSelected ? 'custom' : selectedValue || ''}
+                        onChange={handleOptionChange}
+                      >
+                        <Stack spacing={1}>
+                          {currentQuestion.options.map((opt, idx) => {
+                            const isSelected = !isCustomSelected && selectedValue === opt.value;
+
+                            return (
+                              <FormControlLabel
+                                key={idx}
+                                value={opt.value}
+                                label={
+                                  <Box
+                                    sx={{
+                                      display: 'flex',
+                                      flexDirection: 'column',
+                                      gap: 0.25,
+                                    }}
+                                  >
+                                    <Typography
+                                      variant="body2"
+                                      sx={{
+                                        color: 'grey.100',
+                                        fontSize: '0.9rem',
+                                        lineHeight: 1.5,
+                                      }}
+                                    >
+                                      {opt.label}
+                                    </Typography>
+                                    {isSelected && (
+                                      <Typography
+                                        variant="caption"
+                                        sx={{
+                                          fontSize: '0.7rem',
+                                          color: '#22c55e',
+                                        }}
+                                      >
+                                        ✔ Одоогоор сонгосон
+                                      </Typography>
+                                    )}
+                                  </Box>
+                                }
+                                control={
+                                  <Radio
+                                    sx={{
+                                      color: 'rgba(148,163,184,0.9)',
+                                      '&.Mui-checked': {
+                                        color: '#38bdf8',
+                                      },
+                                    }}
+                                  />
+                                }
+                                sx={{
+                                  position: 'relative',
+                                  alignItems: 'center',
+                                  m: 0,
+                                  borderRadius: 2,
+                                  px: 1.6,
+                                  py: 0.9,
+                                  pl: 2.3,
+                                  minHeight: 0,
+                                  overflow: 'hidden',
+                                  bgcolor: isSelected
+                                    ? 'rgba(15,23,42,0.98)'
+                                    : 'rgba(15,23,42,0.9)',
+                                  transition:
+                                    'background-color 0.16s ease, transform 0.12s ease, box-shadow 0.16s ease',
+                                  boxShadow: isSelected ? '0 10px 24px rgba(15,23,42,0.9)' : 'none',
+                                  transform: isSelected ? 'translateY(-1px)' : 'none',
+                                  '&:before': {
+                                    content: '""',
+                                    position: 'absolute',
+                                    left: 10,
+                                    top: 9,
+                                    bottom: 9,
+                                    width: 2,
+                                    borderRadius: 999,
+                                    background: isSelected
+                                      ? 'linear-gradient(180deg, #22c55e, #38bdf8)'
+                                      : 'rgba(51,65,85,0.9)',
+                                  },
+                                  '&:hover': {
+                                    bgcolor: 'rgba(15,23,42,1)',
+                                  },
+                                }}
+                              />
+                            );
+                          })}
+                        </Stack>
+                      </RadioGroup>
+
+                      <Box mt={3} display="flex" justifyContent="space-between" alignItems="center">
+                        <Button
+                          onClick={handleBack}
+                          disabled={currentIndex === 0}
+                          sx={{
+                            color: 'text.secondary',
+                            textTransform: 'none',
+                            fontSize: '0.85rem',
+                            px: 1.5,
+                            minWidth: 0,
+                          }}
+                        >
+                          Өмнөх
+                        </Button>
+
+                        <Button
+                          variant="contained"
+                          onClick={handleNext}
+                          disabled={!answers[currentIndex] || answers[currentIndex] === 0}
+                          sx={{
+                            px: 4,
+                            py: 1,
+                            borderRadius: 999,
+                            textTransform: 'none',
+                            fontWeight: 600,
+                            fontSize: '0.9rem',
+                            background: 'linear-gradient(90deg, #0f766e, #2563eb)',
+                            boxShadow: '0 14px 34px rgba(37,99,235,0.55)',
+                            '&:hover': {
+                              background: 'linear-gradient(90deg, #0f766e, #1d4ed8)',
+                              boxShadow: '0 18px 40px rgba(37,99,235,0.7)',
+                            },
+                          }}
+                        >
+                          {currentIndex < questions.length - 1 ? 'Дараах' : 'Дуусгах'}
+                        </Button>
+                      </Box>
+                    </Box>
+                  </Box>
+                </Fade>
+              </Stack>
+            </Box>
           )}
 
+          {/* EMAIL STAGE */}
           {stage === 'email' && (
             <Fade in>
               <Box>
@@ -489,16 +505,11 @@ export const HomeView = () => {
                   variant="h5"
                   fontWeight={700}
                   gutterBottom
-                  sx={{ color: 'text.primary' }}
+                  sx={{ color: 'text.primary', mb: 1.5 }}
                 >
                   🎉 Үр дүн бэлэн боллоо!
                 </Typography>
-                <Typography
-                  variant="body1"
-                  color="text.secondary"
-                  gutterBottom
-                  sx={{ color: 'text.secondary' }}
-                >
+                <Typography variant="body1" sx={{ color: 'text.secondary', mb: 2 }}>
                   Таны <strong>суралцах хэв маяг, анхаарал, цагийн менежмент, төвлөрөл</strong> ямар
                   алдаанаас болж алдагддаг, юуг өөрчлөхөд хамгийн их нөлөө үзүүлэхийг нарийвчлан
                   дүгнээд и-мэйлээр илгээнэ.
@@ -530,8 +541,8 @@ export const HomeView = () => {
                   sx={{
                     mt: 3,
                     mb: 1,
-                    size: 'large',
                     width: '100%',
+                    borderRadius: 999,
                     background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
                     '&:hover': {
                       background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
@@ -552,6 +563,7 @@ export const HomeView = () => {
           )}
         </Paper>
 
+        {/* Preview dialog */}
         <Dialog open={showPreview} onClose={() => setShowPreview(false)} maxWidth="sm" fullWidth>
           <DialogTitle>Жишээ дүгнэлт</DialogTitle>
           <DialogContent>
@@ -598,14 +610,14 @@ export const HomeView = () => {
           </DialogActions>
         </Dialog>
 
+        {/* Why dialog */}
         <Dialog open={showWhy} onClose={() => setShowWhy(false)} maxWidth="sm" fullWidth>
           <DialogTitle>Яагаад энэ тест хэрэгтэй вэ?</DialogTitle>
           <DialogContent>
             <Typography variant="body1" gutterBottom>
               Ихэнх хүмүүс “хичээлээ сайн давтах ёстой” гэж боддог ч{' '}
-              <strong>юу нь яг алдаатай</strong>
-              байгаагаа мэддэггүй. Таны сурдаггүй шалтгаан ихэнхдээ тархи, анхаарал, зуршлын
-              системтэй холбоотой байдаг.
+              <strong>юу нь яг алдаатай</strong> байгаагаа мэддэггүй. Таны сурдаггүй шалтгаан
+              ихэнхдээ тархи, анхаарал, зуршлын системтэй холбоотой байдаг.
             </Typography>
             <ul>
               <li>📌 Аль үед, ямар орчинд та хамгийн сайн сурдгаа тодорхой харна</li>
@@ -624,6 +636,7 @@ export const HomeView = () => {
           </DialogActions>
         </Dialog>
 
+        {/* Confirm email dialog */}
         <Dialog open={confirmEmailDialog} onClose={() => setConfirmEmailDialog(false)}>
           <DialogTitle>И-мэйл хаяг зөв үү?</DialogTitle>
           <DialogContent>
