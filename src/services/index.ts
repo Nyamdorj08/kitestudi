@@ -1,5 +1,5 @@
 import { ApiRequest as CoreApiRequest } from './Request.service';
-import { StudyyService as CoreStudyyService } from './Studyy.service';
+import { StudiiService as CoreStudiiService } from './Studii.service';
 
 export const ApiRequest = () => {
   const apiHeaders: any = {
@@ -29,4 +29,4 @@ export const UploadRequest = () => {
   return CoreApiRequest(config);
 };
 
-export const StudyyService = () => CoreStudyyService(ApiRequest());
+export const StudiiService = () => CoreStudiiService(ApiRequest());

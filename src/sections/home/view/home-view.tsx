@@ -24,13 +24,14 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 import { CircularLoadingBlur } from 'src/components/circular-loading-blur';
-import { StudyyService } from 'src/services';
+import { StudiiService } from 'src/services';
 import { questions } from 'src/utils/constants';
 import { getErrorMessage } from 'src/utils/error-message';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { eventview, pageview } from 'src/utils/fpixel';
 import { hasCommonEmailTypo, isValidEmail } from 'src/utils/validators';
+import { FooterView } from 'src/sections/Footer';
 
 export const HomeView = () => {
   const theme = useTheme();
@@ -85,7 +86,7 @@ export const HomeView = () => {
     const fbclid = qs.get('fbclid') || undefined;
 
     try {
-      const response = await StudyyService().answers({ email, answers, fbclid });
+      const response = await StudiiService().answers({ email, answers, fbclid });
       router.push(`/${response.data._id}`);
     } catch (error) {
       const feedbackmessage = getErrorMessage(error);
@@ -156,7 +157,7 @@ export const HomeView = () => {
             width: '100%',
             maxWidth: 680,
             p: isMobile ? 3 : 5,
-            borderRadius: 5,
+            borderRadius: 0,
             backdropFilter: 'blur(22px)',
             border: '1px solid rgba(129, 230, 217, 0.3)',
             boxShadow: '0 0 60px 10px rgba(56, 189, 248, 0.18)',
@@ -166,7 +167,7 @@ export const HomeView = () => {
           {stage === 'start' && (
             <Fade in>
               <Box textAlign="center">
-                <Stack
+                {/* <Stack
                   direction="row"
                   spacing={1}
                   justifyContent="center"
@@ -188,9 +189,44 @@ export const HomeView = () => {
                   >
                     📚 Суралцах хэв маягийн гүн анализ
                   </Box>
-                </Stack>
+                </Stack> */}
 
-                <Typography
+                <Box
+                  sx={{
+                    width: { xs: '100%', md: 'auto' },
+                    flex: 1,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    // maxWidth: { md: 220 },
+                    mt: { xs: 1.5, md: 0 },
+                    mb: 1.5,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      borderRadius: 3,
+                      overflow: 'hidden',
+                      p: 1,
+                      maxWidth: 220,
+                      width: '100%',
+                    }}
+                  >
+                    <Box
+                      component="img"
+                      src={'/full_white_logo.png'}
+                      alt={'STUDII-MAIN'}
+                      sx={{
+                        width: '100%',
+                        display: 'block',
+                        objectFit: 'cover',
+                        maxHeight: isMobile ? 220 : 260,
+                      }}
+                    />
+                  </Box>
+                </Box>
+
+                {/* <Typography
                   variant="h4"
                   fontWeight={800}
                   sx={{
@@ -199,8 +235,8 @@ export const HomeView = () => {
                     textShadow: '0 1px 2px rgba(56,189,248,0.4)',
                   }}
                 >
-                  S.T.U.D.Y.Y — 3 минутын суралцах хэв маягийн тест
-                </Typography>
+                  STUDII
+                </Typography> */}
 
                 <Typography
                   variant="body1"
@@ -215,11 +251,11 @@ export const HomeView = () => {
                   </strong>
                 </Typography>
 
-                <Box
+                {/* <Box
                   mt={2.5}
                   p={2}
                   sx={{
-                    borderRadius: 3,
+                    borderRadius: 0,
                     background:
                       'linear-gradient(135deg, rgba(15,118,110,0.12), rgba(59,130,246,0.16))',
                     border: '1px solid rgba(45,212,191,0.4)',
@@ -233,7 +269,7 @@ export const HomeView = () => {
                   <br />
                   Харин чамд бол дараагийн олон жилийн{' '}
                   <strong>суралцах арга барилын roadmap</strong> болно.
-                </Box>
+                </Box> */}
 
                 <Stack alignItems="center" spacing={2.5} mt={4}>
                   <Button
@@ -256,8 +292,45 @@ export const HomeView = () => {
                       transition: 'all 0.18s ease-in-out',
                     }}
                   >
-                    🧠 Тест эхлүүлэх
+                    Тест эхлүүлэх
                   </Button>
+
+                  {/* <Box
+                    sx={{
+                      width: { xs: '100%', md: 'auto' },
+                      flex: 1,
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      maxWidth: { md: 117 },
+                      mt: { xs: 1.5, md: 0 },
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        borderRadius: 3,
+                        overflow: 'hidden',
+
+                        p: 1,
+                        maxWidth: 117,
+                        width: '100%',
+                      }}
+                    >
+                      <Box
+                        component="img"
+                        src={
+                          'https://studyy.b-cdn.net/illustrations/mixedkinesthetic/description.png'
+                        }
+                        alt={'STUDII-MAIN'}
+                        sx={{
+                          width: '100%',
+                          display: 'block',
+                          objectFit: 'cover',
+                          maxHeight: isMobile ? 220 : 260,
+                        }}
+                      />
+                    </Box>
+                  </Box> */}
 
                   <Stack
                     direction={isMobile ? 'column' : 'row'}
@@ -265,7 +338,7 @@ export const HomeView = () => {
                     alignItems="center"
                     justifyContent="center"
                   >
-                    <Button
+                    {/* <Button
                       variant="text"
                       onClick={() => setShowPreview(true)}
                       sx={{
@@ -276,7 +349,7 @@ export const HomeView = () => {
                       }}
                     >
                       🔍 Жишээ дүгнэлт харах
-                    </Button>
+                    </Button> */}
 
                     <Button
                       variant="text"
@@ -569,29 +642,7 @@ export const HomeView = () => {
           </DialogActions>
         </Dialog>
 
-        <Box mt={6} textAlign="center" maxWidth={640}>
-          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            S.T.U.D.Y.Y тест нь таны суралцах хэв маяг, анхаарал, цагийн менежмент, хойш тавих
-            зуршил, сэтгэлгээний хэв маягийг тодорхойлох зорилготой. Үр дүн нь зөвлөгөө, оношлогоо
-            биш бөгөөд таны өөрийгөө илүү сайн ойлгоход чиглэсэн аналитик ойлголт өгөх зорилготой
-            юм.
-          </Typography>
-
-          <Stack direction="row" spacing={2} justifyContent="center" mt={1.5}>
-            <IconButton
-              target="_blank"
-              href="https://www.facebook.com/profile.php?id=61578743243476"
-            >
-              <FacebookIcon sx={{ color: 'text.secondary' }} />
-            </IconButton>
-            <IconButton target="_blank" href="https://instagram.com/eetneb">
-              <InstagramIcon sx={{ color: 'text.secondary' }} />
-            </IconButton>
-          </Stack>
-          <Typography sx={{ color: 'text.secondary' }} variant="caption" mt={2} display="block">
-            © 2025 S.T.U.D.Y.Y — Бүтээсэн: <strong>RELATE MIRROR</strong>
-          </Typography>
-        </Box>
+        <FooterView />
       </Box>
     </>
   );

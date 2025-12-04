@@ -1,6 +1,6 @@
 import { AxiosInstance, AxiosResponse } from 'axios';
 
-export type StudyyAnswerPayload = {
+export type StudiiAnswerPayload = {
   email: string;
   answers: Array<string | null | number>;
   fbclid?: string;
@@ -13,7 +13,7 @@ interface Url {
   link: string;
 }
 
-export type StudyyAnswerResponse = {
+export type StudiiAnswerResponse = {
   _id: number;
   email: string;
   quiz?: number;
@@ -53,7 +53,7 @@ export type PsychProfile = {
   overall_summary: string;
 };
 
-export type StudyyServiceProps = (requestInstance?: AxiosInstance) => {
-  answers: (payload: StudyyAnswerPayload) => Promise<AxiosResponse<StudyyAnswerResponse>>;
-  paymentCheck: (_id: number | string) => Promise<AxiosResponse<StudyyAnswerResponse>>;
+export type StudiiServiceProps = (requestInstance?: AxiosInstance) => {
+  answers: (payload: StudiiAnswerPayload) => Promise<AxiosResponse<StudiiAnswerResponse>>;
+  paymentCheck: (_id: number | string) => Promise<AxiosResponse<StudiiAnswerResponse>>;
 };

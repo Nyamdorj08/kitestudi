@@ -9,7 +9,7 @@ import {
   Radar,
   Tooltip,
 } from 'recharts';
-import { PsychProfile } from 'src/services/types/Studyy.type';
+import { PsychProfile } from 'src/services/types/Studii.type';
 
 type Props = {
   data: PsychProfile;

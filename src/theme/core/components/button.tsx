@@ -109,7 +109,7 @@ const MuiButton: Components<Theme>['MuiButton'] = {
                 backgroundColor: theme.vars.palette.grey[700],
               },
               ...theme.applyStyles('dark', {
-                color: theme.vars.palette.grey[800],
+                color: theme.vars.palette.grey[300],
                 backgroundColor: theme.vars.palette.common.white,
                 '&:hover': { backgroundColor: theme.vars.palette.grey[400] },
               }),

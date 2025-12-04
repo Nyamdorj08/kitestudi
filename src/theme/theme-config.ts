@@ -44,7 +44,7 @@ export const themeConfig: ThemeConfig = {
   direction: 'ltr',
   defaultMode: 'dark',
   modeStorageKey: 'theme-mode',
-  classesPrefix: 'studyy',
+  classesPrefix: 'studii',
   /** **************************************
    * Typography
    *************************************** */
