@@ -40,7 +40,6 @@ export const HomeView = () => {
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<(number | null)[]>(Array(questions.length).fill(null));
-  const [customAnswer, setCustomAnswer] = useState('');
   const [email, setEmail] = useState('');
   const [fadeIn, setFadeIn] = useState(true);
   const [showPreview, setShowPreview] = useState(false);
@@ -99,20 +98,11 @@ export const HomeView = () => {
     setAnswers(updated);
   };
 
-  const handleCustomInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setCustomAnswer(value);
-    const updated = [...answers];
-    updated[currentIndex] = parseInt(value);
-    setAnswers(updated);
-  };
-
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
       setFadeIn(false);
       setTimeout(() => {
         setCurrentIndex((prev) => prev + 1);
-        setCustomAnswer('');
         setFadeIn(true);
       }, 200);
     } else {
@@ -125,7 +115,6 @@ export const HomeView = () => {
       setFadeIn(false);
       setTimeout(() => {
         setCurrentIndex((prev) => prev - 1);
-        setCustomAnswer('');
         setFadeIn(true);
       }, 200);
     }
@@ -225,7 +214,7 @@ export const HomeView = () => {
                       transition: 'all 0.16s ease-in-out',
                     }}
                   >
-                    Тест эхлүүлэх
+                    Аялалаа эхэлье
                   </Button>
 
                   <Stack
@@ -335,6 +324,24 @@ export const HomeView = () => {
                       }}
                     />
 
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <Box
+                        component="img"
+                        src={`https://studyy.b-cdn.net/illustrations/questions/${currentQuestion.id}.png`}
+                        alt="STUDII-MAIN"
+                        sx={{
+                          width: '100%',
+                          display: 'block',
+                        }}
+                      />
+                    </Box>
+
                     <Box sx={{ position: 'relative', zIndex: 1 }}>
                       <Typography
                         variant="h6"
@@ -345,7 +352,16 @@ export const HomeView = () => {
                           fontSize: { xs: '1.05rem', md: '1.15rem' },
                         }}
                       >
-                        {currentQuestion.question}
+                        {currentQuestion.question.includes('<br />') ? (
+                          <>
+                            {currentQuestion.question.split('<br />')[0]}
+                            <br />
+                            <br />
+                            {currentQuestion.question.split('<br />')[1]}
+                          </>
+                        ) : (
+                          currentQuestion.question
+                        )}
                       </Typography>
 
                       {/* <Typography

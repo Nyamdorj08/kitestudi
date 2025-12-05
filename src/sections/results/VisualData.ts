@@ -27,7 +27,7 @@ import { SOCIAL_VISUALAUDITORYKINESTHETIC } from './datas/SocialVisualAuditoryKi
 import { SOCIAL_VISUALAUDITORYREADWRITE } from './datas/SocialVisualAuditoryReadWrite';
 import { SOCIAL_VISUALAUDITORYREADWRITEKINESTHETIC } from './datas/SocialVisualAuditoryReadWriteKinesthetic';
 import { SOCIAL_VISUALKINESTHETIC } from './datas/SocialVisualKinesthetic';
-import { SOCIAL_VISUALAUDITORY } from './datas/SocialVisualReadWrite';
+// import { SOCIAL_VISUALAUDITORY } from './datas/SocialVisualReadWrite';
 import { SOCIAL_VISUALREADWRITEKINESTHETIC } from './datas/SocialVisualReadWriteKinesthetic';
 import { SOLO_AUDITORY } from './datas/SoloAuditory';
 import { SOLO_AUDITORYKINESTHETIC } from './datas/SoloAuditoryKinesthetic';
@@ -91,7 +91,7 @@ export const DATA_MAP: Record<string, any> = {
   'social readwrite': SOCIAL_READWRITE,
   'social kinesthetic': SOCIAL_KINESTHETIC,
 
-  'social visual - social auditory': SOCIAL_VISUALAUDITORY,
+  // 'social visual - social auditory': SOCIAL_VISUALAUDITORY,
   // 'social visual - social readwrite': SOCIAL_VISUALREADWRITE,
   'social visual - social kinesthetic': SOCIAL_VISUALKINESTHETIC,
   'social auditory - social readwrite': SOCIAL_AUDITORYREADWRITE,
