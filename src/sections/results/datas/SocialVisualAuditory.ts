@@ -1,6 +1,6 @@
 import { VisualData } from '../Visual';
 
-export const SOLO_VISUALAUDITORY: VisualData = {
+export const SOCIAL_VISUALAUDITORY: VisualData = {
   title: 'Таны суралцах онцлог',
   mainType: 'Орон зайн буюу хараагаар/Авиа зүйн буюу сонсголоор хосолсон',
 

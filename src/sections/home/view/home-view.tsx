@@ -29,6 +29,7 @@ import { getErrorMessage } from 'src/utils/error-message';
 import { eventview, pageview } from 'src/utils/fpixel';
 import { hasCommonEmailTypo, isValidEmail } from 'src/utils/validators';
 import { FooterView } from 'src/sections/Footer';
+import { IntroSlider } from '../intro-slider';
 
 export const HomeView = () => {
   const theme = useTheme();
@@ -36,7 +37,7 @@ export const HomeView = () => {
   const router = useRouter();
   const qs = useSearchParams();
 
-  const [stage, setStage] = useState<'start' | 'quiz' | 'email'>('start');
+  const [stage, setStage] = useState<'start' | 'caution' | 'quiz' | 'email'>('start');
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<(number | null)[]>(Array(questions.length).fill(null));
@@ -174,30 +175,31 @@ export const HomeView = () => {
                     />
                   </Box>
 
-                  <Box>
+                  {/* <Box>
                     <Typography
                       maxWidth={500}
                       variant="body1"
                       fontSize="0.97rem"
                       sx={{ color: 'text.secondary' }}
                     >
-                      “Хичээлийг жинхнээсээ уйлуулна” гэж боддог ч өөрөө уйлчихсан сууж байсан
-                      тохиолдол байдаг л биз дээ?
+                      Өөрийн суралцах хэв маягийг мэдэж авахаар бусдаасаа түрүүлж алхсан танд баяр
+                      хүргэе.
                       <br />
                       <br />
                       <strong>
-                        Өөрийнхөө суралцах хэв маягийг мэдээд авчихвал зөвхөн хичээл гэлтгүй ямар ч
-                        шинэ зүйлийг “гартаа оруулах” үнэхээр амархан болно.
+                        Аливааг сурдаг онцлогоо мэдэж авах адал явдлаар дүүрэн аялалд урьж байна.
                       </strong>
                       <br />
                       <br />
                     </Typography>
-                  </Box>
+                  </Box> */}
+
+                  <IntroSlider />
 
                   <Button
                     variant="contained"
                     size="large"
-                    onClick={() => setStage('quiz')}
+                    onClick={() => setStage('caution')}
                     sx={{
                       px: 6,
                       py: 1.4,
@@ -214,7 +216,7 @@ export const HomeView = () => {
                       transition: 'all 0.16s ease-in-out',
                     }}
                   >
-                    Аялалаа эхэлье
+                    Аяллаа эхлүүлэх
                   </Button>
 
                   <Stack
@@ -237,7 +239,131 @@ export const HomeView = () => {
                     >
                       💡 Яагаад энэ тест хэрэгтэй вэ?
                     </Button>
+
+                    <Button
+                      variant="text"
+                      onClick={() => setShowPreview(true)}
+                      sx={{
+                        fontWeight: 500,
+                        color: 'text.secondary',
+                        fontSize: '0.85rem',
+                        textDecoration: 'none',
+                        '&:hover': { color: 'text.primary' },
+                      }}
+                    >
+                      🔎 Дүгнэлтэнд юу ирэх вэ?
+                    </Button>
                   </Stack>
+                </Stack>
+              </Box>
+            </Fade>
+          )}
+
+          {stage === 'caution' && (
+            <Fade in>
+              <Box textAlign="center">
+                <Stack spacing={2.5} alignItems="center">
+                  <Box
+                    sx={{
+                      width: { xs: 150, md: 180 },
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}
+                  >
+                    <Box
+                      component="img"
+                      src="/full_white_logo.png"
+                      alt="STUDII-MAIN"
+                      sx={{
+                        width: '100%',
+                        display: 'block',
+                      }}
+                    />
+                  </Box>
+
+                  <Box
+                    sx={{
+                      borderRadius: 3,
+                      p: { xs: 2.2, md: 2.8 },
+                      bgcolor: 'rgba(15,23,42,0.96)',
+                      position: 'relative',
+                      overflow: 'hidden',
+                      cursor: 'pointer',
+                      my: 1.5,
+                    }}
+                  >
+                    {/* BG glow */}
+                    <Box
+                      sx={{
+                        position: 'absolute',
+                        inset: 0,
+                        background:
+                          'radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 62%)',
+                        pointerEvents: 'none',
+                      }}
+                    />
+
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        mb: 2,
+                      }}
+                    >
+                      <Box
+                        component="img"
+                        src={`https://studyy.b-cdn.net/illustrations/home/4.png`}
+                        alt="STUDII-MAIN"
+                        sx={{
+                          width: '100%',
+                          display: 'block',
+                        }}
+                      />
+                    </Box>
+
+                    <Box>
+                      <Typography
+                        maxWidth={550}
+                        variant="body1"
+                        fontSize="0.97rem"
+                        sx={{ color: 'text.secondary' }}
+                        fontWeight={500}
+                      >
+                        Та өөрийгөө 10 жилийн ахлах ангийн сурагч болсон байна гэж төсөөлөөрэй.
+                        <br />
+                        <br />
+                        (Хэрэв та өөрөө 10 жилийн ахлах ангид сурдаг бол мэдээж төсөөлөх
+                        шаардлагагүй).
+                        <br />
+                        <br />
+                      </Typography>
+                    </Box>
+                  </Box>
+
+                  <Button
+                    variant="contained"
+                    size="large"
+                    onClick={() => setStage('quiz')}
+                    sx={{
+                      px: 6,
+                      py: 1.4,
+                      borderRadius: 999,
+                      fontSize: '1.02rem',
+                      background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
+                      fontWeight: 700,
+                      boxShadow: '0 0 22px rgba(34,197,94,0.45)',
+                      '&:hover': {
+                        background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
+                        transform: 'translateY(-1px)',
+                        boxShadow: '0 0 30px rgba(52,211,153,0.7)',
+                      },
+                      transition: 'all 0.16s ease-in-out',
+                    }}
+                  >
+                    Ойлголоо!
+                  </Button>
                 </Stack>
               </Box>
             </Fade>
@@ -329,6 +455,7 @@ export const HomeView = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
+                        mb: 2,
                       }}
                     >
                       <Box
@@ -345,7 +472,7 @@ export const HomeView = () => {
                     <Box sx={{ position: 'relative', zIndex: 1 }}>
                       <Typography
                         variant="h6"
-                        fontWeight={600}
+                        fontWeight={500}
                         sx={{
                           color: 'text.primary',
                           mb: 5,
@@ -538,12 +665,23 @@ export const HomeView = () => {
                 </Box>
                 <Typography
                   textAlign={'center'}
-                  fontWeight={700}
+                  fontWeight={500}
+                  variant="body1"
+                  sx={{ color: 'text.secondary' }}
+                >
+                  Та найзтайгаа тэтгэлэгт тэнцэж чадсан болов уу?
+                  <br />
+                  <br /> Краштайгаа хамт түвшин ахисан уу? <br />
+                </Typography>
+
+                <Typography
+                  textAlign={'center'}
+                  fontWeight={500}
                   variant="body1"
                   sx={{ color: 'text.primary', mb: 2 }}
                 >
-                  Ганцхан удаа бөглөх тест бөгөөд үр дүн нь таны амьдралд насан туршид нөлөөлөх
-                  өөрчлөлт авчрах болно.
+                  <br /> Жинхнээсээ шалгалтаа давахад тань туслах дүгнэлтийн линкийг таны и-мэйл
+                  хаяг руу илгээх болно.
                   <br />
                 </Typography>
 
@@ -580,7 +718,7 @@ export const HomeView = () => {
                     },
                   }}
                 >
-                  Дүгнэлтээ и-мэйлээр авах
+                  Дүгнэлтээ авах
                 </Button>
 
                 <Typography
@@ -598,11 +736,11 @@ export const HomeView = () => {
 
         {/* Preview dialog */}
         <Dialog open={showPreview} onClose={() => setShowPreview(false)} maxWidth="sm" fullWidth>
-          <DialogTitle>Жишээ дүгнэлт</DialogTitle>
+          <DialogTitle>Дүгнэлтэд юу багтсан бэ?</DialogTitle>
           <DialogContent>
             <Typography variant="body2" color="text.secondary" mb={2}>
-              Доорх дүгнэлт нь жишээ хариултууд дээр тулгуурласан бөгөөд AI болон суралцах
-              сэтгэлзүйн загварчлал ашиглан боловсруулагдсан болно.
+              Бид таныг ямар нөхцөлд хэрхэн сурдгийг тань үнэлэн зөвхөн таны онцлогт тохирсон
+              өвөрмөц хэв маягийг тодорхойлох болно.
             </Typography>
             <Paper
               elevation={0}
@@ -614,28 +752,26 @@ export const HomeView = () => {
                 borderLeft: `4px solid ${theme.palette.primary.light}`,
               }}
             >
-              1. Таны суралцах зан төлөвийн онцлог
-              <br />
-              Хариултуудаас харахад та суралцахдаа ихэвчлэн гадны дарамт, хугацааны шахалтаар
-              хөдөлдөг. Өөрөө сонирхоод эхлүүлэхээс илүү “хийхээс өөр аргагүй” үед төвлөрөл чинь
-              огцом нэмэгддэг. Энэ нь богино хугацаанд үр дүн гаргах боломж олгодог ч урт хугацааны
-              тогтвортой дадал үүсэхэд саад болж байна.
+              1. Суралцах үндсэн хэв маяг
               <br />
               <br />
-              2. Анхаарал, төвлөрлийн хэв маяг
-              <br />
-              Та нэгэн зэрэг олон зүйл бодох хандлагатай, үүгээрээ өөрийгөө дэмий ядаргаанд
-              оруулдаг. Энгийн, жижиг task-уудыг хойшлуулж, эцэст нь бөөгнөрүүлэн хийдэг тул
-              суралцах процесс урамгүй, ядраасан мэдрэмжтэй болдог. Мөн та “төгс эхлэх” гэсэн
-              хүлээлтээс болж эхний алхмаа дутуу хийж, өөрийгөө шүүмжилдэг.
+              2. Харилцааны хэв маяг
               <br />
               <br />
-              3. Өөрчлөлтийн боломж ба практик алхам
+              3. Дэлгэрэнгүй тайлбар
               <br />
-              Та суралцах системээ зөв тавьбал хурдан дасан зохицдог төрлийн хүн. 25–40 минутын
-              богино төвлөрлийн блок, дүрэмтэй амралт, жижиг ахицуудаа тэмдэглэж харах систем
-              нэвтрүүлснээр таны гүйцэтгэл эрс сайжирна. Таны зорилго бол “их сургах” биш, харин
-              “тогтмол баг багаар ахих”-ыг систем болгох явдал.
+              <br />
+              4. Хэрэгжүүлэхэд хялбар зөвлөгөө
+              <br />
+              <br />
+              5. Бодит амьдрал дээрх жишээ
+              <br />
+              <br />
+              6. Хийх зүйлсийн жагсаалт
+              <br />
+              <br />
+              7. Төвлөрөхөд тань туслах хэв маягт тань нийцсэн дуу, хөгжмийн жагсаалт (playlist)
+              <br />
             </Paper>
           </DialogContent>
           <DialogActions>

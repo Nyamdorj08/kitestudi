@@ -5,7 +5,6 @@ import { MIXED_AUDITORYREADWRITEKINESTHETIC } from './datas/MixedAuditoryReadWri
 import { MIXED_KINESTHETIC } from './datas/MixedKinesthetic';
 import { MIXED_READWRITE } from './datas/MixedReadWrite';
 import { MIXED_READWRITEKINESTHETIC } from './datas/MixedReadWriteKinesthetic';
-
 import { MIXED_VISUAL } from './datas/MixedVisual';
 import { MIXED_VISUALAUDITORY } from './datas/MixedVisualAuditory';
 import { MIXED_VISUALAUDITORYKINESTHETIC } from './datas/MixedVisualAuditoryKinesthetic';
@@ -22,12 +21,12 @@ import { SOCIAL_KINESTHETIC } from './datas/SocialKinesthetic';
 import { SOCIAL_READWRITE } from './datas/SocialReadWrite';
 import { SOCIAL_READWRITEKINESTHETIC } from './datas/SocialReadWriteKinesthetic';
 import { SOCIAL_VISUAL } from './datas/SocialVisual';
-import { SOLO_VISUALAUDITORY } from './datas/SocialVisualAuditory';
+import { SOCIAL_VISUALAUDITORY } from './datas/SocialVisualAuditory';
 import { SOCIAL_VISUALAUDITORYKINESTHETIC } from './datas/SocialVisualAuditoryKinesthetic';
 import { SOCIAL_VISUALAUDITORYREADWRITE } from './datas/SocialVisualAuditoryReadWrite';
 import { SOCIAL_VISUALAUDITORYREADWRITEKINESTHETIC } from './datas/SocialVisualAuditoryReadWriteKinesthetic';
 import { SOCIAL_VISUALKINESTHETIC } from './datas/SocialVisualKinesthetic';
-// import { SOCIAL_VISUALAUDITORY } from './datas/SocialVisualReadWrite';
+import { SOCIAL_VISUALREADWRITE } from './datas/SocialVisualReadWrite';
 import { SOCIAL_VISUALREADWRITEKINESTHETIC } from './datas/SocialVisualReadWriteKinesthetic';
 import { SOLO_AUDITORY } from './datas/SoloAuditory';
 import { SOLO_AUDITORYKINESTHETIC } from './datas/SoloAuditoryKinesthetic';
@@ -35,11 +34,14 @@ import { SOLO_AUDITORYREADWRITE } from './datas/SoloAuditoryReadWrite';
 import { SOLO_AUDITORYREADWRITEKINESTHETIC } from './datas/SoloAuditoryReadWriteKinesthetic';
 import { SOLO_KINESTHETIC } from './datas/SoloKinesthetic';
 import { SOLO_READWRITE } from './datas/SoloReadWrite';
+import { SOLO_READWRITEKINESTHETIC } from './datas/SoloReadWriteKinesthetic';
 import { SOLO_VISUAL } from './datas/SoloVisual';
+import { SOLO_VISUALAUDITORY } from './datas/SoloVisualAuditory';
 import { SOLO_VISUALAUDITORYKINESTHETIC } from './datas/SoloVisualAuditoryKinesthetic';
 import { SOLO_VISUALAUDITORYREADWRITE } from './datas/SoloVisualAuditoryReadWrite';
 import { SOLO_VISUALAUDITORYREADWRITEKINESTHETIC } from './datas/SoloVisualAuditoryReadWriteKinesthetic';
 import { SOLO_VISUALKINESTHETIC } from './datas/SoloVisualKinesthetic';
+import { SOLO_VISUALREADWRITE } from './datas/SoloVisualReadWrite';
 import { SOLO_VISUALREADWRITEKINESTHETIC } from './datas/SoloVisualReadWriteKinesthetic';
 
 export const DATA_MAP: Record<string, any> = {
@@ -50,11 +52,11 @@ export const DATA_MAP: Record<string, any> = {
   'solo kinesthetic': SOLO_KINESTHETIC,
 
   'solo visual - solo auditory': SOLO_VISUALAUDITORY,
-  // 'solo visual - solo readwrite': SOLO_VISUALREADWRITE,
+  'solo visual - solo readwrite': SOLO_VISUALREADWRITE,
   'solo visual - solo kinesthetic': SOLO_VISUALKINESTHETIC,
   'solo auditory - solo readwrite': SOLO_AUDITORYREADWRITE,
   'solo auditory - solo kinesthetic': SOLO_AUDITORYKINESTHETIC,
-  // 'solo readwrite - solo kinesthetic': SOLO_READWRITEKINESTHETIC,
+  'solo readwrite - solo kinesthetic': SOLO_READWRITEKINESTHETIC,
 
   'solo visual - solo auditory - solo readwrite': SOLO_VISUALAUDITORYREADWRITE,
   'solo visual - solo auditory - solo kinesthetic': SOLO_VISUALAUDITORYKINESTHETIC,
@@ -91,8 +93,8 @@ export const DATA_MAP: Record<string, any> = {
   'social readwrite': SOCIAL_READWRITE,
   'social kinesthetic': SOCIAL_KINESTHETIC,
 
-  // 'social visual - social auditory': SOCIAL_VISUALAUDITORY,
-  // 'social visual - social readwrite': SOCIAL_VISUALREADWRITE,
+  'social visual - social auditory': SOCIAL_VISUALAUDITORY,
+  'social visual - social readwrite': SOCIAL_VISUALREADWRITE,
   'social visual - social kinesthetic': SOCIAL_VISUALKINESTHETIC,
   'social auditory - social readwrite': SOCIAL_AUDITORYREADWRITE,
   'social auditory - social kinesthetic': SOCIAL_AUDITORYKINESTHETIC,

@@ -5,6 +5,7 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import Fade from '@mui/material/Fade';
 import { useState, useRef, useEffect } from 'react';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
 type VisualChip = {
   label: string;
@@ -611,23 +612,6 @@ export const Visual = ({ data }: VisualProps) => {
       label: 'Checklist / 7 хоног',
       content: (
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={2.5}>
-          <Box
-            sx={{
-              mt: 1,
-              p: isMobile ? 2 : 2.3,
-              borderRadius: 3,
-              bgcolor: 'rgba(15,118,110,0.22)',
-              flex: 1.8,
-              order: { xs: 1, md: 0 },
-            }}
-          >
-            <Typography variant="subtitle2" sx={{ color: 'teal.100', fontWeight: 700, mb: 0.75 }}>
-              Өнөөдрийн хийх зүйлсийн checklist
-            </Typography>
-
-            <BulletList items={data.dailyChecklist.checklists} />
-          </Box>
-
           {data.dailyChecklist.illustration && (
             <Box
               sx={{
@@ -637,8 +621,9 @@ export const Visual = ({ data }: VisualProps) => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 maxWidth: { md: 117 },
+                minWidth: { md: 117 },
                 mt: { xs: 1.5, md: 0 },
-                order: { xs: 0, md: 1 },
+                order: { xs: 0, md: 2 },
               }}
             >
               <Box
@@ -665,6 +650,117 @@ export const Visual = ({ data }: VisualProps) => {
               </Box>
             </Box>
           )}
+
+          <Stack spacing={2.5} sx={{ flex: 1 }}>
+            {data.playlists && data.playlists.length > 0 && (
+              <Box sx={{ mt: 3, order: { xs: 2 } }}>
+                <Typography
+                  variant="subtitle2"
+                  sx={{ color: 'teal.100', fontWeight: 700, mb: 0.5 }}
+                >
+                  Танд зориулж Spotify playlist үүсгэлээ
+                </Typography>
+
+                <Stack spacing={1.4}>
+                  {data.playlists.map((item, idx) => (
+                    <Stack
+                      key={idx}
+                      direction="row"
+                      spacing={1.5}
+                      alignItems="center"
+                      sx={{
+                        p: 1.4,
+                        borderRadius: 2.5,
+                        bgcolor: 'rgba(15,23,42,0.9)',
+                        border: '1px solid rgba(56,189,248,0.22)',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease',
+                        boxShadow: '0 18px 45px rgba(15,23,42,0.85)',
+                        '&:hover': {
+                          bgcolor: 'rgba(15,23,42,0.98)',
+                          border: '1px solid rgba(56,189,248,0.45)',
+                          transform: 'translateY(-1px)',
+                        },
+                      }}
+                      onClick={() => window.open(item.url, '_blank')}
+                    >
+                      <Box
+                        sx={{
+                          width: 44,
+                          height: 44,
+                          borderRadius: '999px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          bgcolor: 'rgba(34,197,94,0.08)',
+                          flexShrink: 0,
+                        }}
+                      >
+                        <Icon icon="mdi:spotify" style={{ fontSize: 26 }} />
+                      </Box>
+
+                      <Box sx={{ flex: 1, minWidth: 0 }}>
+                        <Typography
+                          sx={{
+                            color: 'grey.100',
+                            fontSize: '0.9rem',
+                            fontWeight: 600,
+                            mb: 0.4,
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                          }}
+                        >
+                          {data.mainType} төвлөрлийн Spotify playlist
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            color: 'grey.400',
+                            fontSize: '0.8rem',
+                            lineHeight: 1.5,
+                          }}
+                        >
+                          Зөвхөн суралцах, төвлөрч ажиллах үедээ сонсоорой. Таны сургалтын хэв маягт
+                          тааруулж curated playlist бэлдсэн тул заавал нэг удаа бүтнээр нь сонсож
+                          үзээрэй.
+                        </Typography>
+                      </Box>
+
+                      <Box
+                        sx={{
+                          ml: 1,
+                          flexShrink: 0,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        <Icon icon="mdi:arrow-top-right" style={{ fontSize: 18 }} />
+                      </Box>
+                    </Stack>
+                  ))}
+                </Stack>
+              </Box>
+            )}
+
+            <Box
+              sx={{
+                mt: 1,
+                p: isMobile ? 2 : 2.3,
+                borderRadius: 3,
+                bgcolor: 'rgba(15,118,110,0.22)',
+                flex: 1.8,
+                order: { xs: 1, md: 1 },
+              }}
+            >
+              <Typography variant="subtitle2" sx={{ color: 'teal.100', fontWeight: 700, mb: 0.75 }}>
+                Өнөөдрийн хийх зүйлсийн checklist
+              </Typography>
+
+              <BulletList items={data.dailyChecklist.checklists} />
+            </Box>
+          </Stack>
         </Stack>
       ),
     },
