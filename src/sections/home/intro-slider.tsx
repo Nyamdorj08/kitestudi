@@ -41,7 +41,7 @@ export const IntroSlider = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       handleNext();
-    }, 4000);
+    }, 5000);
     return () => clearTimeout(timer);
   }, [index]);
 
