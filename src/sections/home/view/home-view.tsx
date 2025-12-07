@@ -30,6 +30,7 @@ import { eventview, pageview } from 'src/utils/fpixel';
 import { hasCommonEmailTypo, isValidEmail } from 'src/utils/validators';
 import { FooterView } from 'src/sections/Footer';
 import { IntroSlider } from '../intro-slider';
+import { getFbp } from 'src/utils/getFbp';
 
 export const HomeView = () => {
   const theme = useTheme();
@@ -81,9 +82,9 @@ export const HomeView = () => {
     setConfirmEmailDialog(false);
     setLoading(true);
     const fbclid = qs.get('fbclid') || undefined;
-
+    const fbp = getFbp();
     try {
-      const response = await StudiiService().answers({ email, answers, fbclid });
+      const response = await StudiiService().answers({ email, answers, fbclid, fbp });
       router.push(`/${response.data._id}`);
     } catch (error) {
       const feedbackmessage = getErrorMessage(error);

@@ -4,6 +4,7 @@ export type StudiiAnswerPayload = {
   email: string;
   answers: Array<string | null | number>;
   fbclid?: string;
+  fbp?: string;
 };
 
 interface Url {
