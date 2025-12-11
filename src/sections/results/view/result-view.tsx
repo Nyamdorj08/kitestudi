@@ -64,7 +64,7 @@ export const ResultView = () => {
           value: 4900.0,
           currency: 'MNT',
           num_items: 1,
-          contents: [{ id: 'studii-basic', quantity: 1, item_price: 4800.0 }],
+          contents: [{ id: 'studii-basic', quantity: 1, item_price: 4900.0 }],
           content_type: 'product',
         },
         { eventID: `checkout-${result._id}` }
@@ -79,7 +79,7 @@ export const ResultView = () => {
           value: 4900.0,
           currency: 'MNT',
           num_items: 1,
-          contents: [{ id: 'st-basic', quantity: 1, item_price: 4800.0 }],
+          contents: [{ id: 'st-basic', quantity: 1, item_price: 4900.0 }],
           content_type: 'product',
         },
         { eventID: `purchase-${result._id}` }
