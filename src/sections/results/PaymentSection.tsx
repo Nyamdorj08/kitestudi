@@ -1,7 +1,24 @@
 'use client';
 
-import { Box, Button, Grid, Link, Paper, Stack, Typography, useMediaQuery } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import {
+  Box,
+  Button,
+  Grid,
+  Link,
+  Paper,
+  Stack,
+  Typography,
+  useMediaQuery,
+  Chip,
+} from '@mui/material';
+import { alpha, useTheme } from '@mui/material/styles';
+import WorkspacePremiumRoundedIcon from '@mui/icons-material/WorkspacePremiumRounded';
+import BoltRoundedIcon from '@mui/icons-material/BoltRounded';
+import LockRoundedIcon from '@mui/icons-material/LockRounded';
+import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
+import SpeedRoundedIcon from '@mui/icons-material/SpeedRounded';
+import TimelineRoundedIcon from '@mui/icons-material/TimelineRounded';
+import TaskAltRoundedIcon from '@mui/icons-material/TaskAltRounded';
 import { StudiiAnswerResponse } from 'src/services/types/Studii.type';
 
 type PaymentSectionProps = {
@@ -16,130 +33,218 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
   return (
     <Box
       sx={{
-        maxWidth: 520,
+        maxWidth: 560,
         mx: 'auto',
         mt: 4,
         px: 3,
         pt: 3,
-        pb: 2,
+        pb: 2.5,
         borderRadius: 4,
         border: '1px solid rgba(129,230,217,0.35)',
         background: 'linear-gradient(135deg, rgba(15,23,42,0.96), rgba(15,23,42,0.98))',
         boxShadow: '0 0 40px 6px rgba(56,189,248,0.20)',
+        position: 'relative',
+        overflow: 'hidden',
       }}
     >
-      {/* Title */}
-
       <Box
         sx={{
-          width: { xs: '100%', md: 'auto' },
-          flex: 1,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          // maxWidth: { md: 220 },
-          mt: { xs: 1.5, md: 0 },
-          mb: 1.5,
+          position: 'absolute',
+          inset: 0,
+          pointerEvents: 'none',
+          background: `radial-gradient(circle at 18% 0%, ${alpha(
+            theme.palette.primary.light,
+            0.16
+          )}, transparent 55%)`,
         }}
-      >
+      />
+
+      <Stack spacing={2} sx={{ position: 'relative' }}>
         <Box
           sx={{
-            borderRadius: 3,
-            overflow: 'hidden',
-            p: 1,
-            maxWidth: 220,
-            width: '100%',
+            width: { xs: '100%', md: 'auto' },
+            flex: 1,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            mt: { xs: 1.5, md: 0 },
+            mb: 0.5,
           }}
         >
-          <Box
-            component="img"
-            src={'/full_white_logo.png'}
-            alt={'STUDII-MAIN'}
+          <Box sx={{ borderRadius: 3, overflow: 'hidden', p: 1, maxWidth: 220, width: '100%' }}>
+            <Box
+              component="img"
+              src="/full_white_logo.png"
+              alt="STUDII-MAIN"
+              sx={{
+                width: '100%',
+                display: 'block',
+                objectFit: 'cover',
+                maxHeight: isMobile ? 220 : 260,
+              }}
+            />
+          </Box>
+        </Box>
+
+        <Stack direction="row" spacing={1} flexWrap="wrap" justifyContent="center">
+          <Chip
+            icon={<LockRoundedIcon />}
+            label="Нэг удаагийн төлбөр"
+            size="small"
             sx={{
-              width: '100%',
-              display: 'block',
-              objectFit: 'cover',
-              maxHeight: isMobile ? 220 : 260,
+              borderRadius: 999,
+              bgcolor: alpha(theme.palette.common.white, 0.06),
+              border: `1px solid ${alpha(theme.palette.common.white, 0.12)}`,
+              color: 'text.primary',
             }}
           />
-        </Box>
-      </Box>
+          <Chip
+            icon={<WorkspacePremiumRoundedIcon />}
+            label="Дүгнэлт + 7 алхам"
+            size="small"
+            sx={{
+              borderRadius: 999,
+              bgcolor: alpha(theme.palette.common.white, 0.06),
+              border: `1px solid ${alpha(theme.palette.common.white, 0.12)}`,
+              color: 'text.primary',
+            }}
+          />
+          <Chip
+            icon={<BoltRoundedIcon />}
+            label="Төлбөр баталгаажмагц нээгдэнэ"
+            size="small"
+            sx={{
+              borderRadius: 999,
+              bgcolor: alpha(theme.palette.success.main, 0.12),
+              border: `1px solid ${alpha(theme.palette.success.main, 0.35)}`,
+              color: 'text.primary',
+            }}
+          />
+        </Stack>
 
-      <Typography
-        variant="body1"
-        fontWeight={700}
-        sx={{
-          mt: 2,
-          textAlign: 'center',
-          color: 'text.primary',
-        }}
-      >
-        Ганцхан удаа бөглөх тест бөгөөд үр дүн нь таны амьдралд насан туршид нөлөөлөх өөрчлөлт
-        авчрах болно.
-      </Typography>
-
-      <Typography
-        variant="body2"
-        fontWeight={500}
-        textAlign="center"
-        sx={{
-          mt: 2,
-          color: 'text.secondary',
-          textShadow: '0 1px 2px rgba(15,23,42,0.9)',
-          textTransform: 'uppercase',
-        }}
-      >
-        Дүгнэлтээ харахад ердөө <strong>4900</strong> төгрөг
-      </Typography>
-
-      {/* Info pill */}
-      <Stack alignItems="center" spacing={2.5} mt={1}>
-        {/* <Box
-          p={2}
+        <Typography
+          variant="h6"
+          fontWeight={950}
           sx={{
+            mt: 1,
+            textAlign: 'center',
+            lineHeight: 1.25,
+            textShadow: '0 1px 2px rgba(15,23,42,0.9)',
+          }}
+        >
+          <Box component="span" sx={{ color: 'primary.main' }}>
+            “Муу сураад”
+          </Box>{' '}
+          байгаа юм биш.
+          <br />
+          Зүгээр л буруу аргаар{' '}
+          <Box component="span" sx={{ color: 'warning.light' }}>
+            сураад{' '}
+          </Box>{' '}
+          байгаа юм.
+        </Typography>
+
+        <Paper
+          variant="outlined"
+          sx={{
+            p: 1.6,
             borderRadius: 3,
-            background: 'linear-gradient(135deg, rgba(15,118,110,0.18), rgba(59,130,246,0.22))',
-            border: '1px solid rgba(45,212,191,0.6)',
-            color: 'text.primary',
-            fontWeight: 500,
-            fontSize: '0.95rem',
-            display: 'inline-block',
+            borderColor: alpha(theme.palette.warning.main, 0.55),
+            backgroundColor: alpha(theme.palette.common.black, 0.18),
+          }}
+        >
+          <Stack direction="row" spacing={1.2} alignItems="flex-start">
+            <WarningAmberRoundedIcon />
+            <Stack spacing={0.4}>
+              <Typography variant="body2" fontWeight={950}>
+                Та өөрийн онцлогт таарахгүй аргаар суралцаж байна
+              </Typography>
+              <Typography variant="body2"> </Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                <strong>Өөртөө тохирох арга барилгүй</strong> учраас сурах нэрийн дор{' '}
+                <strong> ойлгосон мэт болоод л мартаж</strong> үнэт цагаа үрж байна.
+              </Typography>
+            </Stack>
+          </Stack>
+        </Paper>
+
+        <Paper
+          variant="outlined"
+          sx={{
+            mt: 0.5,
+            p: 2,
+            borderRadius: 3,
+            borderColor: alpha(theme.palette.success.main, 0.55),
+            backgroundColor: alpha(theme.palette.common.black, 0.18),
             textAlign: 'center',
           }}
         >
-          4900₮ — Надад бол нэг аяга кофе ☕
-          <br />
-          Харин чамд бол дараагийн <strong>олон жилийн суралцах roadmap</strong> болно.
-        </Box> */}
+          <Typography variant="h4" fontWeight={980}>
+            6,900₮
+            <br />
+          </Typography>
 
-        {/* QR card */}
+          <Typography variant="caption" color="text.secondary">
+            Ганцхан удаа <strong>хагас таваг хоолны мөнгө</strong> төлөөд өөрт таарсан суралцах арга
+            барилаа олж авна.
+          </Typography>
 
-        {/* Mobile bank app shortcuts */}
-        {isMobile && result.urls?.length ? (
-          <Box mt={2} width="100%">
-            <Box>
-              <Typography
-                sx={{ textAlign: 'center', color: 'text.secondary' }}
-                variant="body2"
-                fontWeight={800}
-                gutterBottom
-              >
-                Банкны аппаар төлөх
+          <Stack spacing={0.8} mt={1.2} sx={{ textAlign: 'left', maxWidth: 460, mx: 'auto' }}>
+            <Stack direction="row" spacing={1} alignItems="flex-start">
+              <TaskAltRoundedIcon fontSize="small" />
+              <Typography variant="body2">
+                Таны хамгийн сайн суралцах хэв маягийг <strong>нэрлэнэ</strong>.
               </Typography>
-            </Box>
+            </Stack>
 
-            <Grid container spacing={2} mt={1}>
+            <Stack direction="row" spacing={1} alignItems="flex-start">
+              <TaskAltRoundedIcon fontSize="small" />
+              <Typography variant="body2">
+                Дараагийн 7 хоногт яг юу хийхийг чинь <strong>хэлнэ</strong>.
+              </Typography>
+            </Stack>
+
+            <Stack direction="row" spacing={1} alignItems="flex-start">
+              <TaskAltRoundedIcon fontSize="small" />
+              <Typography variant="body2">Юуг яаж хэрхэн сурах талаар жишээг танд өгнө.</Typography>
+            </Stack>
+
+            <Stack direction="row" spacing={1} alignItems="flex-start">
+              <TaskAltRoundedIcon fontSize="small" />
+              <Typography variant="body2">
+                1 цагийн урттай зөвхөн танд зориулсан Spotify Playlist.
+              </Typography>
+            </Stack>
+          </Stack>
+        </Paper>
+
+        {isMobile && result.urls?.length ? (
+          <Box mt={0.5} width="100%">
+            <Typography
+              sx={{ textAlign: 'center', color: 'text.secondary' }}
+              variant="body2"
+              fontWeight={950}
+              gutterBottom
+            >
+              Банкны аппаар 10 секундэд төлөөд суралцах арга барилаа олж ав
+            </Typography>
+
+            <Grid container spacing={2} mt={0.5}>
               {result.urls.map((url, idx) => (
                 <Grid item xs={3} key={idx} textAlign="center">
                   <Link href={url.link} target="_blank" underline="none">
-                    <img
+                    <Box
+                      component="img"
                       src={url.logo}
                       alt={url.name}
-                      style={{
+                      sx={{
                         width: 48,
                         height: 48,
-                        borderRadius: 12,
+                        borderRadius: 2,
                         objectFit: 'contain',
+                        border: `1px solid ${alpha(theme.palette.common.white, 0.12)}`,
+                        bgcolor: alpha(theme.palette.common.white, 0.06),
+                        p: 0.6,
                       }}
                     />
                     <Typography
@@ -154,76 +259,71 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
                 </Grid>
               ))}
             </Grid>
-
-            <Stack alignItems="center" mt={3}>
-              <Button
-                variant="contained"
-                size="large"
-                onClick={onCheckPayment}
-                sx={{
-                  borderRadius: 999,
-                  px: 4,
-                  background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
-                  fontWeight: 600,
-                  '&:hover': {
-                    background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
-                  },
-                }}
-              >
-                Төлбөр шалгах
-              </Button>
-            </Stack>
           </Box>
         ) : null}
 
         <Typography
           variant="body2"
-          fontWeight={700}
-          sx={{ color: 'text.secondary', textAlign: 'center', mt: 1 }}
+          fontWeight={950}
+          sx={{ color: 'text.secondary', textAlign: 'center', mt: 0.5 }}
         >
-          <Box sx={{ xs: 'display', md: 'none' }} component={'span'}>
-            Эсвэл
+          QR код уншуулж төлөөд
+          <br />
+          <Box component="span" sx={{ color: 'text.primary' }}>
+            “Дүгнэлтээ нээх”
           </Box>{' '}
-          QR кодыг уншуулан төлбөр хийгээд
-          <br /> <u>“Төлбөр шалгах”</u> товчийг дарна уу.
+          товчийг дар — тэр үед дүгнэлт чинь шууд гарна.
         </Typography>
 
         <Paper
           variant="outlined"
           sx={{
-            mt: 2,
+            mt: 0.5,
             p: 2,
             borderRadius: 3,
             borderColor: 'rgba(129,230,217,0.5)',
             backgroundColor: 'rgba(15,23,42,0.95)',
+            mx: 'auto',
           }}
         >
-          <img
+          <Box
+            component="img"
             src={`data:image/png;base64,${result.qr_image}`}
             alt="QR төлбөр"
-            style={{ width: 220, height: 220, objectFit: 'contain' }}
+            sx={{ width: 230, height: 230, objectFit: 'contain', display: 'block' }}
           />
         </Paper>
-      </Stack>
 
-      {/* Desktop main button */}
-      <Stack alignItems="center" mt={2}>
-        <Button
-          variant="contained"
-          size="large"
-          onClick={onCheckPayment}
-          sx={{
-            borderRadius: 999,
-            px: 4,
-            background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
-            fontWeight: 600,
-            '&:hover': {
-              background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
-            },
-          }}
-        >
-          Төлбөр шалгах
-        </Button>
+        <Stack alignItems="center" mt={1}>
+          <Button
+            variant="contained"
+            size="large"
+            onClick={onCheckPayment}
+            sx={{
+              width: '100%',
+              maxWidth: 440,
+              borderRadius: 999,
+              py: 1.35,
+              px: 4,
+              background: 'linear-gradient(90deg, #0f766e, #2563eb, #22c55e)',
+              fontWeight: 980,
+              fontSize: '1rem',
+              letterSpacing: 0.2,
+              '&:hover': {
+                background: 'linear-gradient(90deg, #0f766e, #1d4ed8, #4ade80)',
+              },
+            }}
+          >
+            ДҮГНЭЛТЭЭ НЭЭХ
+          </Button>
+
+          <Typography
+            variant="caption"
+            sx={{ mt: 0.8, textAlign: 'center', color: alpha(theme.palette.common.white, 0.6) }}
+          >
+            Secure төлбөр • QPay / Банкны аппууд •
+          </Typography>
+        </Stack>
       </Stack>
     </Box>
   );
