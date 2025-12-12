@@ -193,20 +193,18 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
             <Stack direction="row" spacing={1} alignItems="flex-start">
               <TaskAltRoundedIcon fontSize="small" />
               <Typography variant="body2">
-                Таны хамгийн сайн суралцах хэв маягийг <strong>нэрлэнэ</strong>.
+                Үндсэн суралцах арга барил + харилцааны онцлог.
               </Typography>
             </Stack>
 
             <Stack direction="row" spacing={1} alignItems="flex-start">
               <TaskAltRoundedIcon fontSize="small" />
-              <Typography variant="body2">
-                Дараагийн 7 хоногт яг юу хийхийг чинь <strong>хэлнэ</strong>.
-              </Typography>
+              <Typography variant="body2">Онцлогт тань тохирсон суралцах төлөвлөгөө</Typography>
             </Stack>
 
             <Stack direction="row" spacing={1} alignItems="flex-start">
               <TaskAltRoundedIcon fontSize="small" />
-              <Typography variant="body2">Юуг яаж хэрхэн сурах талаар жишээг танд өгнө.</Typography>
+              <Typography variant="body2">Юуг яаж хэрхэн сурах талаар бодит жишээнүүд.</Typography>
             </Stack>
 
             <Stack direction="row" spacing={1} alignItems="flex-start">
@@ -219,8 +217,8 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
             <Stack direction="row" spacing={1} alignItems="flex-start">
               <TaskAltRoundedIcon fontSize="small" />
               <Typography variant="body2">
-                20+ видео хичээл / унших / сонсох / ажиллах материал бүхий step-up.mn англи хэлний
-                онлайн сургалтыг үзэх 1 сарын эрх.
+                20+ видео хичээл / унших / сонсох / ажиллах материал бүхий англи хэлний онлайн
+                "STEP-UP" сургалтын 1 сарын эрх.
               </Typography>
             </Stack>
           </Stack>
