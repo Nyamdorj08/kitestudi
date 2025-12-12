@@ -177,7 +177,9 @@ export const ResultView = () => {
                 }}
               />
 
-              <Box sx={{ position: 'relative' }}>{data && <Visual data={data} />}</Box>
+              <Box sx={{ position: 'relative' }}>
+                {data && <Visual data={data} result={result} />}
+              </Box>
             </Paper>
           </Container>
         )}

@@ -1,3 +1,5 @@
+'use client';
+
 import { Box, Chip, Divider, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 import MobileStepper from '@mui/material/MobileStepper';
 import Button from '@mui/material/Button';
@@ -6,6 +8,8 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import Fade from '@mui/material/Fade';
 import { useState, useRef, useEffect } from 'react';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { StudiiAnswerResponse } from 'src/services/types/Studii.type';
+import { PromoCard } from './PromoCard';
 
 type VisualChip = {
   label: string;
@@ -65,6 +69,7 @@ export type VisualData = {
 
 type VisualProps = {
   data: VisualData;
+  result: StudiiAnswerResponse;
 };
 
 const BulletList = ({ items }: { items: string[] }) => (
@@ -93,7 +98,7 @@ const BulletList = ({ items }: { items: string[] }) => (
   </Stack>
 );
 
-export const Visual = ({ data }: VisualProps) => {
+export const Visual = ({ data, result }: VisualProps) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -740,6 +745,10 @@ export const Visual = ({ data }: VisualProps) => {
                       </Box>
                     </Stack>
                   ))}
+
+                  {result.stepup_promo && (
+                    <PromoCard code={result.stepup_promo} helpBaseUrl="/step-up" />
+                  )}
                 </Stack>
               </Box>
             )}

@@ -25,6 +25,7 @@ export type StudiiAnswerResponse = {
   qr_text?: string;
   qr_image?: string;
   urls?: Url[];
+  stepup_promo?: string;
   created_at: number;
   updated_at: number;
 };

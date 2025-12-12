@@ -147,7 +147,7 @@ export const HomeView = () => {
             p: isMobile ? 3 : 4,
             borderRadius: 4,
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(129,230,217,0.35)',
+            border: '  1px solid rgba(129,230,217,0.35)',
             background: 'linear-gradient(135deg, rgba(15,23,42,0.96), rgba(15,23,42,0.98))',
             boxShadow: '0 0 40px 6px rgba(56,189,248,0.20)',
           }}

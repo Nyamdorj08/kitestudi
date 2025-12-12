@@ -215,6 +215,14 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
                 1 цагийн урттай зөвхөн танд зориулсан Spotify Playlist.
               </Typography>
             </Stack>
+
+            <Stack direction="row" spacing={1} alignItems="flex-start">
+              <TaskAltRoundedIcon fontSize="small" />
+              <Typography variant="body2">
+                20+ видео хичээл / унших / сонсох / ажиллах материал бүхий step-up.mn англи хэлний
+                онлайн сургалтыг үзэх 1 сарын эрх.
+              </Typography>
+            </Stack>
           </Stack>
         </Paper>
 
