@@ -36,7 +36,7 @@ export const ResultView = () => {
       setResult(response.data);
       setLoading(false);
       if (response.data.styles) {
-        console.log(VisualDataFinder(response.data.styles));
+        // console.log(VisualDataFinder(response.data.styles));
         setData(VisualDataFinder(response.data.styles));
       }
     } catch (error) {
