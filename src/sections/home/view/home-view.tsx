@@ -200,7 +200,7 @@ export const HomeView = () => {
                   <Button
                     variant="contained"
                     size="large"
-                    onClick={() => setStage('caution')}
+                    onClick={() => setStage('quiz')}
                     sx={{
                       px: 6,
                       py: 1.4,
@@ -451,7 +451,7 @@ export const HomeView = () => {
                       }}
                     />
 
-                    <Box
+                    {/* <Box
                       sx={{
                         display: 'flex',
                         justifyContent: 'center',
@@ -468,7 +468,7 @@ export const HomeView = () => {
                           display: 'block',
                         }}
                       />
-                    </Box>
+                    </Box> */}
 
                     <Box sx={{ position: 'relative', zIndex: 1 }}>
                       <Typography
@@ -670,9 +670,9 @@ export const HomeView = () => {
                   variant="body1"
                   sx={{ color: 'text.secondary' }}
                 >
-                  Та найзтайгаа тэтгэлэгт тэнцэж чадсан болов уу?
+                  {/* Та найзтайгаа тэтгэлэгт тэнцэж чадсан болов уу?
                   <br />
-                  <br /> Краштайгаа хамт түвшин ахисан уу? <br />
+                  <br /> Краштайгаа хамт түвшин ахисан уу? <br /> */}
                 </Typography>
 
                 <Typography

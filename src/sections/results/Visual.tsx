@@ -746,9 +746,9 @@ export const Visual = ({ data, result }: VisualProps) => {
                     </Stack>
                   ))}
 
-                  {result.stepup_promo && (
+                  {/* {result.stepup_promo && (
                     <PromoCard code={result.stepup_promo} helpBaseUrl="/step-up" />
-                  )}
+                  )} */}
                 </Stack>
               </Box>
             )}

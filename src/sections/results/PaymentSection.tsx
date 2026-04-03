@@ -180,7 +180,7 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
           }}
         >
           <Typography variant="h4" fontWeight={980}>
-            6,900₮
+            4,900₮
             <br />
           </Typography>
 
@@ -214,13 +214,13 @@ export const PaymentSection = ({ result, onCheckPayment }: PaymentSectionProps) 
               </Typography>
             </Stack>
 
-            <Stack direction="row" spacing={1} alignItems="flex-start">
+            {/* <Stack direction="row" spacing={1} alignItems="flex-start">
               <TaskAltRoundedIcon fontSize="small" />
               <Typography variant="body2">
                 20+ видео хичээл / унших / сонсох / ажиллах материал бүхий англи хэлний онлайн
                 "STEP-UP" сургалтын 1 сарын эрх.
               </Typography>
-            </Stack>
+            </Stack> */}
           </Stack>
         </Paper>
 
