@@ -87,7 +87,7 @@ export const HomeView = () => {
       const response = await StudiiService().answers({ email, answers, fbclid, fbp });
       router.push(`/${response.data._id}`);
     } catch (error) {
-      const feedbackmessage = getErrorMessage(error);
+      const feedbackmessage = String(getErrorMessage(error));
       toast.error(feedbackmessage);
       setLoading(false);
     }

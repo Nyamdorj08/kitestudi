@@ -2,19 +2,20 @@
 
 import { Box, Container, Paper, useMediaQuery, useTheme } from '@mui/material';
 import { useParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { toast } from 'sonner';
 import { CircularLoadingBlur } from 'src/components/circular-loading-blur';
 import { StudiiService } from 'src/services';
 import { StudiiAnswerResponse } from 'src/services/types/Studii.type';
 import { getErrorMessage } from 'src/utils/error-message';
-import { eventview } from 'src/utils/fpixel';
 
 import { PaymentSection } from '../PaymentSection';
 import { VisualDataFinder } from '../VisualData';
 import { Visual, VisualData } from '../Visual';
 import { FooterView } from 'src/sections/Footer';
 import { ResultChecker } from 'src/sections/home/view/result-checker';
+
+const POLL_INTERVAL_MS = 5000;
 
 export const ResultView = () => {
   const theme = useTheme();
@@ -23,75 +24,47 @@ export const ResultView = () => {
   const params = useParams();
   const [result, setResult] = useState<StudiiAnswerResponse | null>(null);
   const [loading, setLoading] = useState(true);
-
-  const [hasFiredCheckout, setHasFiredCheckout] = useState(false);
-  const [hasFiredPurchase, setHasFiredPurchase] = useState(false);
-  const [hasFiredResultViewed, setHasFiredResultViewed] = useState(false);
   const [data, setData] = useState<VisualData | null>(null);
 
+  const pollingRef = useRef<NodeJS.Timeout | null>(null);
+
   const fetchData = async () => {
-    setLoading(true);
     try {
       const response = await StudiiService().paymentCheck(params._id.toString());
       setResult(response.data);
-      setLoading(false);
       if (response.data.styles) {
-        // console.log(VisualDataFinder(response.data.styles));
         setData(VisualDataFinder(response.data.styles));
       }
+      return response.data.status;
     } catch (error) {
-      toast.error(getErrorMessage(error));
+      toast.error(String(getErrorMessage(error)));
+      return null;
+    } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    if (!params._id) return;
-    if (params._id !== 'helper') {
-      fetchData();
-    } else {
+    if (!params._id || params._id === 'helper') {
       setLoading(false);
+      return;
     }
+
+    fetchData().then((status) => {
+      if (status === 'pending') {
+        pollingRef.current = setInterval(async () => {
+          const newStatus = await fetchData();
+          if (newStatus === 'approved') {
+            if (pollingRef.current) clearInterval(pollingRef.current);
+          }
+        }, POLL_INTERVAL_MS);
+      }
+    });
+
+    return () => {
+      if (pollingRef.current) clearInterval(pollingRef.current);
+    };
   }, [params._id]);
-
-  useEffect(() => {
-    if (!result) return;
-
-    if (result.status === 'pending' && !hasFiredCheckout) {
-      eventview(
-        'InitiateCheckout',
-        {
-          value: 4900.0,
-          currency: 'MNT',
-          num_items: 1,
-          contents: [{ id: 'studii-basic', quantity: 1, item_price: 4900.0 }],
-          content_type: 'product',
-        },
-        { eventID: `checkout-${result._id}` }
-      );
-      setHasFiredCheckout(true);
-    }
-
-    if (result.status === 'paid' && !hasFiredPurchase) {
-      eventview(
-        'Purchase',
-        {
-          value: 4900.0,
-          currency: 'MNT',
-          num_items: 1,
-          contents: [{ id: 'studii-basic', quantity: 1, item_price: 4900.0 }],
-          content_type: 'product',
-        },
-        { eventID: `purchase-${result._id}` }
-      );
-      setHasFiredPurchase(true);
-    }
-
-    if (result.status === 'completed' && !hasFiredResultViewed) {
-      eventview('ResultViewed', {}, { eventID: `result-${result._id}` });
-      setHasFiredResultViewed(true);
-    }
-  }, [result, hasFiredCheckout, hasFiredPurchase, hasFiredResultViewed]);
 
   return (
     <>
@@ -112,14 +85,14 @@ export const ResultView = () => {
         )}
 
         {!loading && result && result.status === 'pending' && (
-          <Container>
-            <PaymentSection result={result} onCheckPayment={fetchData} />
+          <Container maxWidth="sm">
+            <PaymentSection />
           </Container>
         )}
 
         {loading && <CircularLoadingBlur loading={loading} />}
 
-        {!loading && result && (result.status === 'paid' || result.status === 'completed') && (
+        {!loading && result && result.status === 'approved' && (
           <Container maxWidth="md">
             <Box
               sx={{
@@ -128,19 +101,12 @@ export const ResultView = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                // maxWidth: { md: 220 },
                 mt: { xs: 1.5, md: 0 },
                 mb: 5,
               }}
             >
               <Box
-                sx={{
-                  borderRadius: 3,
-                  overflow: 'hidden',
-                  p: 1,
-                  maxWidth: 220,
-                  width: '100%',
-                }}
+                sx={{ borderRadius: 3, overflow: 'hidden', p: 1, maxWidth: 220, width: '100%' }}
               >
                 <Box
                   component="img"
@@ -176,7 +142,6 @@ export const ResultView = () => {
                   pointerEvents: 'none',
                 }}
               />
-
               <Box sx={{ position: 'relative' }}>
                 {data && <Visual data={data} result={result} />}
               </Box>

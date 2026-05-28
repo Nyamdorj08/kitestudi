@@ -31,10 +31,9 @@ export const ApiRequest: ApiRequestProps = (configOverride = {}, _eventCallBack)
       } catch (error) {
         return;
       }
-      const errorMessage =
-        error.response && error.response.data && error.response.data.message
-          ? error.response.data.message
-          : error;
+      const raw =
+        error?.response?.data?.message || error?.message || 'Алдаа гарлаа';
+      const errorMessage = typeof raw === 'string' ? raw : 'Алдаа гарлаа';
 
       throw new axios.Cancel(errorMessage);
     }
